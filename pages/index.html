@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title> HOC </title>
+        <meta name="description" content="HOC" />
+        <meta name="author" content="Noctua.Art & RLabs" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.60" />
+    </head>
+    <body class="w-full">
+        <!-- Sómente para identificar breakpoint. Remover em produção -->
+        <div class="bpvisor"><p></p></div>
+        <header>
+            <div class="header__hambcont">
+                <a role="button" class="navbar-burger" aria-label="menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <nav class="topNav">
+                <div class="w-8/12 lg:w-6/12 flex justify-between items-center h-full">
+                    <div class="flex flex-row justify-start items-center">
+                        <img src="svgs/logo_topnav.svg" class="h-[40px] lg:mr-20" alt="Logo RD" />
+                        <span class="text-verde2 font-vag_light" id="topNavTitle" ></span>
+                    </div>
+                    <a href="pdf/Raia_Drogasil_RAS2021.pdf" target="_blank" class="text-verde2 font-vag_bold flex gap-x-2" id="topNavButton" >
+                        <svg class="h-5 fill-verde2" viewBox="0 0 32 39" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                            <path d="M19.467 2.18536e-05H3.89302C3.3813 -0.00169556 2.8743 0.0978276 2.40121 0.292861C1.92811 0.487894 1.49827 0.774585 1.13643 1.13643C0.774585 1.49827 0.487894 1.92811 0.292861 2.40121C0.0978276 2.8743 -0.00169556 3.3813 2.18536e-05 3.89302V35.04C-0.00169556 35.5517 0.0978276 36.0587 0.292861 36.5318C0.487894 37.0049 0.774585 37.4348 1.13643 37.7966C1.49827 38.1585 1.92811 38.4451 2.40121 38.6402C2.8743 38.8352 3.3813 38.9347 3.89302 38.933H27.253C27.7647 38.9347 28.2717 38.8352 28.7448 38.6402C29.2179 38.4451 29.6478 38.1585 30.0096 37.7966C30.3715 37.4348 30.6581 37.0049 30.8532 36.5318C31.0482 36.0587 31.1477 35.5517 31.146 35.04V11.68L19.467 2.18536e-05ZM15.574 33.094L7.78702 25.307H12.654V19.467H18.494V25.307H23.36L15.573 33.094H15.574ZM17.52 13.627V2.92002L28.227 13.627H17.52Z" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="sideNav h-full relative">
+                <ul class="sideMenu">
+                    <li><a href="#home">home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Home/Hero -->
+            <section class="home px-40 border-2 border-red-600">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br><br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+
+                
+            </section>
+
+        </main>
+        
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+
+        (function ($) {
+            $(".navbar-burger").on("click", function (event) {
+                toggleMenu();
+                console.log("menu");
+                event.preventDefault();
+            });
+            function toggleMenu() {
+                $(".navbar-burger").toggleClass("is-active");
+                $(".sideMenu").toggleClass("is-active");
+                setTimeout(function () {
+                    console.log("exibir menu");
+                }, 200);
+            }
+
+            $("header ul.sideMenu li a, a.goTo, a.btnNextSection, .heroNav ul li a").on(
+                "click",
+                function (event) {
+                    console.log('teste');
+                    event.preventDefault();
+                    var url = $(this).attr("href");
+                    console.log('url: ', url);
+
+                    $("html, body")
+                        .stop()
+                        .animate(
+                            {
+                                scrollTop: $(url).offset().top,
+                            },
+                            800,
+                            "easeInOutExpo"
+                        );
+                }
+            );
+
+            
+        })(jQuery);
+
+        // function init() {
+        //     window.addEventListener("scroll", function (e) {
+        //         var distanceY =
+        //                 window.pageYOffset ||
+        //                 document.documentElement.scrollTop,
+        //             shrinkOn = 500,
+        //             hamb = document.querySelector("header__hambcont");
+
+        //         if (distanceY > shrinkOn) {
+        //             $(".header__hambcont").addClass("is-spying");
+        //             $(".topNav").addClass("is-active");
+        //         } else {
+        //             $(".header__hambcont").removeClass("is-spying");
+        //             $(".topNav").removeClass("is-active");
+        //         }
+        //     });
+        // }
+        // window.onload = init();
+    </script>
+</html>

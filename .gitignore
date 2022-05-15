@@ -1,0 +1,5 @@
+/node_modules
+/__NOTES
+/pages/audios/
+*.zip
+.DS_Store
