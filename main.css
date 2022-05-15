@@ -86,7 +86,7 @@
 
         .header__hambcont {
             transition: 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-            @apply fixed h-[52px] w-[52px] bg-green-300 flex items-center justify-center top-[72px] sm:top-20 -right-20 rounded-full hover:bg-black transition-all duration-300 z-40 shadow-xl;
+            @apply relative h-20 w-20 border flex items-center justify-center transition-all duration-300 z-40;
         }
 
         .header__hambcont.is-spying {
@@ -94,15 +94,11 @@
         }
 
         .navbar-burger {
-            @apply relative transition-all duration-300 w-[24px] h-[28px] block z-50 mt-[10px];
-        }
-        .navbar-burger:hover {
-            background-color: transparent;
-            color: red;
+            @apply relative transition-all duration-300 w-[32px] h-[28px] block z-50 mt-[10px];
         }
 
         .navbar-burger span {
-            @apply absolute h-[3px] w-full bg-white block transition-all duration-300 rounded-full;
+            @apply absolute h-[3px] w-full bg-verdeaguaclaro block transition-all duration-300;
         }
 
         .navbar-burger span:nth-child(2) {
