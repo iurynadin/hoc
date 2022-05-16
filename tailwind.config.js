@@ -12,6 +12,7 @@ module.exports = {
                 amarelolimao: "#e7fd53",
                 verdeagua: "#337686",
                 verdeaguaclaro: "#50aeb9",
+                verdehamb: "#00b2bb",
                 verdeescuro: "#153a4c",
             },
             fontFamily: {
@@ -32,6 +33,9 @@ module.exports = {
             },
             backgroundSize: {
                 "sustentabilidade-lg": '75% auto',
+            },
+            zIndex: {
+                '100': '100',
             }
         },
     },

@@ -56,12 +56,29 @@
     }
 
     header {
-        nav.topNav {
-            @apply fixed left-0 top-[-70px] w-full h-[64px] px-4 sm:px-8 z-50 duration-300 transition-all flex justify-between items-center;
+        .bgTopNav.is-hovered {
+            @apply h-full;
+        }
+        nav .bgTopNav.is-active {
+            @apply h-[666px] rounded-3xl;
         }
 
         nav.topNav.is-active {
             @apply bg-white top-0;
+        }
+
+        ul.topNavUl {
+            &.is-active {
+                @apply flex flex-col opacity-100 z-10 translate-y-0;
+            }
+
+            li {
+                @apply text-verdeagua mb-5;
+            }
+        }
+
+        /* ul.topNavUl.is-active {
+            @apply flex flex-col opacity-100 z-10 translate-y-0;
         }
 
         nav.sideNav {
@@ -82,7 +99,7 @@
             ul.is-active {
                 @apply right-0;
             }
-        }
+        } */
 
         .header__hambcont {
             transition: 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -94,30 +111,30 @@
         }
 
         .navbar-burger {
-            @apply relative transition-all duration-300 w-[32px] h-[28px] block z-50 mt-[10px];
+            @apply relative transition-all duration-300 w-[32px] h-[21px] block z-50 mt-[10px];
         }
 
         .navbar-burger span {
-            @apply absolute h-[3px] w-full bg-verdeaguaclaro block transition-all duration-300;
+            @apply absolute h-[3px] w-full bg-verdehamb block transition-all duration-300;
         }
 
         .navbar-burger span:nth-child(2) {
-            top: calc(50% - 7px);
+            top: calc(50% - 2px);
         }
         .navbar-burger span:nth-child(3) {
-            top: calc(50%);
+            top: calc(50% + 6px);
         }
 
         .navbar-burger.is-active span:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
-            background-color: white;
+            @apply bg-verdeaguaclaro;
+            transform: translateY(8px) rotate(45deg);
         }
         .navbar-burger.is-active span:nth-child(2) {
             opacity: 0;
         }
         .navbar-burger.is-active span:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
-            background-color: white;
+            @apply bg-verdeaguaclaro;
+            transform: translateY(-8px) rotate(-45deg);
         }
     }
 

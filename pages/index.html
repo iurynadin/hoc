@@ -14,65 +14,204 @@
     <body class="w-full bg-verdeagua">
         <!-- Sómente para identificar breakpoint. Remover em produção -->
         <div class="bpvisor"><p></p></div>
-        <header class="fixed top-0 left-0 w-full h-20 bg-white z-50 flex flex-row justify-between items-center px-10">
-            <div class="flex flex-rom items-center gap-x-4">
+        <div class="fixed w-px h-[300px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
+
+        <header class="fixed top-0 left-0 w-full h-20 bg-white z-40 flex flex-row justify-between items-center px-10">
+            <div class="flex flex-rom items-center gap-x-4 h-full">
                 <div class="header__hambcont">
-                    <a role="button" class="navbar-burger" aria-label="menu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
+                    <a role="button" class="navbar-burger group" aria-label="menu">
+                        <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
+                        <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
+                        <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
                     </a>
                 </div>
 
-                <span class="relative z-10">Relatório Integrado 2021</span>
+                <nav class="topNav relative lg:w-[300px] xl:w-[360px] h-full">
+                    <div class="relative z-10 w-full h-full flex justify-start items-center pl-7">Relatório Integrado 2021</div>
+                    <div class="bgTopNav w-full absolute top-0 left-0 z-1 h-2 bg-amarelolimao block transition-all duration-300"></div>
+
+                    <ul class="topNavUl relative -translate-y-10 -z-10 opacity-0 transition-all duration-300 px-7 py-2 border">
+                        <li><a href="#palavra">Palavra da liderança</a></li>
+                        <li><a href="#oswaldo-cruz">Oswaldo Cruz: um hospital de grande porte e alta complexidade</a></li>
+                        <li><a href="#nossas-unidades">Nossas Unidades</a></li>
+                        <li><a href="#modelo-de-negocios">Modelo de Negócios</a></li>
+                        <li><a href="#indicadores">Indicadores Estratégicos</a></li>
+                        <li><a href="#investimentos">Investimentos em 2021</a></li>
+                        <li><a href="#covid-19">Covid-19, ano dois</a></li>
+                        <li><a href="#desempenho">Desempenho em indicadores e taxas</a></li>
+                        <li><a href="#educacao">Educação, Pesquisa, Inovação e Saúde Digital</a></li>
+                        <li><a href="#sustentabilidade">Sustentabilidade e Responsabilidade Social</a></li>
+                        <li><a href="#créditos">Créditos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="w-[242px] h-10 bg-black block absolute left-1/2 -translate-x-1/2"></div>
+
             </div>
 
-            <div class="w-[200px] h-10 bg-black block"></div>
 
             <a href="#">pdf</a>
-
-            <!-- <nav class="topNav">
-                <div class="w-8/12 lg:w-6/12 flex justify-between items-center h-full">
-                    <div class="flex flex-row justify-start items-center">
-                        <img src="svgs/logo_topnav.svg" class="h-[40px] lg:mr-20" alt="Logo RD" />
-                        <span class="text-verde2 font-vag_light" id="topNavTitle" ></span>
-                    </div>
-                    <a href="pdf/Raia_Drogasil_RAS2021.pdf" target="_blank" class="text-verde2 font-vag_bold flex gap-x-2" id="topNavButton" >
-                        <svg class="h-5 fill-verde2" viewBox="0 0 32 39" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                            <path d="M19.467 2.18536e-05H3.89302C3.3813 -0.00169556 2.8743 0.0978276 2.40121 0.292861C1.92811 0.487894 1.49827 0.774585 1.13643 1.13643C0.774585 1.49827 0.487894 1.92811 0.292861 2.40121C0.0978276 2.8743 -0.00169556 3.3813 2.18536e-05 3.89302V35.04C-0.00169556 35.5517 0.0978276 36.0587 0.292861 36.5318C0.487894 37.0049 0.774585 37.4348 1.13643 37.7966C1.49827 38.1585 1.92811 38.4451 2.40121 38.6402C2.8743 38.8352 3.3813 38.9347 3.89302 38.933H27.253C27.7647 38.9347 28.2717 38.8352 28.7448 38.6402C29.2179 38.4451 29.6478 38.1585 30.0096 37.7966C30.3715 37.4348 30.6581 37.0049 30.8532 36.5318C31.0482 36.0587 31.1477 35.5517 31.146 35.04V11.68L19.467 2.18536e-05ZM15.574 33.094L7.78702 25.307H12.654V19.467H18.494V25.307H23.36L15.573 33.094H15.574ZM17.52 13.627V2.92002L28.227 13.627H17.52Z" />
-                        </svg>
-                    </a>
-                </div>
-            </nav> -->
-
-            <!-- <nav class="sideNav h-full relative">
-                <ul class="sideMenu">
-                    <li><a href="#home">home</a></li>
-                </ul>
-            </nav> -->
         </header>
 
         <main>
-            <!-- Home/Hero -->
-            <section class="home px-40 border-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
-                <br><br><br><br>
-                
-                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
-                <br><br><br><br>
-                
-                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
-                <br><br><br><br>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
-                <br><br><br><br>
-                
-                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
-                <br><br><br><br><br><br><br><br>
-                
-                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
 
+            <!-- Home/Hero -->
+            <section class="home w-full" id="home">
+                <div class="container h-screen border border-red-500 flex justify-end items-center">
+                    <h1 class="text-[72px] leading-none translate-y-32">
+                        <span class="text-white">Relatório<br>Integrado</span><br>
+                        <span class="text-verdeaguaclaro">2021</span>
+                    </h1>
+                </div>
+                <a href="#summary" class="btnStart absolute w-28 h-28 border-x border-gray-400 bottom-10 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center">seta</a>
+            </section>
+
+            <section class="w-full border-l-2 border-amarelolimao" id="summary">
+                <div class="container grid grid-cols-12 gap-x-12">
+                    <div class="col-span-7">
+                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam recusandae autem harum voluptate qui et alias repellat, aspernatur facere similique!</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex fugit repellat sunt soluta quod magnam, debitis eos laudantium odio sint corporis! Beatae nisi, ducimus delectus aperiam suscipit eligendi quas ea dicta fugiat officia corporis sapiente nemo sit quasi rerum veritatis cum, doloremque temporibus consequatur eum, quisquam voluptatibus atque. Veritatis ratione doloribus voluptas eaque amet error assumenda consectetur, culpa magni nesciunt.</p>
+                    </div>
+                    <div class="col-span-5 bg-verdeescuro rounded-tl-[50px] rounded-tr-[50px] p-14">
+                        <p class="text-white">Neste resumo</p>
+                        <ul class="ulSummary">
+                            <li><a href="#palavra">Palavra da liderança</a></li>
+                            <li><a href="#oswaldo-cruz">Oswaldo Cruz: um hospital de grande porte e alta complexidade</a></li>
+                            <li><a href="#nossas-unidades">Nossas Unidades</a></li>
+                            <li><a href="#modelo-de-negocios">Modelo de Negócios</a></li>
+                            <li><a href="#indicadores">Indicadores Estratégicos</a></li>
+                            <li><a href="#investimentos">Investimentos em 2021</a></li>
+                            <li><a href="#covid-19">Covid-19, ano dois</a></li>
+                            <li><a href="#desempenho">Desempenho em indicadores e taxas</a></li>
+                            <li><a href="#educacao">Educação, Pesquisa, Inovação e Saúde Digital</a></li>
+                            <li><a href="#sustentabilidade">Sustentabilidade e Responsabilidade Social</a></li>
+                            <li><a href="#créditos">Créditos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="px-40 border-l-[11px] border-b-[20px] border-amarelolimao bg-white" id="palavra">
+                <h1>Palavra da liderança</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
                 
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            
+            <section id="oswaldo-cruz">
+                <h1>Oswaldo Cruz: um hospital de grande porte e alta complexidade</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="nossas-unidades">
+                <h1>Nossas Unidades</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="modelo-de-negocios">
+                <h1>Modelo de Negócios</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="indicadores">
+                <h1>Indicadores Estratégicos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="investimentos">
+                <h1>Investimentos em 2021</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="covid-19">
+                <h1>Covid-19, ano dois</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="desempenho">
+                <h1>Desempenho em indicadores e taxas</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="educacao">
+                <h1>Educação, Pesquisa, Inovação e Saúde Digital</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="sustentabilidade">
+                <h1>Sustentabilidade e Responsabilidade Social</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
+            </section>
+            <section id="créditos">
+                <h1>Créditos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
+                <br><br><br><br>
+                
+                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
+                <br><br><br><br>
+                
+                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
+                <br><br><br><br>
             </section>
 
         </main>
@@ -80,62 +219,5 @@
     </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script type="text/javascript">
-
-        (function ($) {
-            $(".navbar-burger").on("click", function (event) {
-                toggleMenu();
-                console.log("menu");
-                event.preventDefault();
-            });
-            function toggleMenu() {
-                $(".navbar-burger").toggleClass("is-active");
-                $(".sideMenu").toggleClass("is-active");
-                setTimeout(function () {
-                    console.log("exibir menu");
-                }, 200);
-            }
-
-            $("header ul.sideMenu li a, a.goTo, a.btnNextSection, .heroNav ul li a").on(
-                "click",
-                function (event) {
-                    console.log('teste');
-                    event.preventDefault();
-                    var url = $(this).attr("href");
-                    console.log('url: ', url);
-
-                    $("html, body")
-                        .stop()
-                        .animate(
-                            {
-                                scrollTop: $(url).offset().top,
-                            },
-                            800,
-                            "easeInOutExpo"
-                        );
-                }
-            );
-
-            
-        })(jQuery);
-
-        // function init() {
-        //     window.addEventListener("scroll", function (e) {
-        //         var distanceY =
-        //                 window.pageYOffset ||
-        //                 document.documentElement.scrollTop,
-        //             shrinkOn = 500,
-        //             hamb = document.querySelector("header__hambcont");
-
-        //         if (distanceY > shrinkOn) {
-        //             $(".header__hambcont").addClass("is-spying");
-        //             $(".topNav").addClass("is-active");
-        //         } else {
-        //             $(".header__hambcont").removeClass("is-spying");
-        //             $(".topNav").removeClass("is-active");
-        //         }
-        //     });
-        // }
-        // window.onload = init();
-    </script>
+    <script src="./js/main.js" type="text/javascript"></script>
 </html>
