@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title> HOC </title>
+        <title>HOAC</title>
         <meta name="description" content="HOC" />
         <meta name="author" content="Noctua.Art & RLabs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,7 @@
         <div class="bpvisor"><p></p></div>
         <div class="fixed w-px h-[100px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
 
-        <header class="fixed top-0 left-0 w-full h-20 bg-white shadow-xl z-40 flex flex-row justify-between items-center px-10">
+        <header class="fixed top-0 left-0 w-full h-20 bg-white shadow-xl z-40 flex flex-row justify-between items-center px-4 xl:px-10">
             <div class="flex flex-rom items-center gap-x-4 h-full">
                 <div class="header__hambcont">
                     <a role="button" class="navbar-burger group" aria-label="menu">
@@ -28,8 +28,8 @@
                     </a>
                 </div>
 
-                <nav class="topNav relative lg:w-[300px] xl:w-[360px] h-full">
-                    <div class="relative z-10 w-full h-full flex justify-start items-center pl-7 font-gotham_book text-xl">Relatório Integrado 2021</div>
+                <nav class="topNav relative lg:w-[280px] xl:w-[360px] h-full">
+                    <div class="relative z-10 w-full h-full flex justify-start items-center pl-7 font-gotham_book text-lg xl:text-xl text-verdemedio">Relatório Integrado 2021</div>
                     <div class="bgTopNav w-full absolute top-0 left-0 z-1 h-2 bg-amarelolimao block transition-all duration-300"></div>
 
                     <ul class="topNavUl relative -translate-y-10 -z-9999 opacity-0 transition-all duration-300 px-7 py-2 pointer-events-none">
@@ -47,25 +47,35 @@
                     </ul>
                 </nav>
 
-                <div class="w-[242px] h-10 bg-black block absolute left-1/2 -translate-x-1/2"></div>
+                <img src="./svgs/logo-header.png" class="w-[200px] xl:w-[240px] block absolute left-1/2 -translate-x-1/2" alt="">
 
             </div>
 
 
-            <a href="#">pdf</a>
+            <a href="#" class="group text-verdehamb font-gotham_bold text-xl uppercase flex flex-row items-center gap-x-1 relative pr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="relative z-[1] fill-verdehamb transition-all duration-300 group-hover:fill-verdeescuro group-hover:translate-y-[2px]" width="30" height="30" viewBox="0 0 30 30">
+                    <g id="download" transform="translate(-580.077 -1096.077)">
+                        <path d="M5,24.359H22.59V21.846H5M22.59,10.538H17.564V3H10.026v7.538H5l8.795,8.795Z" transform="translate(581.282 1098.026)" />
+                    </g>
+                </svg>
+                <span class="group-hover:text-verdeescuro transition-all duration-300 relative z-[1]">pdf</span> 
+                <div class="absolute bg-amarelolimao h-10 w-4 group-hover:w-[108px] rounded-full right-0 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+            </a>
         </header>
 
         <main>
 
             <!-- Home/Hero -->
             <section class="home w-full bg-verdeagua" id="home">
-                <div class="container h-screen border border-red-500 flex justify-end items-center">
-                    <h1 class="text-[72px] leading-none translate-y-32">
+                <div class="container h-screen border border-red-500 flex justify-end items-center text-right">
+                    <h1 class="text-[72px] xl:text-[100px] leading-none translate-y-32">
                         <span class="text-white">Relatório<br>Integrado</span><br>
-                        <span class="text-verdeaguaclaro">2021</span>
+                        <span class="text-amarelolimao2 font-gotham_bold">2021</span>
                     </h1>
                 </div>
-                <a href="#summary" class="btnStart absolute w-28 h-28 border-x border-gray-400 bottom-10 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center">seta</a>
+                <a href="#summary" class="group btnStart absolute w-20 h-20 border-2 border-btnStartBorder bg-btnStartFill hover:bg-btnStartHoverFill hover:border-btnStartFill hover:translate-y-3 hover:scale-95 bottom-10 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-verdehamb group-hover:fill-verdeescuro transition-all duration-300" width="28" height="51" viewBox="0 0 28 51"><text transform="translate(0 42)" font-size="43" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">↓</tspan></text></svg>
+                </a>
             </section>
 
 

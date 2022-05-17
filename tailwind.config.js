@@ -10,12 +10,16 @@ module.exports = {
         extend: {
             colors: {
                 amarelolimao: "#e7fd53",
+                amarelolimao2: "#E2FE0A",
                 amarelopastel: "#eaff90",
                 verdeagua: "#337686",
                 verdeaguaclaro: "#50aeb9",
                 verdehamb: "#00b2bb",
                 verdemedio: "#007889",
                 verdeescuro: "#153a4c",
+                btnStartFill: "rgba(0,59,78,0.56)",
+                btnStartHoverFill: "rgba(226,254,10,0.56)",
+                btnStartBorder: "rgba(112,112,112,0.56)",
             },
             fontFamily: {
                 montserrat: ["Montserrat"],
@@ -23,6 +27,7 @@ module.exports = {
                 gotham_extra_light: ["Gotham-extra"],
                 gotham_light: ["Gotham-light"],
                 gotham_book: ["Gotham-book"],
+                gotham_medium: ["Gotham-medium"],
                 gotham_bold: ["Gotham-bold"]
             },
             boxShadow: {
