@@ -181,7 +181,7 @@
     }
 
     .swiper-col-left {
-        @apply relative col-span-8 h-full rounded-3xl pr-80;
+        @apply relative col-span-8 h-full rounded-3xl rounded-tr-[240px] pr-80 pt-32;
     }
 
     .btnSwiperNext {

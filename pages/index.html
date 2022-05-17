@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./css/swiper-bundle.css" />
         <script src="./js/swiper-bundle.min.js"></script>
     </head>
-    <body class="w-full bg-verdeagua">
+    <body class="w-full">
         <!-- Sómente para identificar breakpoint. Remover em produção -->
         <div class="bpvisor"><p></p></div>
         <div class="fixed w-px h-[100px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
@@ -58,7 +58,7 @@
         <main>
 
             <!-- Home/Hero -->
-            <section class="home w-full" id="home">
+            <section class="home w-full bg-verdeagua" id="home">
                 <div class="container h-screen border border-red-500 flex justify-end items-center">
                     <h1 class="text-[72px] leading-none translate-y-32">
                         <span class="text-white">Relatório<br>Integrado</span><br>
@@ -70,7 +70,7 @@
 
 
             <!-- Sumário -->
-            <section class="w-full border-l-2 border-amarelolimao pt-40" id="summary">
+            <section class="w-full border-l-2 border-amarelolimao pt-40 bg-verdeagua" id="summary">
                 <div class="container grid grid-cols-12 gap-x-16">
                     <div class="col-span-7">
                         <h2 class="text-3xl text-amarelolimao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam recusandae autem harum voluptate qui et alias repellat, aspernatur facere similique!</h2>
@@ -136,8 +136,8 @@
 
 
             <!-- Palavra da Liderança -->
-            <section class="px-40 border-l-[11px] border-b-[20px] border-amarelolimao bg-white" id="palavra">
-                <div class="container grid grid-cols-3 gap-x-20 pt-40 mb-10">
+            <section class="px-40 border-l-[11px] border-amarelolimao bg-white pb-20" id="palavra">
+                <div class="container grid grid-cols-3 gap-x-20 pt-40">
                     <div class="border">
                         <h1 class="text-verdeaguaclaro text-[58px] leading-none">Palavra da liderança</h1>
                         <div class="relative w-full h-2 flex justify-end mt-6 mb-8">
@@ -183,8 +183,8 @@
 
 
             <!-- Hospital Oswaldo Cruz -->
-            <section id="oswaldo-cruz" class="w-full relative min-h-screen border border-red-500">
-
+            <section id="oswaldo-cruz" class="w-full relative min-h-screen">
+                <div class="absolute top-0 left-0 w-full h-5 bg-amarelolimao z-20 block"></div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide bg-verdeaguaclaro">
@@ -202,7 +202,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-span-4">
+                                <div class="col-span-4 pt-20">
                                     ilustração
                                 </div>
                             </div>
@@ -224,7 +224,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-span-4">
+                                <div class="col-span-4 pt-20">
                                     ilustração
                                 </div>
                             </div>
@@ -245,7 +245,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-span-4">
+                                <div class="col-span-4 pt-20">
                                     ilustração
                                 </div>
                             </div>
