@@ -19,6 +19,11 @@ module.exports = {
             },
             fontFamily: {
                 montserrat: ["Montserrat"],
+                gotham_book_italic: ["Gotham-book-italic"],
+                gotham_extra_light: ["Gotham-extra"],
+                gotham_light: ["Gotham-light"],
+                gotham_book: ["Gotham-book"],
+                gotham_bold: ["Gotham-bold"]
             },
             boxShadow: {
                 saibaMaisRosa1: "0px 0px 10px 2px rgba(152, 27, 27, 0.5)",

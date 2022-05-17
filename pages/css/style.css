@@ -465,6 +465,7 @@ body {
   margin: 0px;
   box-sizing: border-box;
   padding: 0px;
+  font-family: Gotham-book;
 }
 .bpvisor {
   position: fixed;
@@ -545,6 +546,9 @@ body {
                 content: "2xl";
             }
         }
+h1 {
+  font-family: Gotham-extra;
+}
 section {
   position: relative;
   width: 100%;
@@ -806,6 +810,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
 .mt-8 {
   margin-top: 2rem;
 }
@@ -826,6 +833,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .block {
   display: block;
@@ -872,9 +882,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .h-5 {
   height: 1.25rem;
 }
-.h-4 {
-  height: 1rem;
-}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -902,8 +909,11 @@ header .navbar-burger.is-active span:nth-child(3) {
 .w-\[600px\] {
   width: 600px;
 }
-.w-5 {
-  width: 1.25rem;
+.w-10\/12 {
+  width: 83.333333%;
+}
+.w-\[2000px\] {
+  width: 2000px;
 }
 .flex-grow {
   flex-grow: 1;
@@ -968,6 +978,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .rounded-2xl {
   border-radius: 1rem;
 }
+.rounded-xl {
+  border-radius: 0.75rem;
+}
 .rounded-tl-\[50px\] {
   border-top-left-radius: 50px;
 }
@@ -984,23 +997,14 @@ header .navbar-burger.is-active span:nth-child(3) {
 .border-l-2 {
   border-left-width: 2px;
 }
-.border-l-\[11px\] {
-  border-left-width: 11px;
-}
-.border-l-\[20px\] {
-  border-left-width: 20px;
-}
-.border-t-\[20px\] {
-  border-top-width: 20px;
-}
-.border-b-\[30px\] {
-  border-bottom-width: 30px;
-}
 .border-l-\[12px\] {
   border-left-width: 12px;
 }
-.border-t-\[12px\] {
-  border-top-width: 12px;
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-b-\[30px\] {
+  border-bottom-width: 30px;
 }
 .border-red-500 {
   --tw-border-opacity: 1;
@@ -1022,9 +1026,9 @@ header .navbar-burger.is-active span:nth-child(3) {
   --tw-border-opacity: 1;
   border-left-color: rgb(80 174 185 / var(--tw-border-opacity));
 }
-.border-t-verdeescuro {
+.border-b-verdeagua {
   --tw-border-opacity: 1;
-  border-top-color: rgb(21 58 76 / var(--tw-border-opacity));
+  border-bottom-color: rgb(51 118 134 / var(--tw-border-opacity));
 }
 .border-l-amarelolimao {
   --tw-border-opacity: 1;
@@ -1037,14 +1041,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .border-l-verdeagua {
   --tw-border-opacity: 1;
   border-left-color: rgb(51 118 134 / var(--tw-border-opacity));
-}
-.border-t-verdeagua {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(51 118 134 / var(--tw-border-opacity));
-}
-.border-t-verdeaguaclaro {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(80 174 185 / var(--tw-border-opacity));
 }
 .bg-red-600 {
   --tw-bg-opacity: 1;
@@ -1118,6 +1114,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .p-14 {
   padding: 3.5rem;
 }
+.p-6 {
+  padding: 1.5rem;
+}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1130,9 +1129,13 @@ header .navbar-burger.is-active span:nth-child(3) {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .pl-7 {
   padding-left: 1.75rem;
@@ -1152,6 +1155,19 @@ header .navbar-burger.is-active span:nth-child(3) {
 .pt-28 {
   padding-top: 7rem;
 }
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+.pr-3 {
+  padding-right: 0.75rem;
+}
+.font-gotham_book {
+  font-family: Gotham-book;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .text-\[72px\] {
   font-size: 72px;
 }
@@ -1165,6 +1181,13 @@ header .navbar-burger.is-active span:nth-child(3) {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .leading-none {
   line-height: 1;
@@ -1202,6 +1225,51 @@ header .navbar-burger.is-active span:nth-child(3) {
   transition-duration: 300ms;
 }
 
+@font-face {
+    font-family: "Gotham-book-italic";
+    src: url("./fonts/Gotham-BookItalic.woff2") format("woff2"),
+        url("./fonts/Gotham-BookItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham-light";
+    src: url("./fonts/Gotham-Light.woff2") format("woff2"),
+        url("./fonts/Gotham-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham-book";
+    src: url("./fonts/Gotham-Book.woff2") format("woff2"),
+        url("./fonts/Gotham-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham-bold";
+    src: url("./fonts/Gotham-Bold.woff2") format("woff2"),
+        url("./fonts/Gotham-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham-extra";
+    src: url("./fonts/Gotham-ExtraLight.woff2") format("woff2"),
+        url("./fonts/Gotham-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* @font-face {
     font-family: "VAG-light";
     src: url("./fonts/VAGRoundedStd-Light.woff2") format("woff2"),
@@ -1234,8 +1302,24 @@ header .navbar-burger.is-active span:nth-child(3) {
 
 @media (min-width: 1024px) {
 
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .lg\:w-\[300px\] {
     width: 300px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 }
 
