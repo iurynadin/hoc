@@ -10,16 +10,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.60" />
+        <link rel="stylesheet" href="./css/swiper-bundle.css" />
+        <script src="./js/swiper-bundle.min.js"></script>
     </head>
     <body class="w-full bg-verdeagua">
         <!-- Sómente para identificar breakpoint. Remover em produção -->
         <div class="bpvisor"><p></p></div>
-        <div class="fixed w-px h-[300px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="fixed w-px h-[100px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
 
-        <header class="fixed top-0 left-0 w-full h-20 bg-white z-40 flex flex-row justify-between items-center px-10">
+        <header class="fixed top-0 left-0 w-full h-20 bg-white shadow-xl z-40 flex flex-row justify-between items-center px-10">
             <div class="flex flex-rom items-center gap-x-4 h-full">
                 <div class="header__hambcont">
-                    <a role="button" class="navbar-burger group" aria-label="menu">
+                    <a role="button" class="navbar-burger group border" aria-label="menu">
                         <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
                         <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
                         <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
@@ -30,7 +32,7 @@
                     <div class="relative z-10 w-full h-full flex justify-start items-center pl-7">Relatório Integrado 2021</div>
                     <div class="bgTopNav w-full absolute top-0 left-0 z-1 h-2 bg-amarelolimao block transition-all duration-300"></div>
 
-                    <ul class="topNavUl relative -translate-y-10 -z-10 opacity-0 transition-all duration-300 px-7 py-2 border">
+                    <ul class="topNavUl relative -translate-y-10 -z-9999 opacity-0 transition-all duration-300 px-7 py-2 border pointer-events-none">
                         <li><a href="#palavra">Palavra da liderança</a></li>
                         <li><a href="#oswaldo-cruz">Oswaldo Cruz: um hospital de grande porte e alta complexidade</a></li>
                         <li><a href="#nossas-unidades">Nossas Unidades</a></li>
@@ -66,55 +68,197 @@
                 <a href="#summary" class="btnStart absolute w-28 h-28 border-x border-gray-400 bottom-10 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center">seta</a>
             </section>
 
-            <section class="w-full border-l-2 border-amarelolimao" id="summary">
-                <div class="container grid grid-cols-12 gap-x-12">
+
+            <!-- Sumário -->
+            <section class="w-full border-l-2 border-amarelolimao pt-40" id="summary">
+                <div class="container grid grid-cols-12 gap-x-16">
                     <div class="col-span-7">
-                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam recusandae autem harum voluptate qui et alias repellat, aspernatur facere similique!</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex fugit repellat sunt soluta quod magnam, debitis eos laudantium odio sint corporis! Beatae nisi, ducimus delectus aperiam suscipit eligendi quas ea dicta fugiat officia corporis sapiente nemo sit quasi rerum veritatis cum, doloremque temporibus consequatur eum, quisquam voluptatibus atque. Veritatis ratione doloribus voluptas eaque amet error assumenda consectetur, culpa magni nesciunt.</p>
+                        <h2 class="text-3xl text-amarelolimao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam recusandae autem harum voluptate qui et alias repellat, aspernatur facere similique!</h2>
+
+                        <div class="relative w-full h-2 flex justify-end mt-8 mb-10">
+                            <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[1000px] h-full block"></div>
+                        </div>
+
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex fugit repellat sunt soluta quod magnam, debitis eos laudantium odio sint corporis! Beatae nisi, ducimus delectus aperiam suscipit eligendi quas ea dicta fugiat officia corporis sapiente nemo sit quasi rerum veritatis cum, doloremque temporibus consequatur eum, quisquam voluptatibus atque. Veritatis ratione doloribus voluptas eaque amet error assumenda consectetur, culpa magni nesciunt.</p>
                     </div>
                     <div class="col-span-5 bg-verdeescuro rounded-tl-[50px] rounded-tr-[50px] p-14">
                         <p class="text-white">Neste resumo</p>
-                        <ul class="ulSummary">
-                            <li><a href="#palavra">Palavra da liderança</a></li>
-                            <li><a href="#oswaldo-cruz">Oswaldo Cruz: um hospital de grande porte e alta complexidade</a></li>
-                            <li><a href="#nossas-unidades">Nossas Unidades</a></li>
-                            <li><a href="#modelo-de-negocios">Modelo de Negócios</a></li>
-                            <li><a href="#indicadores">Indicadores Estratégicos</a></li>
-                            <li><a href="#investimentos">Investimentos em 2021</a></li>
-                            <li><a href="#covid-19">Covid-19, ano dois</a></li>
-                            <li><a href="#desempenho">Desempenho em indicadores e taxas</a></li>
-                            <li><a href="#educacao">Educação, Pesquisa, Inovação e Saúde Digital</a></li>
-                            <li><a href="#sustentabilidade">Sustentabilidade e Responsabilidade Social</a></li>
-                            <li><a href="#créditos">Créditos</a></li>
+                        <ul class="ulSummary relative bg-bolinhasvertical bg-repeat-y bg-[left_7px_top_18px] pt-0">
+                            <div class="absolute top-0 left-0 w-6 h-1 bg-verdeescuro block z-0"></div>
+                            <li><a href="#palavra" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Palavra da liderança</p>
+                            </a></li>
+                            <li><a href="#oswaldo-cruz" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Oswaldo Cruz: um hospital de grande porte e alta complexidade</p>
+                            </a></li>
+                            <li><a href="#nossas-unidades" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Nossas Unidades</p>
+                            </a></li>
+                            <li><a href="#modelo-de-negocios" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Modelo de Negócios</p>
+                            </a></li>
+                            <li><a href="#indicadores" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Indicadores Estratégicos</p>
+                            </a></li>
+                            <li><a href="#investimentos" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Investimentos em 2021</p>
+                            </a></li>
+                            <li><a href="#covid-19" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Covid-19, ano dois</p>
+                            </a></li>
+                            <li><a href="#desempenho" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Desempenho em indicadores e taxas</p>
+                            </a></li>
+                            <li><a href="#educacao" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Educação, Pesquisa, Inovação e Saúde Digital</p>
+                            </a></li>
+                            <li><a href="#sustentabilidade" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Sustentabilidade e Responsabilidade Social</p>
+                            </a></li>
+                            <li><a href="#créditos" class="group">
+                                <span class="group-hover:scale-[1.35] group-hover:bg-amarelolimao"></span>
+                                <p class="group-hover:bg-amarelolimao group-hover:text-verdeescuro">Créditos</p>
+                            </a></li>
                         </ul>
                     </div>
                 </div>
             </section>
 
+
+            <!-- Palavra da Liderança -->
             <section class="px-40 border-l-[11px] border-b-[20px] border-amarelolimao bg-white" id="palavra">
-                <h1>Palavra da liderança</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
-                <br><br><br><br>
-                
-                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
-                <br><br><br><br>
-                
-                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
-                <br><br><br><br>
+                <div class="container grid grid-cols-3 gap-x-20 pt-40 mb-10">
+                    <div class="border">
+                        <h1 class="text-verdeaguaclaro text-[58px] leading-none">Palavra da liderança</h1>
+                        <div class="relative w-full h-2 flex justify-end mt-6 mb-8">
+                            <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[1000px] h-1 block"></div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus debitis est minus.</p>
+                        <br><br><br><br>
+                    </div>
+
+
+                    <div class="h-full flex flex-col">
+                        <div class="relative rounded-2xl w-full h-[380px] overflow-hidden block mb-4">
+                            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
+                            <img src="./imgs/lideranca1.jpg" class="h-full w-full object-cover" alt="">
+                        </div>
+                        <div class="relative flex-grow flex flex-col justify-between">
+                            <div class="absolute w-8 h-8 top-0 -left-10 bg-red-500"></div>
+                            <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, dignissimos? Porro fuga amet optio beatae ipsum pariatur dicta minus iste in saepe, enim cupiditate dolorem modi quidem temporibus. Dolores, ipsam..</p>
+                            <div class="w-full">
+                                <p>Nome</p>
+                                <p>cargo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-full flex flex-col">
+                        <div class="relative rounded-2xl w-full h-[380px] overflow-hidden block mb-4">
+                            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
+                            <img src="./imgs/lideranca1.jpg" class="h-full w-full object-cover" alt="">
+                        </div>
+                        <div class="relative flex-grow flex flex-col justify-between">
+                            <div class="absolute w-8 h-8 top-0 -left-10 bg-red-500"></div>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elittur.</p>
+                            <div class="w-full">
+                                <p>Nome</p>
+                                <p>cargo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
-            
-            <section id="oswaldo-cruz">
-                <h1>Oswaldo Cruz: um hospital de grande porte e alta complexidade</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
-                <br><br><br><br>
-                
-                <p>Provident enim ea numquam, quo fuga doloribus, nisi aspernatur veritatis laborum neque fugit repellendus, optio est atque quibusdam sunt? Et accusantium quod eius quam, eveniet esse aliquam aliquid beatae, dignissimos adipisci reiciendis. Recusandae consequatur voluptatem laudantium necessitatibus vel, consequuntur inventore in veniam fugiat officia esse maiores harum nesciunt, neque reiciendis dolorem quis sit iste perspiciatis aut excepturi sapiente ipsa temporibus dolorum? Voluptate nostrum placeat velit necessitatibus debitis illo magnam laborum inventore pariatur. </p>
-                <br><br><br><br>
-                
-                <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
-                <br><br><br><br>
+
+
+            <!-- Hospital Oswaldo Cruz -->
+            <section id="oswaldo-cruz" class="w-full relative min-h-screen border border-red-500">
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-verdeaguaclaro">
+                            <div class="relative z-[1] container min-h-screen grid grid-cols-12">
+                                <div class="swiper-col-left bg-amarelolimao">
+                                    <h1>Oswaldo Cruz</h1>
+                                    <p>um hospital de grande porte e alta complexidade</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque recusandae quae modi aut iste officiis molestiae deleniti illum sequi adipisci a consectetur tempora corporis tenetur delectus, </p>
+
+                                    <div class="btnSwiperNext">></div>
+                                    <div class="pagination-inside pagination-green">
+                                        <div class="relative">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-span-4">
+                                    ilustração
+                                </div>
+                            </div>
+                            <div class="halfColumn bg-amarelolimao"></div>
+                        </div>
+
+                        <div class="swiper-slide bg-verdeaguaclaro">
+                            <div class="relative z-[1] container min-h-screen grid grid-cols-12">
+                                <div class="swiper-col-left bg-verdeescuro">
+                                    <h1>Defendemos a ciência e investimos em pesquisa científica</h1>
+                                    <p>um hospital de grande porte e alta complexidade</p>
+                                    
+
+                                    <div class="btnSwiperNext">></div>
+                                    <div class="pagination-inside">
+                                        <div class="relative">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-span-4">
+                                    ilustração
+                                </div>
+                            </div>
+                            <div class="halfColumn bg-verdeescuro"></div>
+                        </div>
+
+
+                        <div class="swiper-slide bg-amarelopastel">
+                            <div class="relative z-[1] container min-h-screen grid grid-cols-12">
+                                <div class="swiper-col-left bg-verdemedio">
+                                    <h1>Fortalecemos o SUS e agimos com Responsabilidade Social</h1>
+                                
+                                    <div class="btnSwiperNext">></div>
+                                    <div class="pagination-inside">
+                                        <div class="relative">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-span-4">
+                                    ilustração
+                                </div>
+                            </div>
+                            <div class="halfColumn bg-verdemedio"></div>
+                        </div>                        
+                        
+                    </div>
+                </div>
             </section>
-            <section id="nossas-unidades">
+
+
+            <!-- Nossas Unidades -->
+            <section id="nossas-unidades" class="relative border-l-[20px] border-verdeescuro bg-white pt-28">
                 <h1>Nossas Unidades</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -125,7 +269,9 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="modelo-de-negocios">
+
+            <!-- Modelo de Negócios -->
+            <section id="modelo-de-negocios"  class="relative border-l-[20px] border-amarelolimao bg-white pt-28">
                 <h1>Modelo de Negócios</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -136,7 +282,9 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="indicadores">
+
+            <!-- Indicadores Estratégicos -->
+            <section id="indicadores" class="relative border-l-[20px] border-l-verdeaguaclaro border-t-[20px] border-t-verdeescuro bg-white pt-28">
                 <h1>Indicadores Estratégicos</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -147,7 +295,10 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="investimentos">
+
+
+            <!-- Investimentos em 2021 -->
+            <section id="investimentos" class="relative border-l-[20px] border-l-amarelolimao bg-verdeaguaclaro pt-28">
                 <h1>Investimentos em 2021</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -158,7 +309,9 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="covid-19">
+
+            <!-- Covid-19, ano dois -->
+            <section id="covid-19" class="relative border-l-[20px] border-l-verdeescuro bg-white pt-28">
                 <h1>Covid-19, ano dois</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -169,7 +322,10 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="desempenho">
+
+
+            <!-- Desempenho em indicadores e taxas -->
+            <section id="desempenho" class="relative border-l-[20px] border-l-verdeagua bg-white pt-28">
                 <h1>Desempenho em indicadores e taxas</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -180,7 +336,9 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="educacao">
+
+            <!-- Educação, Pesquisa, Inovação e Saúde Digital -->
+            <section id="educacao" class="relative border-l-[20px] border-b-[30px] border-amarelolimao bg-verdeagua pt-28">
                 <h1>Educação, Pesquisa, Inovação e Saúde Digital</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -191,7 +349,9 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="sustentabilidade">
+
+            <!-- Sustentabilidade e Responsabilidade Social -->
+            <section id="sustentabilidade" class="relative border-l-[20px] border-l-verdeescuro bg-white pt-28">
                 <h1>Sustentabilidade e Responsabilidade Social</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>
@@ -202,7 +362,9 @@
                 <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                 <br><br><br><br>
             </section>
-            <section id="créditos">
+
+            <!-- Créditos -->
+            <section id="créditos" class="relative border-l-[20px] border-l-verdeescuro bg-white pt-28">
                 <h1>Créditos</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
                 <br><br><br><br>

@@ -64,12 +64,12 @@
         }
 
         nav.topNav.is-active {
-            @apply bg-white top-0;
+            @apply overflow-visible;
         }
 
         ul.topNavUl {
             &.is-active {
-                @apply flex flex-col opacity-100 z-10 translate-y-0;
+                @apply flex flex-col opacity-100 z-10 translate-y-0 pointer-events-auto;
             }
 
             li {
@@ -103,15 +103,11 @@
 
         .header__hambcont {
             transition: 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-            @apply relative h-20 w-20 border flex items-center justify-center transition-all duration-300 z-40;
-        }
-
-        .header__hambcont.is-spying {
-            @apply right-6;
+            @apply relative h-20 w-20 flex items-center justify-center transition-all duration-300 z-40;
         }
 
         .navbar-burger {
-            @apply relative transition-all duration-300 w-[32px] h-[21px] block z-50 mt-[10px];
+            @apply relative transition-all duration-300 w-[32px] h-[21px] block z-50;
         }
 
         .navbar-burger span {
@@ -152,6 +148,50 @@
                 }
             }
         }
+    }
+
+    .ulSummary {
+        li {
+            @apply w-full text-left mb-6;
+            a {
+                @apply relative inline-flex justify-start items-center pl-10 content-start flex-shrink;
+
+                p {
+                    @apply text-white px-4 py-1 bg-transparent inline rounded-full transition-all duration-300;
+                }
+
+                /* &::before {
+                    @apply w-5 h-5 block bg-white rounded-full relative;
+                    content: "";
+                } */
+
+                span {
+                    @apply w-5 h-5 block bg-white rounded-full absolute left-0 flex-shrink-0 transition-all duration-300 origin-center;
+                }
+            }
+        }
+    }
+
+    .swiper {
+        @apply w-full min-h-screen border border-blue-500;
+    }
+
+    .swiper-slide {
+        @apply bg-red-400 w-full min-h-screen;
+    }
+
+    .swiper-col-left {
+        @apply relative col-span-8 h-full rounded-3xl pr-80;
+    }
+
+    .btnSwiperNext {
+        @apply absolute bg-verdeagua hover:bg-white flex justify-center items-center  transition-all duration-300 cursor-pointer
+        right-8 top-2/4
+        w-[120px] h-[120px] rounded-2xl;
+    }
+
+    .halfColumn {
+        @apply absolute z-0 top-0 left-0 w-2/4 h-full block;
     }
 
     .modal {

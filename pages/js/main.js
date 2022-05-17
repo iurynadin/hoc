@@ -51,6 +51,24 @@
         }
     );
 
+
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.btnSwiperNext',
+        }
+      });
+
     
 })(jQuery);
 

@@ -10,9 +10,11 @@ module.exports = {
         extend: {
             colors: {
                 amarelolimao: "#e7fd53",
+                amarelopastel: "#eaff90",
                 verdeagua: "#337686",
                 verdeaguaclaro: "#50aeb9",
                 verdehamb: "#00b2bb",
+                verdemedio: "#007889",
                 verdeescuro: "#153a4c",
             },
             fontFamily: {
@@ -27,6 +29,8 @@ module.exports = {
             },
             backgroundImage: {
                 hero1: "url('../backgrounds/hero.jpg')",
+                bolinhasvertical: "url('../svgs/bg-bolinhas.svg')",
+                bolinhashorizontal: "url('../svgs/bg-bolinhas-horizontal.svg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',
