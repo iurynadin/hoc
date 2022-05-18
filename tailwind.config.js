@@ -45,6 +45,8 @@ module.exports = {
                 bolinhasvertical: "url('../svgs/bg-bolinhas.svg')",
                 bolinhashorizontal: "url('../svgs/bg-bolinhas-horizontal.svg')",
                 pontilhadoPalavraLideranca: "url('../svgs/pontilhado-palavra.svg')",
+                arrowSwiperNext: "url('../svgs/arrow-swipernext.svg')",
+                listSusItem: "url('../svgs/itemlistsus.svg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',

@@ -216,25 +216,102 @@
     }
 
     .swiper {
-        @apply w-full min-h-screen border border-blue-500;
+        @apply w-full
+        lg:h-[750px]
+        xl:h-[850px]
+        2xl:h-[890px];
     }
 
     .swiper-slide {
-        @apply bg-red-400 w-full min-h-screen;
+        @apply bg-red-400 w-full 
+        lg:h-[750px]
+        xl:h-[850px]
+        2xl:h-[890px];
     }
 
     .swiper-col-left {
-        @apply relative col-span-8 h-full rounded-3xl rounded-tr-[240px] pr-20 xl:pr-48 2xl:pr-80 pt-32;
+        @apply relative col-span-8 rounded-[70px] rounded-tr-[240px] pr-[130px] pt-32
+        lg:h-[750px]
+        xl:h-[850px] xl:pr-40
+        2xl:h-[890px] 2xl:pr-[200px];
     }
 
     .btnSwiperNext {
-        @apply absolute bg-verdeagua hover:bg-white flex justify-center items-center  transition-all duration-300 cursor-pointer
+        @apply absolute bg-amarelolimao2 bg-arrowSwiperNext bg-no-repeat hover:bg-white flex justify-center items-center  transition-all duration-300 cursor-pointer
         right-8 top-2/4 z-30
-        w-[120px] h-[120px] rounded-2xl;
+        rounded-[17px] 
+        bg-[length:50%_auto]
+        lg:w-[90px] lg:h-[90px] lg:bg-[left_1rem_center]
+        xl:w-[120px] xl:h-[120px] xl:bg-[left_1.5rem_center];
+    }
+
+    .titleSlideDef {
+        @apply text-white font-gotham_bold leading-none lg:text-4xl xl:text-[43px] 2xl:text-[48px] 2xl:leading-[1em] mb-6;
+    }
+
+    .paragSlideDef {
+        @apply lg:text-[22px] xl:text-[28px] 2xl:text-[32px] text-white font-gotham_bold leading-[1.18em] xl:leading-none mb-4 xl:mb-10;
+
+        span {
+            @apply text-amarelolimao2;
+        }
+    }
+
+    .topicsSlide2 {
+        @apply text-white leading-tight font-gotham_light lg:text-[22px] xl:text-[26px] 2xl:text-[33px] 2xl:leading-[1.2em] mb-6;
+
+        span {
+            @apply font-gotham_bold text-amarelolimao2 lg:text-[30px] xl:text-[36px] 2xl:text-[45px];
+        }
+    }
+
+    .startTopics {
+        @apply relative font-gotham_medium text-white text-lg xl:text-[22px] 2xl:text-[24px] leading-tight pl-6 ml-4;
+
+        &::before {
+            content: "";
+            @apply absolute -left-[2px] top-2 w-3 h-3 bg-white block rounded-full;
+        }
+
+        span {
+            @apply font-gotham_bold text-amarelolimao2;
+        }
+    }
+
+    .defaultSusTopics {
+        @apply ml-20 mt-10 relative;
+        li {
+            @apply font-gotham_medium text-lg xl:text-xl 2xl:text-[25px] text-white leading-[1.2em] mb-8 2xl:mb-6 relative;
+
+            &::before {
+                content: "";
+                @apply absolute -left-[60px] top-2 bg-listSusItem bg-no-repeat bg-left bg-[length:47px_auto] w-[48px] h-2 z-[2];
+            }
+
+            span {
+                @apply font-gotham_bold text-[22px] xl:text-[25px] 2xl:text-[32px] text-amarelopastel;
+            }
+        }
+    }
+
+    .topicsSlideSus {
+        @apply text-white leading-tight font-gotham_light lg:text-[22px] xl:text-[26px] 2xl:text-[33px] 2xl:leading-[1.2em] mb-6;
+
+        span {
+            @apply font-gotham_bold text-amarelolimao2 lg:text-[30px] xl:text-[36px] 2xl:text-[45px];
+        }
     }
 
     .halfColumn {
         @apply absolute z-0 top-0 left-0 w-2/4 h-full block;
+    }
+
+    .predio {
+        @apply absolute
+        bottom-0                             
+        lg:w-[540px] lg:right-2
+        xl:w-[660px] xl:right-2
+        2xl:w-[690px] 2xl:right-14;
     }
 
     .modal {
