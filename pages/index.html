@@ -19,7 +19,7 @@
         <div class="fixed w-px h-[100px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
 
         <header class="fixed top-0 left-0 w-full h-20 bg-white shadow-xl z-40 flex flex-row justify-between items-center px-4 xl:px-10">
-            <div class="flex flex-rom items-center gap-x-4 h-full">
+            <div class="flex flex-row items-center gap-x-4 h-full">
                 <div class="header__hambcont">
                     <a role="button" class="navbar-burger group" aria-label="menu">
                         <span aria-hidden="true" class="group-hover:bg-verdeagua transition-all duration-300"></span>
@@ -28,11 +28,11 @@
                     </a>
                 </div>
 
-                <nav class="topNav relative lg:w-[280px] xl:w-[360px] h-full">
-                    <div class="relative z-10 w-full h-full flex justify-start items-center pl-7 font-gotham_book text-lg xl:text-xl text-verdemedio">Relatório Integrado 2021</div>
-                    <div class="bgTopNav w-full absolute top-0 left-0 z-1 h-2 bg-amarelolimao block transition-all duration-300"></div>
+                <nav class="topNav relative w-full lg:w-[280px] xl:w-[360px] h-full">
+                    <div class="relative z-10 w-full h-full hidden lg:flex justify-start items-center pl-7 font-gotham_book text-lg xl:text-xl text-verdemedio">Relatório Integrado 2021</div>
+                    <div class="bgTopNav block w-full absolute top-0 left-0 z-[-1] lg:z-auto h-2 bg-amarelolimao  transition-all duration-300"></div>
 
-                    <ul class="topNavUl relative -translate-y-10 -z-9999 opacity-0 transition-all duration-300 px-7 py-2 pointer-events-none">
+                    <ul class="topNavUl relative -translate-y-10 -z-9999 opacity-0 transition-all duration-300 px-7 py-10 lg:py-2 pointer-events-none">
                         <li><a href="#palavra">Palavra da liderança</a></li>
                         <li><a href="#oswaldo-cruz">Oswaldo Cruz: um hospital de grande porte e alta complexidade</a></li>
                         <li><a href="#nossas-unidades">Nossas Unidades</a></li>
@@ -44,6 +44,7 @@
                         <li><a href="#educacao">Educação, Pesquisa, Inovação e Saúde Digital</a></li>
                         <li><a href="#sustentabilidade">Sustentabilidade e Responsabilidade Social</a></li>
                         <li><a href="#créditos">Créditos</a></li>
+                        <li class="block lg:hidden"><a href="#">Download PDF</a></li>
                     </ul>
                 </nav>
 
@@ -52,13 +53,13 @@
             </div>
 
 
-            <a href="#" class="group text-verdehamb font-gotham_bold text-xl uppercase flex flex-row items-center gap-x-1 relative pr-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="relative z-[1] fill-verdehamb transition-all duration-300 group-hover:fill-verdeescuro group-hover:translate-y-[2px]" width="30" height="30" viewBox="0 0 30 30">
+            <a href="#" class="group absolute right-4 hidden lg:right-auto lg:relative uppercase lg:flex flex-row items-center lg:gap-x-1 lg:pr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="relative z-[1] fill-verdehamb transition-all duration-300 group-hover:fill-verdeescuro group-hover:translate-y-[2px]" class="" width="30" height="30" viewBox="0 0 30 30">
                     <g id="download" transform="translate(-580.077 -1096.077)">
                         <path d="M5,24.359H22.59V21.846H5M22.59,10.538H17.564V3H10.026v7.538H5l8.795,8.795Z" transform="translate(581.282 1098.026)" />
                     </g>
                 </svg>
-                <span class="group-hover:text-verdeescuro transition-all duration-300 relative z-[1]">pdf</span> 
+                <span class="text-verdehamb font-gotham_bold text-sm lg:text-xl group-hover:text-verdeescuro transition-all duration-300 relative z-[1]">pdf</span> 
                 <div class="absolute bg-amarelolimao h-10 w-4 group-hover:w-[108px] rounded-full right-0 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
             </a>
         </header>
@@ -68,7 +69,7 @@
             <!-- Home/Hero -->
             <section class="home w-full bg-verdeagua" id="home">
                 <div class="container h-screen flex justify-end items-center text-right">
-                    <h1 class="text-[72px] xl:text-[100px] leading-none translate-y-14 2xl:translate-y-32">
+                    <h1 class="text-5xl md:text-[72px] xl:text-[100px] leading-none md:translate-y-14 2xl:translate-y-32">
                         <span class="text-white">Relatório<br>Integrado</span><br>
                         <span class="text-amarelolimao2 font-gotham_bold">2021</span>
                     </h1>
@@ -80,19 +81,19 @@
 
 
             <!-- Sumário -->
-            <section class="w-full border-l-2 border-amarelolimao pt-40 bg-verdeagua" id="summary">
-                <div class="container grid grid-cols-12 gap-x-16">
-                    <div class="col-span-6 2xl:col-span-7 pt-14">
-                        <h2 class="text-2xl xl:text-3xl 2xl:text-[42px] text-amarelolimao2 leading-tight 2xl:leading-none"><span class="font-gotham_bold">O Relatório Integrado 2021 do Hospital Alemão Oswaldo Cruz reúne</span> <span class="font-gotham_book">os principais indicadores, dados e projetos que traduzem as conquistas e desafios da Instituição no ano.</span> </h2>
+            <section class="w-full border-l-2 border-amarelolimao pt-6 md:pt-40 bg-verdeagua" id="summary">
+                <div class="container grid grid-cols-12 gap-y-8 md:gap-y-0 md:gap-x-8 lg:gap-x-16">
+                    <div class="col-span-12 md:col-span-6 2xl:col-span-7 md:pt-14">
+                        <h2 class="text-xl md:text-2xl xl:text-3xl 2xl:text-[42px] text-amarelolimao2 leading-tight 2xl:leading-none"><span class="font-gotham_bold">O Relatório Integrado 2021 do Hospital Alemão Oswaldo Cruz reúne</span> <span class="font-gotham_book">os principais indicadores, dados e projetos que traduzem as conquistas e desafios da Instituição no ano.</span> </h2>
 
                         <div class="relative w-full h-2 flex justify-end my-10 xl:my-[66px]">
                             <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[1000px] h-full block"></div>
                         </div>
 
-                        <p class="text-white text-xl 2xl:text-[22px]">As Normas da Global Reporting Initiative (GRI) são o principal instrumento para a comunicação de métricas e resultados. Além disso, balizam o conteúdo os temas ambientais, sociais e de governança (ESG, na sigla em inglês) priorizados por meio de um processo de materialidade. Todos os indicadores de sustentabilidade cobrem o período de 1o de janeiro a 31 de dezembro de 2021, abrangendo unidades diretamente mantidas pelo Hospital e também as instituições administradas pelo Instituto Social Hospital Alemão Oswaldo Cruz. </p>
+                        <p class="text-white text-base md:text-xl 2xl:text-[22px]">As Normas da Global Reporting Initiative (GRI) são o principal instrumento para a comunicação de métricas e resultados. Além disso, balizam o conteúdo os temas ambientais, sociais e de governança (ESG, na sigla em inglês) priorizados por meio de um processo de materialidade. Todos os indicadores de sustentabilidade cobrem o período de 1o de janeiro a 31 de dezembro de 2021, abrangendo unidades diretamente mantidas pelo Hospital e também as instituições administradas pelo Instituto Social Hospital Alemão Oswaldo Cruz. </p>
                     </div>
-                    <div class="col-span-6 2xl:col-span-5 bg-verdeescuro rounded-t-[50px] 2xl:rounded-t-[80px] p-12 pb-0 2xl:p-14">
-                        <p class="text-white text-[22px] xl:text-2xl 2xl:text-[32px] mb-6 xl:mb-[38px] leading-none">Neste resumo-web, você encontrará as seguintes sessões:</p>
+                    <div class="col-span-12 md:col-span-6 2xl:col-span-5 bg-verdeescuro rounded-t-2xl md:rounded-t-[50px] 2xl:rounded-t-[80px] p-8 md:p-12 pb-0 2xl:p-14">
+                        <p class="text-white text-base md:text-[22px] xl:text-2xl 2xl:text-[32px] mb-6 xl:mb-[38px] leading-tight md:leading-none">Neste resumo-web, você encontrará as seguintes sessões:</p>
                         <ul class="ulSummary relative bg-bolinhasvertical bg-repeat-y bg-[left_7px_top_18px] pt-0 pb-10">
                             <div class="absolute top-0 left-0 w-6 h-1 bg-verdeescuro block z-0"></div>
                             <li><a href="#palavra" class="group">
@@ -144,9 +145,8 @@
                 </div>
             </section>
 
-
             <!-- Palavra da Liderança -->
-            <section class="border-l-[12px] border-amarelolimao bg-white pb-20" id="palavra">
+            <!-- <section class="border-l-[12px] border-amarelolimao bg-white pb-20" id="palavra">
                 <div class="container grid grid-cols-3 gap-x-20 pt-40">
                     <div>
                         <h1 class="text-verdehamb text-[58px] xl:text-[68px] 2xl:text-[80px] leading-none">Palavra da liderança</h1>
@@ -195,11 +195,11 @@
 
                 <div class="relative h-[108px] w-full block overflow-hidden bg-pontilhadoPalavraLideranca bg-repeat-x bg-center bg-pontilhadoPalavraLiderancaSize">
                 </div>
-            </section>
+            </section> -->
 
 
             <!-- Hospital Oswaldo Cruz -->
-            <section id="oswaldo-cruz" class="w-full relative">
+            <!-- <section id="oswaldo-cruz" class="w-full relative">
                 <div class="absolute top-0 left-0 w-full h-5 bg-amarelolimao2 z-20 block"></div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
@@ -410,10 +410,10 @@
                         
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Nossas Unidades -->
-            <section id="nossas-unidades" class="relative border-l-[12px] border-verdeescuro bg-white pt-28">
+            <!-- <section id="nossas-unidades" class="relative border-l-[12px] border-verdeescuro bg-white pt-28">
                 <div class="container">
                     <h1>Nossas Unidades</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
@@ -425,10 +425,10 @@
                     <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                     <br><br><br><br>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Modelo de Negócios -->
-            <section id="modelo-de-negocios"  class="relative border-l-[12px] border-amarelolimao bg-white pt-28">
+            <!-- <section id="modelo-de-negocios"  class="relative border-l-[12px] border-amarelolimao bg-white pt-28">
                 <div class="container">
                     <h1>Modelo de Negócios</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
@@ -440,84 +440,211 @@
                     <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                     <br><br><br><br>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Indicadores Estratégicos -->
-            <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro bg-white pt-28">
+            <!-- <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro bg-white pt-28">
                 <div class="absolute top-0 left-0 w-full h-5 bg-verdeagua block z-10"></div>
-                <div class="container border border-red-500">
-                    <h1 class="text-5xl leading-none text-verdeagua">Indicadores<br>Estratégicos</h1>
+                <div class="container">
 
-                    <div class="relative w-10/12 border border-green">
-                        <div class="relative w-full h-2 flex justify-end mt-6 mb-8">
+                    <h1 class="text-verdehamb text-[58px] xl:text-[68px] 2xl:text-[92px] leading-none">Indicadores<br>estratégicos</h1>
+
+                    <div class="relative w-full sm:w-10/12">
+                        <div class="relative w-full h-2 flex justify-end my-20">
                             <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[2000px] h-1 block"></div>
                         </div>
-                        <div class="grid lg:grid-cols-2 lg:gap-6">
-                            <div class="rounded-xl bg-white p-6 shadow-xl flex flex-col justify-between">
+                        <div class="grid xl:grid-cols-2 gap-9 pb-20">
+                            <div class="indicadores">
                                 <div>
-                                    <span class="text-verdeagua uppercase">Giro de leitos</span>
-                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="indicadores__title">Giro de leitos</div>
+                                    <p><strong>O que é:</strong> indica a relação entre a velocidade, a eficácia e a ocupação de leitos do Hospital. O índice é calculado através da fórmula quantidade de altas / número de leitos x quantidade de meses</p>
                                 </div>
-                                <div class="grid grid-cols-12 mt-4 border-b-2 border-b-verdeagua pb-[10px]">
-                                    <div class="col-span-12 lg:col-span-4 pr-3">
-                                        <div class="leading-none border">Giro de leitos global</div>
-                                        <div class="leading-none border">Unidades paulista e vergeuri</div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">Giro de leitos global</div>
+                                        <div class="indicadores__unid">Unidades Paulista e Vergueiro</div>
                                     </div>
-                                    <div class="col-span-12 lg:col-span-8">
-                                        <div class="bg-amarelolimao grid grid-cols-3 rounded-2xl py-1 px-3">
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
                                             <span>2019</span>
                                             <span>2020</span>
                                             <span>2021</span>
                                         </div>
+                                        <div class="indicadores__tditems">
+                                            <span>5,6</span>
+                                            <span>4,5</span>
+                                            <span>5,0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="grid grid-cols-3 rounded-2xl py-1 px-3">
+                            <div class="indicadores">
+                                <div>
+                                    <div class="indicadores__title">Prazo médio de recebimento contábil</div>
+                                    <p><strong>O que é:</strong> quantidade de dias para a Instituição receber o crédito por seus serviços prestados </p>
+                                </div>
+                                <div class="indicadores__infos">
+                                    <div class="hidden lg:block lg:absolute lg:-right-60 lg:top-0 lg:w-48 lg:z-[1] font-gotham_light text-[15px] leading-none text-cinza">* PMR (sem desconto de Perdas Estimadas para Créditos de Liquidação Duvidosa – PECLD): contas a receber / receita líquida total x dias.</div>
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">PMR<sup>*</sup>
+                                            <div class="inline lg:hidden font-gotham_light text-[15px] leading-none text-cinza"> (sem desconto de Perdas Estimadas para Créditos de Liquidação Duvidosa – PECLD): contas a receber / receita líquida total x dias.</div>
+                                        </div>
+                                        <div class="indicadores__unid lg:pt-4">Dias</div>
+                                    </div>
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
                                             <span>2019</span>
                                             <span>2020</span>
                                             <span>2021</span>
                                         </div>
+                                        <div class="indicadores__tditems">
+                                            <span>123,18</span>
+                                            <span>118,21</span>
+                                            <span>106,89</span>
+                                        </div>
                                     </div>
+                                </div>
 
+                            </div>
+
+
+                            <div class="indicadores">
+                                <div>
+                                    <div class="indicadores__title">Atendimentos do Instituto Social Hospital Alemão Oswaldo Cruz</div>
+                                    <p><strong>O que é:</strong> total de pessoas atendidas pelos hospitais e ambulatórios gerenciados pelo Instituto Social Hospital Alemão Oswaldo Cruz</p>
+                                </div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">Atendimentos</div>
+                                        <div class="indicadores__unid lg:pt-4">Pessoas atendidas</div>
+                                    </div>
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
+                                            <span>2019</span>
+                                            <span>2020</span>
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="indicadores__tditems">
+                                            <span>23.071</span>
+                                            <span>97.834</span>
+                                            <span>298.611</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
 
-                            <div class="rounded-xl bg-white p-6 shadow-xl flex flex-col justify-between">
+                            <div class="indicadores">
                                 <div>
-                                    <span class="text-verdeagua uppercase">Giro de leitos</span>
-                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="indicadores__title">Receita líquida </div>
+                                    <p><strong>O que é:</strong> receita obtida pela Instituição</p>
                                 </div>
-                                <div class="grid grid-cols-12 mt-4 border-b-2 border-b-verdeagua pb-[10px]">
-                                    <div class="col-span-12 lg:col-span-4 pr-3">
-                                        <div class="leading-none border">Giro de leitos global</div>
-                                        <div class="leading-none border">Unidades paulista e vergeuri</div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">Receita líquida</div>
+                                        <div class="indicadores__unid lg:pt-4">R$ mil</div>
                                     </div>
-                                    <div class="col-span-12 lg:col-span-8">
-                                        <div class="bg-amarelolimao grid grid-cols-3 rounded-2xl py-1 px-3">
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
                                             <span>2019</span>
                                             <span>2020</span>
                                             <span>2021</span>
                                         </div>
-
-                                        <div class="grid grid-cols-3 rounded-2xl py-1 px-3">
-                                            <span>2019</span>
-                                            <span>2020</span>
-                                            <span>2021</span>
+                                        <div class="indicadores__tditems">
+                                            <span>842.596</span>
+                                            <span>852.497</span>
+                                            <span>1.133.500</span>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 
-                            
+                            <div class="indicadores">
+                                <div>
+                                    <div class="indicadores__title">Provisão dos devedores duvidosos (R$)</div>
+                                    <p><strong>O que é:</strong> o volume de recursos não recebidos que a Instituição enquadra como incertos quanto ao recebimento</p>
+                                </div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">Provisão dos devedores duvidosos</div>
+                                        <div class="indicadores__unid">Milhões</div>
+                                    </div>
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
+                                            <span>2019</span>
+                                            <span>2020</span>
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="indicadores__tditems">
+                                            <span>11,5</span>
+                                            <span>2,6</span>
+                                            <span>17,3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="indicadores">
+                                <div>
+                                    <div class="indicadores__title">Satisfação do colaborador (%)</div>
+                                    <p><strong>O que é:</strong> pesquisa de satisfação realizada com suporte da Great Place to Work (GPTW) </p>
+                                </div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">Satisfação do colaborador</div>
+                                        <div class="indicadores__unid">Índice de confiança</div>
+                                    </div>
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
+                                            <span>2019</span>
+                                            <span>2020</span>
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="indicadores__tditems">
+                                            <span>69%</span>
+                                            <span>73%</span>
+                                            <span>77%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="indicadores">
+                                <div>
+                                    <div class="indicadores__title">Satisfação do paciente – NPS (%)</div>
+                                    <p><strong>O que é:</strong> satisfação medida pelo Net Promoter Score (NPS) em SMS enviado após a alta do Hospital ou por e-mail</p>
+                                </div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">NPS</div>
+                                        <div class="indicadores__unid lg:pt-4">Pessoas atendidas</div>
+                                    </div>
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
+                                            <span>2019</span>
+                                            <span>2020</span>
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="indicadores__tditems">
+                                            <span>73%</span>
+                                            <span>76.7%</span>
+                                            <span>77,6%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                         
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
             <!-- Investimentos em 2021 -->
-            <section id="investimentos" class="relative border-l-[12px] border-l-amarelolimao bg-verdeaguaclaro pt-28">
+            <!-- <section id="investimentos" class="relative border-l-[12px] border-l-amarelolimao bg-verdeaguaclaro pt-28">
                 <div class="container">
                     <h1>Investimentos em 2021</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
@@ -529,10 +656,10 @@
                     <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                     <br><br><br><br>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Covid-19, ano dois -->
-            <section id="covid-19" class="relative border-l-[12px] border-l-verdeescuro bg-white pt-28">
+            <!-- <section id="covid-19" class="relative border-l-[12px] border-l-verdeescuro bg-white pt-28">
                 <div class="container">
                     <h1>Covid-19, ano dois</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae, facere vitae nihil ipsum aliquid minus architecto officia placeat totam sequi maiores, eius quasi ullam reiciendis eligendi odio beatae non officiis laudantium harum corporis asperiores rem! Consectetur nisi sit vitae ducimus qui beatae, doloribus, rerum temporibus asperiores cumque facere sint, odit minima sunt sed sequi dolores cum provident adipisci dolorem quaerat tenetur dicta consequuntur? </p>
@@ -544,7 +671,7 @@
                     <p>Quidem praesentium eos modi dignissimos, totam quos dolorum illo numquam dolor ipsa tenetur corrupti sint, voluptates itaque, at minima? Et vero blanditiis ipsum suscipit earum placeat natus vitae sed accusamus, atque at exercitationem ab adipisci sequi corporis quo explicabo magnam doloremque? Iusto, ea veritatis deserunt esse iste reiciendis! Dolor eligendi ipsa provident minus omnis rerum error id, esse excepturi!</p>
                     <br><br><br><br>
                 </div>
-            </section>
+            </section> -->
 
 
             <!-- Desempenho em indicadores e taxas -->
