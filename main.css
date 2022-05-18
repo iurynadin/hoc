@@ -131,7 +131,7 @@
             }
 
             li {
-                @apply text-verdeagua mb-3 xl:mb-4 2xl:mb-[24px] leading-none;
+                @apply text-verdeagua mb-3 xl:mb-6 leading-none;
 
                 a {
                     @apply text-base 2xl:text-lg font-gotham_medium text-verdemedio leading-none;
@@ -190,7 +190,12 @@
 
     .ulSummary {
         li {
-            @apply w-full text-left xl:mb-6;
+            @apply w-full text-left mb-4 xl:mb-6;
+
+            &:last-of-type {
+                @apply mb-0 border-red-400;
+            }
+
             a {
                 @apply relative inline-flex justify-start items-center pl-10 content-start flex-shrink;
 

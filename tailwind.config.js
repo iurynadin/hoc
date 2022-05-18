@@ -11,12 +11,15 @@ module.exports = {
             colors: {
                 amarelolimao: "#e7fd53",
                 amarelolimao2: "#E2FE0A",
+                amarelolimao3: "#C6E300",
                 amarelopastel: "#eaff90",
                 verdeagua: "#337686",
                 verdeaguaclaro: "#50aeb9",
                 verdehamb: "#00b2bb",
                 verdemedio: "#007889",
                 verdeescuro: "#153a4c",
+                azulescuro: "#003B4E",
+                cinza: "#767676",
                 btnStartFill: "rgba(0,59,78,0.56)",
                 btnStartHoverFill: "rgba(226,254,10,0.56)",
                 btnStartBorder: "rgba(112,112,112,0.56)",
@@ -41,12 +44,14 @@ module.exports = {
                 hero1: "url('../backgrounds/hero.jpg')",
                 bolinhasvertical: "url('../svgs/bg-bolinhas.svg')",
                 bolinhashorizontal: "url('../svgs/bg-bolinhas-horizontal.svg')",
+                pontilhadoPalavraLideranca: "url('../svgs/pontilhado-palavra.svg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',
             },
             backgroundSize: {
                 "sustentabilidade-lg": '75% auto',
+                pontilhadoPalavraLiderancaSize: 'auto 100%',
             },
             zIndex: {
                 '100': '100',
