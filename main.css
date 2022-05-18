@@ -319,6 +319,52 @@
         @apply absolute z-10 hidden lg:block;
     }
 
+    .indicadores {
+        @apply rounded-xl bg-white p-6 shadow-indicadoresbox flex flex-col justify-between;
+
+        &__infos {
+            @apply grid grid-cols-12 mt-10 border-b-2 border-b-verdeagua pb-[10px];
+
+            &--titles {
+                @apply col-span-12 lg:col-span-4 pr-3 flex flex-col lg:gap-y-2 mb-3 lg:mb-0;
+            }
+
+            &--numbers {
+                @apply col-span-12 lg:col-span-8 flex flex-col gap-y-3;
+            }
+        }
+
+        &__title {
+            @apply text-verdemedio font-gotham_bold text-xl uppercase mb-4;
+        }
+        &__subtitle {
+            @apply text-verdemedio font-gotham_bold text-lg leading-none mb-[6px] lg:mb-0;
+        }
+        &__thamarelo {
+            @apply bg-amarelolimao grid grid-cols-3 rounded-2xl pt-2 pb-1 px-3;
+
+            span {
+                @apply text-lg font-gotham_bold text-verdehamb leading-none;
+            }
+        }
+        &__tditems {
+            @apply grid grid-cols-3 py-1 px-3;
+            span {
+                @apply font-gotham_book text-azulescuro text-lg leading-none;
+            }
+        }
+
+        &__unid {
+            @apply font-gotham_book text-lg text-cinza leading-none;
+        }
+        p {
+            @apply text-cinza text-base 2xl:text-xl font-gotham_light;
+            strong {
+                @apply font-gotham_bold;
+            }
+        }
+    }
+
     .modal {
         transition: opacity 0.35s ease;
     }

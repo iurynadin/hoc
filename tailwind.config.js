@@ -55,6 +55,9 @@ module.exports = {
                 "sustentabilidade-lg": '75% auto',
                 pontilhadoPalavraLiderancaSize: 'auto 100%',
             },
+            boxShadow: {
+                indicadoresbox: '0px 5px 9px 1px rgba(0,59,78,0.22)',
+            },
             zIndex: {
                 '100': '100',
             }
