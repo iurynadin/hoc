@@ -308,10 +308,15 @@
 
     .predio {
         @apply absolute
-        bottom-0                             
+        bottom-0  
+        hidden lg:block                           
         lg:w-[540px] lg:right-2
         xl:w-[660px] xl:right-2
         2xl:w-[690px] 2xl:right-14;
+    }
+
+    .illustracao {
+        @apply absolute z-10 hidden lg:block;
     }
 
     .modal {
