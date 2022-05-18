@@ -8,6 +8,10 @@
         $(".navbar-burger").toggleClass("is-active");
         $('.bgTopNav').toggleClass('is-active')
         $('.topNavUl').toggleClass('is-active');
+        if (window.innerWidth <= 768) {
+            $('header').toggleClass('px-4');
+            $('.header__hambcont').toggleClass('mobile-active');
+        }
 
         // setTimeout(function () {
         //     console.log("exibir menu");
