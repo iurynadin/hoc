@@ -47,6 +47,8 @@ module.exports = {
                 pontilhadoPalavraLideranca: "url('../svgs/pontilhado-palavra.svg')",
                 arrowSwiperNext: "url('../svgs/arrow-swipernext.svg')",
                 listSusItem: "url('../svgs/itemlistsus.svg')",
+                nossasUnidades1: "url('../imgs/nossas-unidades1.jpg')",
+                pontilhadoInvestimentos: "url('../svgs/pontilhado-investimentos.svg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',
