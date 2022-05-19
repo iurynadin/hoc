@@ -1,3 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1263" height="4" viewBox="0 0 1263 4">
-  <line id="Line_434" data-name="Line 434" x2="1259" transform="translate(2 2)" fill="none" stroke="#e2fe0a" stroke-linecap="round" stroke-width="4" stroke-dasharray="0 10"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1255 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <use xlink:href="#_Image1" x="0" y="0" width="1263px" height="4px"/>
+    <defs>
+        <image id="_Image1" width="1263px" height="4px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABO8AAAAECAYAAADWKht6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA20lEQVR4nO3UwQ2DMAyF4SQXZKbqCIzQERiBDRETIKdzJK+3ih44QkP53y3Sp8iR7YQsG7zY7MXWLBvCTlp3ru7pxVYvNr/UPVqr727v+BdHP3A49gOHu7Njz3FHOObqmo6+4XA43LnuK15szbVXrr282IzD4XA4HA6Hw+FwOBwOh8Phfue2SSGEuDnHPYjD4XA4HA6Hw+FwOBwOh8PhTnGfpJjCKGmR5DGFaffmxl1IdZLkkpaU6thafXd7x784+oHDsR843J0de447wjFX13T0DYfD4U7+dzd5A/r6w9uPKYFtAAAAAElFTkSuQmCC"/>
+    </defs>
 </svg>
