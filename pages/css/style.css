@@ -1453,6 +1453,14 @@ header .navbar-burger.is-active span:nth-child(3) {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.mx-52 {
+  margin-left: 13rem;
+  margin-right: 13rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -1540,6 +1548,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .-mt-3 {
   margin-top: -0.75rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .block {
   display: block;
 }
@@ -1599,6 +1610,11 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .h-\[51\%\] {
   height: 51%;
+}
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -1678,6 +1694,24 @@ header .navbar-burger.is-active span:nth-child(3) {
 .w-7\/12 {
   width: 58.333333%;
 }
+.w-\[95\%\] {
+  width: 95%;
+}
+.w-11\/12 {
+  width: 91.666667%;
+}
+.w-10\/12 {
+  width: 83.333333%;
+}
+.w-\[93\%\] {
+  width: 93%;
+}
+.w-\[90vw\] {
+  width: 90vw;
+}
+.w-52 {
+  width: 13rem;
+}
 .max-w-\[560px\] {
   max-width: 560px;
 }
@@ -1689,6 +1723,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .flex-grow {
   flex-grow: 1;
+}
+.origin-left {
+  transform-origin: left;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -1718,6 +1755,21 @@ header .navbar-burger.is-active span:nth-child(3) {
 .scale-75 {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-90 {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-scale-90 {
+  --tw-scale-x: -.9;
+  --tw-scale-y: -.9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
@@ -1765,6 +1817,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .justify-between {
   justify-content: space-between;
 }
+.justify-evenly {
+  justify-content: space-evenly;
+}
 .gap-9 {
   gap: 2.25rem;
 }
@@ -1789,8 +1844,17 @@ header .navbar-burger.is-active span:nth-child(3) {
 .self-baseline {
   align-self: baseline;
 }
+.overflow-auto {
+  overflow: auto;
+}
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.overflow-y-auto {
+  overflow-y: auto;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
@@ -2408,6 +2472,12 @@ header .navbar-burger.is-active span:nth-child(3) {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-75:hover {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:border-btnStartFill:hover {
   border-color: rgba(0,59,78,0.56);
 }
@@ -2658,6 +2728,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     left: -3.5vw;
   }
 
+  .lg\:-top-\[6vw\] {
+    top: -6vw;
+  }
+
   .lg\:z-auto {
     z-index: auto;
   }
@@ -2668,6 +2742,11 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .lg\:mt-0 {
@@ -2696,6 +2775,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:ml-5 {
     margin-left: 1.25rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:block {
@@ -2776,6 +2859,12 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:translate-y-8 {
     --tw-translate-y: 2rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:scale-95 {
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -3110,6 +3199,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     grid-column: span 5 / span 5;
   }
 
+  .\32xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .\32xl\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -3133,6 +3226,14 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .\32xl\:mt-40 {
     margin-top: 10rem;
+  }
+
+  .\32xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .\32xl\:mt-20 {
+    margin-top: 5rem;
   }
 
   .\32xl\:h-\[450px\] {
@@ -3178,6 +3279,10 @@ header .navbar-burger.is-active span:nth-child(3) {
   .\32xl\:translate-y-32 {
     --tw-translate-y: 8rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\32xl\:gap-x-28 {

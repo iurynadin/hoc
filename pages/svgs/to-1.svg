@@ -1,9 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="308.5" height="60" viewBox="0 0 308.5 60">
-  <g id="Group_1181" data-name="Group 1181" transform="translate(-159 -11600)">
-    <line id="Line_428" data-name="Line 428" x2="253" transform="translate(211 11630)" fill="none" stroke="#d4f100" stroke-linecap="round" stroke-width="7" stroke-dasharray="0 16"/>
-    <g id="Group_1062" data-name="Group 1062" transform="translate(159 11600)">
-      <circle id="Ellipse_28" data-name="Ellipse 28" cx="30" cy="30" r="30" fill="#c6e300"/>
-      <text id="_2019" data-name="2019" transform="translate(7 36)" fill="#fff" font-size="19" font-family="Gotham-Bold, Gotham" font-weight="700" letter-spacing="-0.02em"><tspan x="0" y="0">2019</tspan></text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 320 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;">
+    <g id="Group_1181" transform="matrix(1,0,0,1,-159,-11600)">
+        <g id="Line_428" transform="matrix(1.04836,0,0,1,211,11630)">
+            <path d="M0,0L253,0" style="fill:none;fill-rule:nonzero;stroke:rgb(212,241,0);stroke-width:7px;stroke-dasharray:0,16;"/>
+        </g>
+        <g id="Group_1062" transform="matrix(1,0,0,1,159,11600)">
+            <circle id="Ellipse_28" cx="30" cy="30" r="30" style="fill:rgb(198,227,0);"/>
+            <use id="_2019" xlink:href="#_Image1" x="6" y="21" width="48px" height="17px"/>
+        </g>
     </g>
-  </g>
+    <defs>
+        <image id="_Image1" width="48px" height="17px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAARCAYAAACb8i8UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVRIidWWS0hVURSG/50pIYZkmEYvKoWyoIQKw0KsURRBEVHNetJ70qRBDZpkA4dBJkFNwmrUGysaBCFRg5oYqZS9MDN7EGSl1dfg7APrbs+5V2rkmtx91/84+z/73HWuNMrLJTWBKZLqJE2Q1CHpnnNuKM0EKJK0WNIiSb2SHjjnurLwCyWtlFQuqc85dyWBM11SjaRKSX2Snkpqc86RmgZYAHQwvDqB2hTNFuBbgqYVKAm4u4GbwHfDexhw8oEGYDDB8w4wLW3z1cDHBFFcfUBZoDmShQ/wEphk+O0JnDDAiRyej4G8pAANhtQC1AObgbemv9/wK8i8S8eBhcAG4LXpnzKak8B7olMYFgCYCvz2/UFgJ1AKLAduG82+tFPYATQGvaNG2GT655M26bF5BhsCZvp+of+cnBJgnelfCjznGuxG3B9rSc65Mwm5Ss2636zrzPp64NMOvJA0y1+jRlK3c24gwd9WcRZsUBKKBs/sHD5R+cek3ySv9f3xwR0uStCeNpxjAZZ2AtWB71agCJgPXDXYT2BMrs1XAT1G1GywStN/k6I/aDhNAZYWwJH5rAP8Ynj9ABJfAbHRCjInUqMVAAWB8YwEjwsGPzSSAB4rAy4nbLrTrDuybf4A0fEB/AEOp/C6jOH2AHNE0yau1SMNYDhVwEZgr7+h642mNUmQDzQb0mdgTZagdl7fB8YZzF6sl+A3kisAsCnwyyN6Mca1LcacJxRIuitpmfG5KKk78H7lnGvymmJJzyVN9NgTSS2KJs82Sfm+vyfW2ACSevzXR865JXbz3qdb0jVJ7yStlbQ03oOkyoy/NkAJI6u2YCOrgC9Z+GeBjFEdB0g6AaKnoDuL3yegPvT75wBeW0k0OQYM7xmwa9iFcgTwWDlwDvhgOF+BW0BFmud/F9FkqgZKc7NH7FkOzCHXzB/N9RcVRUBiRnouEgAAAABJRU5ErkJggg=="/>
+    </defs>
 </svg>
