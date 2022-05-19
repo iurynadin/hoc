@@ -48,7 +48,7 @@
                     </ul>
                 </nav>
 
-                <img src="./svgs/logo-header.png" class="w-[200px] xl:w-[240px] block absolute left-1/2 -translate-x-1/2" alt="">
+                <img src="./svgs/logo-header.svg" class="w-[160px] lg:w-[240px] block absolute left-1/2 -translate-x-1/2" alt="">
 
             </div>
 
@@ -67,7 +67,7 @@
         <main>
 
             <!-- Home/Hero -->
-            <section class="home w-full bg-verdeagua" id="home">
+            <section class="home w-full bg-verdeagua bg-hero bg-center bg-no-repeat bg-cover" id="home">
                 <div class="container h-screen flex justify-end items-center text-right">
                     <h1 class="text-5xl md:text-[72px] xl:text-[100px] leading-none md:translate-y-14 2xl:translate-y-32">
                         <span class="text-white">Relatório<br>Integrado</span><br>
@@ -81,7 +81,7 @@
 
 
             <!-- Sumário -->
-            <section class="w-full border-l-2 border-amarelolimao pt-6 md:pt-40 bg-verdeagua" id="summary">
+            <section class="w-full border-l-2 border-amarelolimao pt-6 md:pt-40 bg-verdeagua bg-sumario bg-center bg-cover bg-no-repeat" id="summary">
                 <div class="container grid grid-cols-12 gap-y-8 md:gap-y-0 md:gap-x-8 lg:gap-x-16">
                     <div class="col-span-12 md:col-span-6 2xl:col-span-7 md:pt-14">
                         <h2 class="text-xl md:text-2xl xl:text-3xl 2xl:text-[42px] text-amarelolimao2 leading-tight 2xl:leading-none"><span class="font-gotham_bold">O Relatório Integrado 2021 do Hospital Alemão Oswaldo Cruz reúne</span> <span class="font-gotham_book">os principais indicadores, dados e projetos que traduzem as conquistas e desafios da Instituição no ano.</span> </h2>
@@ -92,7 +92,7 @@
 
                         <p class="text-white text-base md:text-xl 2xl:text-[22px]">As Normas da Global Reporting Initiative (GRI) são o principal instrumento para a comunicação de métricas e resultados. Além disso, balizam o conteúdo os temas ambientais, sociais e de governança (ESG, na sigla em inglês) priorizados por meio de um processo de materialidade. Todos os indicadores de sustentabilidade cobrem o período de 1o de janeiro a 31 de dezembro de 2021, abrangendo unidades diretamente mantidas pelo Hospital e também as instituições administradas pelo Instituto Social Hospital Alemão Oswaldo Cruz. </p>
                     </div>
-                    <div class="col-span-12 md:col-span-6 2xl:col-span-5 bg-verdeescuro rounded-t-2xl md:rounded-t-[50px] 2xl:rounded-t-[80px] p-8 md:p-12 pb-0 2xl:p-14">
+                    <div class="col-span-12 md:col-span-6 2xl:col-span-5 bg-verdeescuro rounded-t-2xl md:rounded-t-[50px] 2xl:rounded-t-[80px] px-8 pt-8 md:px-12 md:pt-12 2xl:px-14 2xl:pt-14 pb-0">
                         <p class="text-white text-base md:text-[22px] xl:text-2xl 2xl:text-[32px] mb-6 xl:mb-[38px] leading-tight md:leading-none">Neste resumo-web, você encontrará as seguintes sessões:</p>
                         <ul class="ulSummary relative bg-bolinhasvertical bg-repeat-y bg-[left_7px_top_18px] pt-0 pb-10">
                             <div class="absolute top-0 left-0 w-6 h-1 bg-verdeescuro block z-0"></div>
@@ -146,42 +146,41 @@
             </section>
 
             <!-- Palavra da Liderança -->
-            <section class="border-l-[12px] border-amarelolimao bg-white pb-20" id="palavra">
-                <div class="container grid grid-cols-3 md:gap-x-6 lg:gap-x-20 pt-40">
-                    <div>
-                        <h1 class="text-verdehamb md:text-[42px] lg:text-[54px] xl:text-[68px] 2xl:text-[80px] leading-none">Palavra da liderança</h1>
-                        <div class="relative w-full h-2 flex justify-end mt-6 mb-8">
+            <section class="border-l-[12px] border-amarelolimao bg-white pb-14 bg-lideranca bg-no-repeat bg-[left_top] bg-[length:auto_180px] md:bg-[length:auto_270px] xl:bg-[length:auto_345px]" id="palavra">
+                <div class="container grid md:grid-cols-3 md:gap-x-6 lg:gap-x-20 pt-20 md:pt-40">
+                    <div class="mb-10 md:mb-0">
+                        <h1 class="text-verdehamb text-[42px] lg:text-[54px] xl:text-[68px] 2xl:text-[80px] leading-none">Palavra da liderança</h1>
+                        <div class="relative w-full h-2 flex justify-end my-5 md:mt-6 md:mb-8">
                             <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[1000px] h-1 block"></div>
                         </div>
                         <p class="text-xl lg:text-[26px] xl:text-[30px] 2xl:text-[42px] font-gotham_bold text-amarelolimao3 leading-tight">Respeito ao legado, atenção ao presente e olhar para o futuro da saúde</p>
-                        <br><br><br><br>
                     </div>
 
-                    <div class="h-full flex flex-col px-3 xl:px-6 2xl:px-10">
+                    <div class="h-full flex flex-col md:px-3 xl:px-6 2xl:px-10">
                         <div class="relative rounded-2xl 2xl:rounded-[20px] w-full xl:h-[420px] 2xl:h-[450px] overflow-hidden block mb-4">
                             <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
                             <img src="./imgs/weber.jpg" class="h-full w-full object-cover object-bottom 2xl:object-center" alt="">
                         </div>
-                        <div class="relative flex-grow flex flex-col justify-between">
-                            <img src="./svgs/aspas.svg" class="absolute -top-1 -left-10 w-8 xl:-left-14 xl:w-10" alt="">
-                            <p class="mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">... iniciamos um trabalho de cultura mais intenso junto às lideranças do Hospital, a fim de dotá-las de senso e atitude de dono para com o negócio e a estratégia.”</p>
-                            <div class="w-full">
-                                <p class="uppercase text-azulescuro font-gotham_bold text-base xl:text-lg 2xl:text-xl leading-tight">Weber Porto</p>
+                        <div class="relative flex-grow flex flex-col justify-start md:justify-between">
+                            <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt="">
+                            <p class="pl-8 md:pl-0 mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">... iniciamos um trabalho de cultura mais intenso junto às lideranças do Hospital, a fim de dotá-las de senso e atitude de dono para com o negócio e a estratégia.”</p>
+                            <div class="w-full pl-8 md:pl-0">
+                                <p class="uppercase text-azulescuro font-gotham_bold text-sm md:text-base xl:text-lg 2xl:text-xl leading-tight">Weber Porto</p>
                                 <p class="text-sm xl:text-base 2xl:text-xl font-gotham_light text-cinza leading-tight">Presidente do Conselho Deliberativo</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="h-full flex flex-col px-3 xl:px-6 2xl:px-10">
+                    <div class="h-full flex flex-col md:px-3 xl:px-6 2xl:px-10 mt-14 md:mt-0">
                         <div class="relative rounded-2xl 2xl:rounded-[20px] w-full xl:h-[420px] 2xl:h-[450px] overflow-hidden block mb-4">
                             <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
                             <img src="./imgs/jose-marcelo.jpg" class="h-full w-full object-cover object-top" alt="">
                         </div>
-                        <div class="relative flex-grow flex flex-col justify-between">
-                            <img src="./svgs/aspas.svg" class="absolute -top-1 -left-10 w-8 xl:-left-14 xl:w-10" alt="">
-                            <p class="mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">Também temos como objetivo manter um olhar cada vez mais aguçado à jornada, às necessidades e às dores de nossos pacientes para oferecer os melhores desfechos clínicos e qualidade de vida aqueles que nos procuram e são nossa razão de existir.”</p>
-                            <div class="w-full">
-                                <p class="uppercase text-azulescuro font-gotham_bold text-base xl:text-lg 2xl:text-xl leading-tight">Dr. José Marcelo de Oliveira</p>
+                        <div class="relative flex-grow flex flex-col justify-start md:justify-between">
+                            <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt="">
+                            <p class="pl-8 md:pl-0 mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">Também temos como objetivo manter um olhar cada vez mais aguçado à jornada, às necessidades e às dores de nossos pacientes para oferecer os melhores desfechos clínicos e qualidade de vida aqueles que nos procuram e são nossa razão de existir.”</p>
+                            <div class="w-full pl-8 md:pl-0">
+                                <p class="uppercase text-azulescuro font-gotham_bold text-sm md:text-base xl:text-lg 2xl:text-xl leading-tight">Dr. José Marcelo de Oliveira</p>
                                 <p class="text-sm xl:text-base 2xl:text-xl font-gotham_light text-cinza leading-tight">Diretor-presidente</p>
                             </div>
                         </div>
@@ -189,7 +188,7 @@
 
                 </div>
 
-                <div class="relative h-[108px] w-full block overflow-hidden bg-pontilhadoPalavraLideranca bg-repeat-x bg-center bg-pontilhadoPalavraLiderancaSize">
+                <div class="relative h-[72px] md:h-[108px] w-full block overflow-hidden bg-pontilhadoPalavraLideranca bg-repeat-x bg-[29%_center] md:bg-[41%_center] bg-pontilhadoPalavraLiderancaSize mt-10 md:mt-0 md:-translate-y-12">
                 </div>
             </section>
 
@@ -202,9 +201,9 @@
                         <div class="swiper-slide bg-verdeaguaclaro">
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-amarelolimao2">
-                                    <h1 class="text-[74px] xl:text-[94px] 2xl:text-[100px] text-verdehamb font-gotham_extra_light leading-[0.88] -translate-x-1 tracking-[-0.06em]">Oswaldo Cruz</h1>
-                                    <p class="text-[36px] xl:text-[40px] 2xl:text-[44px] text-verdehamb font-gotham_light leading-none mt-2 mb-14 2xl:pr-10">um hospital de grande porte e alta complexidade</p>
-                                    <p class="font-gotham_light text-azulescuro text-xl 2xl:text-[30px] pr-28 xl:pr-0 leading-tight">Referência na América Latina, o Hospital Alemão Oswaldo Cruz construiu, ao longo dos seus quase 125 anos de história, uma tradição que combina a excelência em tratamento e  o acolhimento. A Instituição, que possui um corpo clínico renomado e uma das melhores assistências do país, conta com Modelo Assistencial próprio que coloca o paciente e o familiar no centro do cuidado</p>
+                                    <h1 class="text-4xl lg:text-[74px] xl:text-[94px] 2xl:text-[100px] text-verdehamb font-gotham_extra_light leading-[0.88] -translate-x-1 tracking-[-0.06em]">Oswaldo Cruz</h1>
+                                    <p class="text-xl lg:text-[36px] xl:text-[40px] 2xl:text-[44px] text-verdehamb font-gotham_light leading-none mt-2 mb-4 lg:mb-14 2xl:pr-10">um hospital de grande porte e alta complexidade</p>
+                                    <p class="font-gotham_light text-azulescuro text-base lg:text-xl 2xl:text-[30px] pr-4 lg:pr-28 xl:pr-0 leading-tight">Referência na América Latina, o Hospital Alemão Oswaldo Cruz construiu, ao longo dos seus quase 125 anos de história, uma tradição que combina a excelência em tratamento e  o acolhimento. A Instituição, que possui um corpo clínico renomado e uma das melhores assistências do país, conta com Modelo Assistencial próprio que coloca o paciente e o familiar no centro do cuidado</p>
 
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside pagination-green">
@@ -214,12 +213,13 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/medico.svg" class="illustracao -right-20 bottom-0 translate-y-4 w-[400px]" alt="">
+                                <img src="./svgs/medico.svg" class="illustracao -right-4 lg:-right-20 bottom-0 translate-y-4 w-[250px] lg:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-amarelolimao2"></div>
                         </div>
 
+                        
                         <div class="swiper-slide bg-verdeaguaclaro">
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-verdeescuro">
@@ -237,7 +237,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/quimica.svg" class="illustracao -right-28 xl:right-0 top-[22%] w-[420px] 2xl:w-[500px]" alt="">
+                                <img src="./svgs/quimica.svg" class="illustracao right-0 lg:-right-28 xl:right-0 top-[22%] w-[230px] lg:w-[420px] 2xl:w-[500px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdeescuro"></div>
@@ -266,7 +266,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/maocell.svg" class="illustracao -right-10 2xl:right-0 bottom-0 lg:w-[320px] xl:w-[400px] translate-y-6" alt="">
+                                <img src="./svgs/maocell.svg" class="illustracao right-0 lg:-right-10 2xl:right-0 bottom-0 w-[230px] lg:w-[320px] xl:w-[400px] translate-y-6" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdemedio"></div>
@@ -296,17 +296,17 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/maocell.svg" class="illustracao -right-10 2xl:right-0 bottom-0 translate-y-6 lg:w-[320px] xl:w-[400px]" alt="">
+                                <img src="./svgs/maocell.svg" class="illustracao right-0 lg:-right-10 2xl:right-0 -bottom-10 lg:bottom-0 w-[230px] lg:w-[320px] xl:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdemedio"></div>
                         </div> 
 
+                        
                         <div class="swiper-slide bg-[#158890]">
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-[#004C58]">
                                     <h1 class="titleSlideDef">Promoção da diversidade e do cuidado dos nossos colaboradores</h1>
-                                    <br>
                                     
                                     <p class="paragSlideDef"><span>64% da liderança e 60% dos cargos de diretoria</span> ocupados por mulheres</p>
 
@@ -322,7 +322,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/diversidade.svg" class="illustracao -right-10 2xl:right-0 bottom-0 lg:w-[400px] xl:w-[400px] lg:translate-y-8" alt="">
+                                <img src="./svgs/diversidade.svg" class="illustracao -right-10 2xl:right-0 -bottom-10 lg:bottom-0 w-[280px] lg:w-[400px] xl:w-[400px] lg:translate-y-8" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-[#004C58]"></div>
@@ -332,7 +332,6 @@
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-verdehamb">
                                     <h1 class="titleSlideDef">Inovamos para o avanço na saúde</h1>
-                                    <br>
                                     
                                     <p class="paragSlideDef"><span>Uso de realidades virtual e aumentada</span> no planejamento cirúrgico. Cirurgia menos invasiva para o paciente e mais precisão no procedimento</p>
 
@@ -346,7 +345,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/raiox.svg" class="illustracao right-0 2xl:right-0 top-[25%] xl:top-[18%] lg:w-[280px] xl:w-[400px]" alt="">
+                                <img src="./svgs/raiox.svg" class="illustracao right-0 2xl:right-0 top-[25%] xl:top-[18%] w-[230px] lg:w-[280px] xl:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdehamb"></div>
@@ -356,7 +355,6 @@
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-[#004C58]">
                                     <h1 class="titleSlideDef">Sustentabilidade e meio-ambiente</h1>
-                                    <br>
                                     
                                     <p class="paragSlideDef"><span>Estruturação do Sistema de Gestão Ambiental</span> com base na ISO 14000</p>
 
@@ -372,19 +370,16 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/sustentabilidade.svg" class="illustracao right-0 2xl:right-0 bottom-4 lg:w-[380px] xl:w-[500px]" alt="">
+                                <img src="./svgs/sustentabilidade.svg" class="illustracao right-0 2xl:right-0 bottom-4 w-[280px] lg:w-[380px] xl:w-[500px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-[#004C58]"></div>
                         </div>
 
-
                         <div class="swiper-slide bg-[#D4F100]">
                             <div class="relative z-[1] container h-full grid grid-cols-12">
                                 <div class="swiper-col-left bg-azulescuro">
-                                    <h1 class="titleSlideDef">Promovemos educação de qualidade em todo o Brasil
-                                    </h1>
-                                    <br>
+                                    <h1 class="titleSlideDef">Promovemos educação de qualidade em todo o Brasil</h1>
                                     
                                     <p class="paragSlideDef"><span>Mais de 16 mil novos alunos</span> impactados pelas nossas Faculdade e Escola Técnica (presencial e EaD)</p>
 
@@ -398,11 +393,11 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/professor.svg" class="illustracao right-0 2xl:right-0 top-[30%] xl:top-[22%] lg:w-[280px] xl:w-[400px]" alt="">
+                                <img src="./svgs/professor.svg" class="illustracao right-0 2xl:right-0 top-[30%] xl:top-[22%] w-[240px] lg:w-[280px] xl:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-azulescuro"></div>
-                        </div>
+                        </div> <!-- -->
                         
                     </div>
                 </div>
@@ -453,24 +448,20 @@
             <section id="modelo-de-negocios"  class="relative border-l-[12px] border-amarelolimao bg-white pt-28">
                 <div class="container">
                     <h1>Modelo de Negócios</h1>
+
+                    <wc-btn_negocios icon="equipamento" link="#"></wc-btn_negocios>
+                    <wc-btn_negocios icon="handcoin" link="#"></wc-btn_negocios>
+                    <wc-btn_negocios icon="medics" link="#"></wc-btn_negocios>
+
+
                     
-
-                    <a href="#" class="group relative hover:border-amarelolimao2 h-[128px] w-[128px] rounded-full border-[3px] border-verdemedio flex justify-center items-center transition-all duration-300">
-                        <div class="flex justify-start items-center  p-2 absolute top-6/12 rounded-full -left-[42px] group-hover:-left-16 bg-transparent group-hover:bg-amarelolimao2 transition-all duration-300 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="34.08" height="34.08" viewBox="0 0 34.08 34.08"><path d="M19.04,32.672A13.632,13.632,0,1,1,32.672,19.04,13.65,13.65,0,0,1,19.04,32.672M19.04,2A17.04,17.04,0,1,0,36.08,19.04,17.04,17.04,0,0,0,19.04,2m1.7,8.52H17.336v6.816H10.52v3.408h6.816V27.56h3.408V20.744H27.56V17.336H20.744Z" transform="translate(-2 -2)" fill="#007889"/></svg>
-                            <span class="leading-none uppercase font-gotham_bold text-azulescuro opacity-0 group-hover:opacity-100">veja<br>mais</span>
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="59.611" height="66.044" class="fill-verdemedio group-hover:fill-amarelolimao2 transition-all duration-300" viewBox="0 0 59.611 66.044">
-                            <path d="M26.756,38.955a2.2,2.2,0,1,1-2.2,2.2,2.207,2.207,0,0,1,2.2-2.2m15.41-15.41a1.041,1.041,0,0,1,1.1-1.1H60.877a1.04,1.04,0,0,1,1.1,1.1v6.6a1.039,1.039,0,0,1-1.1,1.1H43.266a1.04,1.04,0,0,1-1.1-1.1ZM79.59,41.156a2.2,2.2,0,1,1-2.2-2.2,2.209,2.209,0,0,1,2.2,2.2m-2.2,18.713a1.04,1.04,0,0,1-1.1-1.1V45.449a3.743,3.743,0,0,0,2.2,0V58.768a1.04,1.04,0,0,1-1.1,1.1m-3.852-20.8-9.357-9.357V26.187L75.3,37.3a4.529,4.529,0,0,0-1.761,1.761m-11.447-.66a4.519,4.519,0,0,0-1.761,1.761l-6.715-6.715h3.523Zm4.293,3.852a2.2,2.2,0,1,1-2.2-2.2,2.207,2.207,0,0,1,2.2,2.2m-2.2,14.31a2.2,2.2,0,1,1,2.2-2.2,2.208,2.208,0,0,1-2.2,2.2m-4.733,4.292a1.062,1.062,0,0,1-1.541,0l-.221-.219a1.065,1.065,0,0,1,0-1.541l2.642-2.642a4.529,4.529,0,0,0,1.761,1.761Zm4.733-10.9c-.329,0-.77.11-1.1.11V46.44a3.743,3.743,0,0,0,2.2,0v3.633c-.329,0-.77-.11-1.1-.11m-4.4-7.156a4.094,4.094,0,0,0,1.1,2.421v6.385a4.89,4.89,0,0,0-1.1,2.422l-2.2,2.2V40.5ZM43.816,40.166a4.508,4.508,0,0,0-1.761-1.761l4.953-4.953h3.523Zm-4.953,21.9V58.658a3.748,3.748,0,0,0,2.2,0V62.07a1.1,1.1,0,1,1-2.2,0m1.1-12.108c-.331,0-.77.11-1.1.11V46.44a3.748,3.748,0,0,0,2.2,0v3.633c-.331,0-.77-.11-1.1-.11m0,6.6a2.2,2.2,0,1,1,2.2-2.2,2.207,2.207,0,0,1-2.2,2.2m0-16.511a2.2,2.2,0,1,1-2.2,2.2,2.208,2.208,0,0,1,2.2-2.2m0-10.348-9.357,9.357A4.508,4.508,0,0,0,28.846,37.3L39.964,26.187ZM26.756,59.869a1.041,1.041,0,0,1-1.1-1.1V45.449c.331,0,.77.11,1.1.11s.77-.11,1.1-.11V58.768a1.041,1.041,0,0,1-1.1,1.1M65.28,75.279v3.3H38.863v-3.3a1.041,1.041,0,0,1,1.1-1.1H64.179a1.04,1.04,0,0,1,1.1,1.1m11.008,6.6v2.2H27.857v-2.2a1.04,1.04,0,0,1,1.1-1.1H75.187a1.041,1.041,0,0,1,1.1,1.1M23.453,58.768a3.206,3.206,0,0,0,2.2,3.082v7.926h2.2V61.85a3.206,3.206,0,0,0,2.2-3.082V44.018a4.892,4.892,0,0,0,1.1-2.421l9.576-9.576a3.141,3.141,0,0,0,2.642,1.32h.66l-4.4,4.4a4.282,4.282,0,0,0-3.852,4.843,4.087,4.087,0,0,0,1.1,2.421v6.384a4.35,4.35,0,0,0,0,5.724V62.07a2.9,2.9,0,0,0,.77,2.091l-2.092,1.872v3.743h2.2V66.913l1.651-1.651a2.254,2.254,0,0,0,1.21,0l1.651,1.651v2.863h2.2V66.032l-1.87-1.872a3.477,3.477,0,0,0,.77-2.091V57.227a4.353,4.353,0,0,0,0-5.724V45.12a4.888,4.888,0,0,0,1.1-2.421l2.2-2.2V71.977h-6.6a3.243,3.243,0,0,0-3.3,3.3v3.3H29.067a3.243,3.243,0,0,0-3.3,3.3v4.4H78.6v-4.4a3.243,3.243,0,0,0-3.3-3.3H67.592v-3.3a3.243,3.243,0,0,0-3.3-3.3h-6.6v-2.2h-2.2v2.2h-6.6V38.295l3.3-3.3,3.3,3.3V58.768a3.908,3.908,0,0,0-.221,1.1H52.842L50.31,62.4l1.541,1.541,1.872-1.872h2.422l.11.11.221.221.11.109v2.423L54.714,66.8l1.541,1.541,2.532-2.532V63.39A3,3,0,0,0,61.1,62.4l3.633-3.633a4.283,4.283,0,0,0,3.852-4.843,4.087,4.087,0,0,0-1.1-2.422V45.12a4.362,4.362,0,0,0-.329-6.165,4.892,4.892,0,0,0-2.421-1.1l-4.4-4.4h.55a3.283,3.283,0,0,0,2.642-1.322L73.1,41.707a4.085,4.085,0,0,0,1.1,2.421V58.768a3.205,3.205,0,0,0,2.2,3.082v7.926h2.2V61.85a3.206,3.206,0,0,0,2.2-3.082V44.018a4.362,4.362,0,0,0-.329-6.165,4.9,4.9,0,0,0-2.421-1.1L64.179,23a3.414,3.414,0,0,0-3.3-2.752H43.266A3.415,3.415,0,0,0,39.964,23L26.206,36.754A4.285,4.285,0,0,0,22.352,41.6a4.1,4.1,0,0,0,1.1,2.421Z" transform="translate(-22.312 -20.243)" />
-                        </svg>
-                    </a>
                 </div>
             </section>
 
             <!-- Indicadores Estratégicos -->
-            <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro bg-white pt-28">
-                <div class="absolute top-0 left-0 w-full h-5 bg-verdeagua block z-10"></div>
+            <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro  bg-indicadores bg-[center_bottom] bg-contain bg-no-repeat pt-28">
+                <div class="absolute w-full top-0 right-0 h-[500px] z-[-1] bg-[right_top] bg-indicadorestop bg-[length:auto_220px] md:bg-[length:auto_380px] 2xl:bg-[length:auto_498px] bg-no-repeat"></div>
+                <div class="absolute top-0 left-0 w-full h-5 bg-verdemedio block z-10"></div>
                 <div class="container">
 
                     <h1 class="text-verdehamb text-[58px] xl:text-[68px] 2xl:text-[92px] leading-none">Indicadores<br>estratégicos</h1>
@@ -670,18 +661,17 @@
 
 
             <!-- Investimentos em 2021 -->
-            <!-- border-l-[12px] border-l-amarelolimao -->
-            <section id="investimentos" class="investimentos border-l-[12px] border-l-amarelolimao overflow-x-hidden relative  bg-verdemedio lg:py-20 xl:py-40">
+            <section id="investimentos" class="investimentos bg-investimentos bg-center bg-cover border-l-[12px] border-l-amarelolimao overflow-x-hidden relative  bg-verdemedio pt-20 pb-0 lg:py-20 xl:py-40">
                 <div class="container">
 
-                    <div class="relative w-6/12">
+                    <div class="relative w-full lg:w-6/12">
                         <h1 class="text-white text-[58px] xl:text-[68px] 2xl:text-[100px] leading-none font-extralight">Investimentos <br>em 2021</h1>
-                        <h2 class="text-amarelolimao2 xl:text-[32px] 2xl:text-[40px] mt-8 mb-4 2xl:my-10 font-gotham_light leading-tight">O Capex consolidado do Hospital Alemão Oswaldo Cruz em 2021 foi de</h2>
+                        <h2 class="text-amarelolimao2 text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[40px] mt-8 mb-4 2xl:my-10 font-gotham_light leading-tight">O Capex consolidado do Hospital Alemão Oswaldo Cruz em 2021 foi de</h2>
                     </div>
 
-                    <div class="relative z-[2] full-width xl:h-[120px] 2xl:h-[142px] bg-pontilhadoInvestimentos bg-center bg-[length:auto_100%]  bg-no-repeat">
-                        <div class="container pt-2">
-                            <div class="text-white font-gotham_light xl:text-[56px] 2xl:text-[64px]">R$ <span class="font-gotham_bold">30,4</span> milhões, </div>
+                    <div class="relative z-[2] full-width h-[80px] lg:h-[100px] xl:h-[120px] 2xl:h-[142px] bg-pontilhadoInvestimentos bg-bottom lg:bg-center bg-[length:auto_100%] bg-no-repeat mt-12 lg:mt-0">
+                        <div class="container -translate-y-10 lg:-translate-y-0 lg:pt-2 ">
+                            <div class="text-white font-gotham_light pl-[10px] pb-40 text-[28px] lg:text-[42px] xl:text-[56px] 2xl:text-[64px]">R$ <span class="font-gotham_bold">30,4</span> milhões, </div>
                         </div>
                     </div>
 
@@ -689,24 +679,36 @@
                         <p>incluindo:</p>
                     </div>
 
-                    <div class="grid grid-cols-3 xl:gap-x-20 2xl:gap-x-28 mt-2">
-                        <div class="border">
+                    <div class="grid gap-y-10 lg:grid-cols-3 lg:gap-x-10 xl:gap-x-20 2xl:gap-x-28 mt-6">
+                        <div>
+                            <div class="flex justify-start items-center mb-2">
+                                <span class="itemstitle">R$ <sspan class="font-gotham_bold">22</sspan> milhões </span>
+                                <img src="./svgs/ico-equipamentos.svg" class="icons" alt="">
+                            </div>
                             <p>em obras e equipamentos médicos (engenharia) nas unidades Paulista e Vergueiro</p>
                         </div>
 
-                        <div class="border">
+                        <div>
+                            <div class="flex justify-start items-center mb-2">
+                                <span class="itemstitle">R$ <sspan class="font-gotham_bold">4,5</sspan> milhões </span>
+                                <img src="./svgs/ico-ti.svg" class="icons" alt="">
+                            </div>
                             <p>para TI, comunicações e jornada digital</p>
                         </div>
-                        <div class="border">
+                        <div>
+                            <div class="flex justify-start items-center mb-2">
+                                <span class="itemstitle">R$ <sspan class="font-gotham_bold">1,7</sspan> milhão </span>
+                                <img src="./svgs/ico-unidade.svg" class="icons" alt="">
+                            </div>
                             <p>para a expansão da Unidade Vergueiro</p>
                         </div>
                     </div>
 
-                    <div class="absolute w-[45%] bg-verdeescuro rounded-l-[40px] top-36 2xl:top-44 right-0 p-14">
-                        <div class="text-left w-[80%]  border">
+                    <div class="relative lg:absolute w-full lg:w-[45%] bg-verdeescuro rounded-t-[30px] lg:rounded-l-[40px] lg:top-20 xl:top-36 2xl:top-44 lg:right-0 p-10 lg:p-14 mt-10 lg:mt-0">
+                        <div class="text-left w-[100%] xl:w-[80%]">
                             <div class="flex flex-row 2xl:gap-x-4 mb-4">
                                 <span class="font-gotham_bold text-amarelolimao2 text-[28px] xl:text-[32px] 2xl:text-[38px] leading-tight ">Mais seis salas de cirurgia</span>
-                                <img src="./svgs/ico-pulmao.svg" class="w-20 2xl:w-24" alt="">
+                                <img src="./svgs/ico-pulmao.svg" class="w-14 xl:w-20 2xl:w-24" alt="">
                             </div>
                             <span class="text-white font-gotham_extra_light xl:text-[18px] 2xl:text-[22px]">O centro cirúrgico da Unidade Paulista ganhou três salas de cirurgia em fevereiro e outras três em setembro. Isto contribuiu para que o Hospital atingisse o seu recorde em volume de cirurgias apesar da pandemia.</span>
                         </div>
@@ -731,7 +733,7 @@
 
 
             <!-- Desempenho em indicadores e taxas -->
-            <section id="desempenho" class="relative border-l-[12px] border-l-verdeagua bg-gradient-to-b from-white via-white to-[#0079892f] pt-28">
+            <!-- <section id="desempenho" class="relative border-l-[12px] border-l-verdeagua bg-gradient-to-b from-white via-white to-[#0079892f] pt-28">
                 <div class="container">
                     <h1 class="mb-14 font-gotham_extra_light text-[#00b1bb]  text-[36px] md:text-[40px] lg:text-[52px] xl:text-[64px] 2xl:text-[77px] leading-none">Desempenho em<br /> indicadores e taxas</h1>
                     <div class="relative w-2/3 md:w-1/2 h-2 flex justify-end my-20">
@@ -939,15 +941,14 @@
                     </div>
                     <br /><br /><br /><br /><br /><br />
                 </div>
-            </section>
+            </section> -->
 
-            <div class="relative h-[30vw] md:h-[20vw] border-l-[12px] border-amarelolimao bg-gradient-to-t from-[#007789f8] to-[#00798930]">
+            <!-- <div class="relative h-[30vw] md:h-[20vw] border-l-[12px] border-amarelolimao bg-gradient-to-t from-[#007789f8] to-[#00798930]">
                 <img class="absolute top-20 left-0" src="./svgs/onda-pontilhada-vd-dir.svg" alt="">
-                
-            </div>
+            </div> -->
 
             <!-- Educação, Pesquisa, Inovação e Saúde Digital -->
-            <section id="educacao" class="z-0 relative border-l-[12px] border-b-[30px] border-amarelolimao ">
+            <!-- <section id="educacao" class="z-0 relative border-l-[12px] border-b-[30px] border-amarelolimao ">
                 
                 <img class="absolute object-cover -z-10 top-0 left-0 w-full h-full" src="./imgs/bg-episd.png" alt="">
                 <div class="container">
@@ -1000,7 +1001,7 @@
                     <br />
                     
                 </div>
-            </section>
+            </section> -->
 
             <!-- Sustentabilidade e Responsabilidade Social -->
             <section id="sustentabilidade" class="relative z-0 overflow-hidden border-l-[12px] border-l-verdeescuro bg-white pt-28">
@@ -1150,4 +1151,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./wc-btn_negocios.js"></script>
 </html>
