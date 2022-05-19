@@ -49,6 +49,8 @@ module.exports = {
                 listSusItem: "url('../svgs/itemlistsus.svg')",
                 nossasUnidades1: "url('../imgs/nossas-unidades1.jpg')",
                 pontilhadoInvestimentos: "url('../svgs/pontilhado-investimentos.svg')",
+
+                investimentos: "url('../backgrounds/investimentos.jpg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',

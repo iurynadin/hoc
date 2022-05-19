@@ -377,8 +377,16 @@
     }
 
     .investimentos {
+        .itemstitle {
+            @apply text-white font-gotham_light text-[28px] md:text-[31px] xl:text-[36px] 2xl:text-[42px] mr-4 xl:mr-6;
+        }
+
+        .icons {
+            @apply w-[50px] lg:w-14 2xl:w-16;
+        }
+
         p {
-            @apply text-amarelolimao2 xl:text-2xl 2xl:text-[32px] font-gotham_light;
+            @apply text-amarelolimao2 text-lg lg:text-[22px] xl:text-2xl 2xl:text-[32px] font-gotham_light leading-snug;
         }
     }
 
