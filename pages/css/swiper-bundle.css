@@ -245,6 +245,11 @@
   --swiper-pagination-bullet-size: 25px;
   --swiper-pagination-bullet-width: 25px;
   --swiper-pagination-bullet-height: 25px;
+
+  --swiper-pagination-bullet-xs-size: 18px;
+  --swiper-pagination-bullet-xs-width: 18px;
+  --swiper-pagination-bullet-xs-height: 18px;
+
   --swiper-pagination-bullet-inactive-color: #e7fd53;
   --swiper-pagination-green-bullet-inactive-color: #153a4c;
   --swiper-pagination-bullet-inactive-opacity: 0.2;
@@ -258,6 +263,11 @@
     bottom: 20px;
     left: 0;
     width: 100%;
+}
+@media (max-width: 768px) {
+    .pagination-inside{
+        bottom: 5px;
+    }
 }
 .swiper-pagination {
     position: absolute;
@@ -312,6 +322,12 @@
   border-radius: 50%;
   background: var(--swiper-pagination-bullet-inactive-color, #000);
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+@media (max-width: 768px) {
+    .swiper-pagination-bullet{
+        width: var(--swiper-pagination-bullet-xs-width, var(--swiper-pagination-bullet-xs-size, 8px));
+        height: var(--swiper-pagination-bullet-xs-height, var(--swiper-pagination-bullet-xs-size, 8px));
+    }
 }
 
 .pagination-green .swiper-pagination-bullet {

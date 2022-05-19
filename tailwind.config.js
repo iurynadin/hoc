@@ -41,7 +41,7 @@ module.exports = {
                 hero2: '956 / 541',
             },
             backgroundImage: {
-                hero1: "url('../backgrounds/hero.jpg')",
+                hero: "url('../backgrounds/hero.jpg')",
                 bolinhasvertical: "url('../svgs/bg-bolinhas.svg')",
                 bolinhashorizontal: "url('../svgs/bg-bolinhas-horizontal.svg')",
                 pontilhadoPalavraLideranca: "url('../svgs/pontilhado-palavra.svg')",
@@ -50,7 +50,11 @@ module.exports = {
                 nossasUnidades1: "url('../imgs/nossas-unidades1.jpg')",
                 pontilhadoInvestimentos: "url('../svgs/pontilhado-investimentos.svg')",
 
+                sumario: "url('../backgrounds/sumario.jpg')",
                 investimentos: "url('../backgrounds/investimentos.jpg')",
+                indicadores: "url('../backgrounds/indicadores.jpg')",
+                lideranca: "url('../backgrounds/lideranca.jpg')",
+                indicadorestop: "url('../backgrounds/indicadores-top.jpg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',

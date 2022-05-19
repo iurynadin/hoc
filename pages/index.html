@@ -48,7 +48,7 @@
                     </ul>
                 </nav>
 
-                <img src="./svgs/logo-header.png" class="w-[200px] xl:w-[240px] block absolute left-1/2 -translate-x-1/2" alt="">
+                <img src="./svgs/logo-header.svg" class="w-[160px] lg:w-[240px] block absolute left-1/2 -translate-x-1/2" alt="">
 
             </div>
 
@@ -67,7 +67,7 @@
         <main>
 
             <!-- Home/Hero -->
-            <section class="home w-full bg-verdeagua" id="home">
+            <section class="home w-full bg-verdeagua bg-hero bg-center bg-no-repeat bg-cover" id="home">
                 <div class="container h-screen flex justify-end items-center text-right">
                     <h1 class="text-5xl md:text-[72px] xl:text-[100px] leading-none md:translate-y-14 2xl:translate-y-32">
                         <span class="text-white">Relatório<br>Integrado</span><br>
@@ -81,7 +81,7 @@
 
 
             <!-- Sumário -->
-            <section class="w-full border-l-2 border-amarelolimao pt-6 md:pt-40 bg-verdeagua" id="summary">
+            <section class="w-full border-l-2 border-amarelolimao pt-6 md:pt-40 bg-verdeagua bg-sumario bg-center bg-cover bg-no-repeat" id="summary">
                 <div class="container grid grid-cols-12 gap-y-8 md:gap-y-0 md:gap-x-8 lg:gap-x-16">
                     <div class="col-span-12 md:col-span-6 2xl:col-span-7 md:pt-14">
                         <h2 class="text-xl md:text-2xl xl:text-3xl 2xl:text-[42px] text-amarelolimao2 leading-tight 2xl:leading-none"><span class="font-gotham_bold">O Relatório Integrado 2021 do Hospital Alemão Oswaldo Cruz reúne</span> <span class="font-gotham_book">os principais indicadores, dados e projetos que traduzem as conquistas e desafios da Instituição no ano.</span> </h2>
@@ -92,7 +92,7 @@
 
                         <p class="text-white text-base md:text-xl 2xl:text-[22px]">As Normas da Global Reporting Initiative (GRI) são o principal instrumento para a comunicação de métricas e resultados. Além disso, balizam o conteúdo os temas ambientais, sociais e de governança (ESG, na sigla em inglês) priorizados por meio de um processo de materialidade. Todos os indicadores de sustentabilidade cobrem o período de 1o de janeiro a 31 de dezembro de 2021, abrangendo unidades diretamente mantidas pelo Hospital e também as instituições administradas pelo Instituto Social Hospital Alemão Oswaldo Cruz. </p>
                     </div>
-                    <div class="col-span-12 md:col-span-6 2xl:col-span-5 bg-verdeescuro rounded-t-2xl md:rounded-t-[50px] 2xl:rounded-t-[80px] p-8 md:p-12 pb-0 2xl:p-14">
+                    <div class="col-span-12 md:col-span-6 2xl:col-span-5 bg-verdeescuro rounded-t-2xl md:rounded-t-[50px] 2xl:rounded-t-[80px] px-8 pt-8 md:px-12 md:pt-12 2xl:px-14 2xl:pt-14 pb-0">
                         <p class="text-white text-base md:text-[22px] xl:text-2xl 2xl:text-[32px] mb-6 xl:mb-[38px] leading-tight md:leading-none">Neste resumo-web, você encontrará as seguintes sessões:</p>
                         <ul class="ulSummary relative bg-bolinhasvertical bg-repeat-y bg-[left_7px_top_18px] pt-0 pb-10">
                             <div class="absolute top-0 left-0 w-6 h-1 bg-verdeescuro block z-0"></div>
@@ -146,42 +146,41 @@
             </section>
 
             <!-- Palavra da Liderança -->
-            <section class="border-l-[12px] border-amarelolimao bg-white pb-20" id="palavra">
-                <div class="container grid grid-cols-3 md:gap-x-6 lg:gap-x-20 pt-40">
-                    <div>
-                        <h1 class="text-verdehamb md:text-[42px] lg:text-[54px] xl:text-[68px] 2xl:text-[80px] leading-none">Palavra da liderança</h1>
-                        <div class="relative w-full h-2 flex justify-end mt-6 mb-8">
+            <section class="border-l-[12px] border-amarelolimao bg-white pb-14 bg-lideranca bg-no-repeat bg-[left_top] bg-[length:auto_180px] md:bg-[length:auto_270px] xl:bg-[length:auto_345px]" id="palavra">
+                <div class="container grid md:grid-cols-3 md:gap-x-6 lg:gap-x-20 pt-20 md:pt-40">
+                    <div class="mb-10 md:mb-0">
+                        <h1 class="text-verdehamb text-[42px] lg:text-[54px] xl:text-[68px] 2xl:text-[80px] leading-none">Palavra da liderança</h1>
+                        <div class="relative w-full h-2 flex justify-end my-5 md:mt-6 md:mb-8">
                             <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[1000px] h-1 block"></div>
                         </div>
                         <p class="text-xl lg:text-[26px] xl:text-[30px] 2xl:text-[42px] font-gotham_bold text-amarelolimao3 leading-tight">Respeito ao legado, atenção ao presente e olhar para o futuro da saúde</p>
-                        <br><br><br><br>
                     </div>
 
-                    <div class="h-full flex flex-col px-3 xl:px-6 2xl:px-10">
+                    <div class="h-full flex flex-col md:px-3 xl:px-6 2xl:px-10">
                         <div class="relative rounded-2xl 2xl:rounded-[20px] w-full xl:h-[420px] 2xl:h-[450px] overflow-hidden block mb-4">
                             <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
                             <img src="./imgs/weber.jpg" class="h-full w-full object-cover object-bottom 2xl:object-center" alt="">
                         </div>
-                        <div class="relative flex-grow flex flex-col justify-between">
-                            <img src="./svgs/aspas.svg" class="absolute -top-1 -left-10 w-8 xl:-left-14 xl:w-10" alt="">
-                            <p class="mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">... iniciamos um trabalho de cultura mais intenso junto às lideranças do Hospital, a fim de dotá-las de senso e atitude de dono para com o negócio e a estratégia.”</p>
-                            <div class="w-full">
-                                <p class="uppercase text-azulescuro font-gotham_bold text-base xl:text-lg 2xl:text-xl leading-tight">Weber Porto</p>
+                        <div class="relative flex-grow flex flex-col justify-start md:justify-between">
+                            <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt="">
+                            <p class="pl-8 md:pl-0 mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">... iniciamos um trabalho de cultura mais intenso junto às lideranças do Hospital, a fim de dotá-las de senso e atitude de dono para com o negócio e a estratégia.”</p>
+                            <div class="w-full pl-8 md:pl-0">
+                                <p class="uppercase text-azulescuro font-gotham_bold text-sm md:text-base xl:text-lg 2xl:text-xl leading-tight">Weber Porto</p>
                                 <p class="text-sm xl:text-base 2xl:text-xl font-gotham_light text-cinza leading-tight">Presidente do Conselho Deliberativo</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="h-full flex flex-col px-3 xl:px-6 2xl:px-10">
+                    <div class="h-full flex flex-col md:px-3 xl:px-6 2xl:px-10 mt-14 md:mt-0">
                         <div class="relative rounded-2xl 2xl:rounded-[20px] w-full xl:h-[420px] 2xl:h-[450px] overflow-hidden block mb-4">
                             <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
                             <img src="./imgs/jose-marcelo.jpg" class="h-full w-full object-cover object-top" alt="">
                         </div>
-                        <div class="relative flex-grow flex flex-col justify-between">
-                            <img src="./svgs/aspas.svg" class="absolute -top-1 -left-10 w-8 xl:-left-14 xl:w-10" alt="">
-                            <p class="mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">Também temos como objetivo manter um olhar cada vez mais aguçado à jornada, às necessidades e às dores de nossos pacientes para oferecer os melhores desfechos clínicos e qualidade de vida aqueles que nos procuram e são nossa razão de existir.”</p>
-                            <div class="w-full">
-                                <p class="uppercase text-azulescuro font-gotham_bold text-base xl:text-lg 2xl:text-xl leading-tight">Dr. José Marcelo de Oliveira</p>
+                        <div class="relative flex-grow flex flex-col justify-start md:justify-between">
+                            <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt="">
+                            <p class="pl-8 md:pl-0 mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">Também temos como objetivo manter um olhar cada vez mais aguçado à jornada, às necessidades e às dores de nossos pacientes para oferecer os melhores desfechos clínicos e qualidade de vida aqueles que nos procuram e são nossa razão de existir.”</p>
+                            <div class="w-full pl-8 md:pl-0">
+                                <p class="uppercase text-azulescuro font-gotham_bold text-sm md:text-base xl:text-lg 2xl:text-xl leading-tight">Dr. José Marcelo de Oliveira</p>
                                 <p class="text-sm xl:text-base 2xl:text-xl font-gotham_light text-cinza leading-tight">Diretor-presidente</p>
                             </div>
                         </div>
@@ -189,7 +188,7 @@
 
                 </div>
 
-                <div class="relative h-[108px] w-full block overflow-hidden bg-pontilhadoPalavraLideranca bg-repeat-x bg-center bg-pontilhadoPalavraLiderancaSize">
+                <div class="relative h-[72px] md:h-[108px] w-full block overflow-hidden bg-pontilhadoPalavraLideranca bg-repeat-x bg-[29%_center] md:bg-[41%_center] bg-pontilhadoPalavraLiderancaSize mt-10 md:mt-0 md:-translate-y-12">
                 </div>
             </section>
 
@@ -202,9 +201,9 @@
                         <div class="swiper-slide bg-verdeaguaclaro">
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-amarelolimao2">
-                                    <h1 class="text-[74px] xl:text-[94px] 2xl:text-[100px] text-verdehamb font-gotham_extra_light leading-[0.88] -translate-x-1 tracking-[-0.06em]">Oswaldo Cruz</h1>
-                                    <p class="text-[36px] xl:text-[40px] 2xl:text-[44px] text-verdehamb font-gotham_light leading-none mt-2 mb-14 2xl:pr-10">um hospital de grande porte e alta complexidade</p>
-                                    <p class="font-gotham_light text-azulescuro text-xl 2xl:text-[30px] pr-28 xl:pr-0 leading-tight">Referência na América Latina, o Hospital Alemão Oswaldo Cruz construiu, ao longo dos seus quase 125 anos de história, uma tradição que combina a excelência em tratamento e  o acolhimento. A Instituição, que possui um corpo clínico renomado e uma das melhores assistências do país, conta com Modelo Assistencial próprio que coloca o paciente e o familiar no centro do cuidado</p>
+                                    <h1 class="text-4xl lg:text-[74px] xl:text-[94px] 2xl:text-[100px] text-verdehamb font-gotham_extra_light leading-[0.88] -translate-x-1 tracking-[-0.06em]">Oswaldo Cruz</h1>
+                                    <p class="text-xl lg:text-[36px] xl:text-[40px] 2xl:text-[44px] text-verdehamb font-gotham_light leading-none mt-2 mb-4 lg:mb-14 2xl:pr-10">um hospital de grande porte e alta complexidade</p>
+                                    <p class="font-gotham_light text-azulescuro text-base lg:text-xl 2xl:text-[30px] pr-4 lg:pr-28 xl:pr-0 leading-tight">Referência na América Latina, o Hospital Alemão Oswaldo Cruz construiu, ao longo dos seus quase 125 anos de história, uma tradição que combina a excelência em tratamento e  o acolhimento. A Instituição, que possui um corpo clínico renomado e uma das melhores assistências do país, conta com Modelo Assistencial próprio que coloca o paciente e o familiar no centro do cuidado</p>
 
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside pagination-green">
@@ -214,12 +213,13 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/medico.svg" class="illustracao -right-20 bottom-0 translate-y-4 w-[400px]" alt="">
+                                <img src="./svgs/medico.svg" class="illustracao -right-4 lg:-right-20 bottom-0 translate-y-4 w-[250px] lg:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-amarelolimao2"></div>
                         </div>
 
+                        
                         <div class="swiper-slide bg-verdeaguaclaro">
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-verdeescuro">
@@ -237,7 +237,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/quimica.svg" class="illustracao -right-28 xl:right-0 top-[22%] w-[420px] 2xl:w-[500px]" alt="">
+                                <img src="./svgs/quimica.svg" class="illustracao right-0 lg:-right-28 xl:right-0 top-[22%] w-[230px] lg:w-[420px] 2xl:w-[500px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdeescuro"></div>
@@ -266,7 +266,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/maocell.svg" class="illustracao -right-10 2xl:right-0 bottom-0 lg:w-[320px] xl:w-[400px] translate-y-6" alt="">
+                                <img src="./svgs/maocell.svg" class="illustracao right-0 lg:-right-10 2xl:right-0 bottom-0 w-[230px] lg:w-[320px] xl:w-[400px] translate-y-6" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdemedio"></div>
@@ -296,17 +296,17 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/maocell.svg" class="illustracao -right-10 2xl:right-0 bottom-0 translate-y-6 lg:w-[320px] xl:w-[400px]" alt="">
+                                <img src="./svgs/maocell.svg" class="illustracao right-0 lg:-right-10 2xl:right-0 -bottom-10 lg:bottom-0 w-[230px] lg:w-[320px] xl:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdemedio"></div>
                         </div> 
 
+                        
                         <div class="swiper-slide bg-[#158890]">
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-[#004C58]">
                                     <h1 class="titleSlideDef">Promoção da diversidade e do cuidado dos nossos colaboradores</h1>
-                                    <br>
                                     
                                     <p class="paragSlideDef"><span>64% da liderança e 60% dos cargos de diretoria</span> ocupados por mulheres</p>
 
@@ -322,7 +322,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/diversidade.svg" class="illustracao -right-10 2xl:right-0 bottom-0 lg:w-[400px] xl:w-[400px] lg:translate-y-8" alt="">
+                                <img src="./svgs/diversidade.svg" class="illustracao -right-10 2xl:right-0 -bottom-10 lg:bottom-0 w-[280px] lg:w-[400px] xl:w-[400px] lg:translate-y-8" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-[#004C58]"></div>
@@ -332,7 +332,6 @@
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-verdehamb">
                                     <h1 class="titleSlideDef">Inovamos para o avanço na saúde</h1>
-                                    <br>
                                     
                                     <p class="paragSlideDef"><span>Uso de realidades virtual e aumentada</span> no planejamento cirúrgico. Cirurgia menos invasiva para o paciente e mais precisão no procedimento</p>
 
@@ -346,7 +345,7 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/raiox.svg" class="illustracao right-0 2xl:right-0 top-[25%] xl:top-[18%] lg:w-[280px] xl:w-[400px]" alt="">
+                                <img src="./svgs/raiox.svg" class="illustracao right-0 2xl:right-0 top-[25%] xl:top-[18%] w-[230px] lg:w-[280px] xl:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-verdehamb"></div>
@@ -356,7 +355,6 @@
                             <div class="relative z-[1] container grid grid-cols-12">
                                 <div class="swiper-col-left bg-[#004C58]">
                                     <h1 class="titleSlideDef">Sustentabilidade e meio-ambiente</h1>
-                                    <br>
                                     
                                     <p class="paragSlideDef"><span>Estruturação do Sistema de Gestão Ambiental</span> com base na ISO 14000</p>
 
@@ -372,19 +370,16 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/sustentabilidade.svg" class="illustracao right-0 2xl:right-0 bottom-4 lg:w-[380px] xl:w-[500px]" alt="">
+                                <img src="./svgs/sustentabilidade.svg" class="illustracao right-0 2xl:right-0 bottom-4 w-[280px] lg:w-[380px] xl:w-[500px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-[#004C58]"></div>
                         </div>
 
-
                         <div class="swiper-slide bg-[#D4F100]">
                             <div class="relative z-[1] container h-full grid grid-cols-12">
                                 <div class="swiper-col-left bg-azulescuro">
-                                    <h1 class="titleSlideDef">Promovemos educação de qualidade em todo o Brasil
-                                    </h1>
-                                    <br>
+                                    <h1 class="titleSlideDef">Promovemos educação de qualidade em todo o Brasil</h1>
                                     
                                     <p class="paragSlideDef"><span>Mais de 16 mil novos alunos</span> impactados pelas nossas Faculdade e Escola Técnica (presencial e EaD)</p>
 
@@ -398,11 +393,11 @@
                                     </div>
 
                                 </div>
-                                <img src="./svgs/professor.svg" class="illustracao right-0 2xl:right-0 top-[30%] xl:top-[22%] lg:w-[280px] xl:w-[400px]" alt="">
+                                <img src="./svgs/professor.svg" class="illustracao right-0 2xl:right-0 top-[30%] xl:top-[22%] w-[240px] lg:w-[280px] xl:w-[400px]" alt="">
                                 <img src="./svgs/predio.svg" class="predio" alt="">
                             </div>
                             <div class="halfColumn bg-azulescuro"></div>
-                        </div>
+                        </div> <!-- -->
                         
                     </div>
                 </div>
@@ -464,8 +459,9 @@
             </section>
 
             <!-- Indicadores Estratégicos -->
-            <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro bg-white pt-28">
-                <div class="absolute top-0 left-0 w-full h-5 bg-verdeagua block z-10"></div>
+            <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro  bg-indicadores bg-[center_bottom] bg-contain bg-no-repeat pt-28">
+                <div class="absolute w-full top-0 right-0 h-[500px] z-[-1] bg-[right_top] bg-indicadorestop bg-[length:auto_220px] md:bg-[length:auto_380px] 2xl:bg-[length:auto_498px] bg-no-repeat"></div>
+                <div class="absolute top-0 left-0 w-full h-5 bg-verdemedio block z-10"></div>
                 <div class="container">
 
                     <h1 class="text-verdehamb text-[58px] xl:text-[68px] 2xl:text-[92px] leading-none">Indicadores<br>estratégicos</h1>

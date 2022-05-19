@@ -228,6 +228,7 @@
 
     .swiper {
         @apply w-full
+        h-[580px]
         lg:h-[750px]
         xl:h-[850px]
         2xl:h-[890px];
@@ -235,13 +236,18 @@
 
     .swiper-slide {
         @apply bg-red-400 w-full 
+        h-[580px]
         lg:h-[750px]
         xl:h-[850px]
         2xl:h-[890px];
     }
 
     .swiper-col-left {
-        @apply relative col-span-8 rounded-[70px] rounded-tr-[240px] pr-[130px] pt-32
+        @apply relative col-span-11 md:col-span-8 lg:col-span-8 
+        rounded-[20px] rounded-tr-[80px] pr-[30px] pt-14
+        md:pr-28
+        lg:rounded-[70px] lg:rounded-tr-[240px] lg:pr-[130px] lg:pt-32
+        h-[580px]
         lg:h-[750px]
         xl:h-[850px] xl:pr-40
         2xl:h-[890px] 2xl:pr-[200px];
@@ -249,15 +255,16 @@
 
     .btnSwiperNext {
         @apply absolute bg-amarelolimao2 bg-arrowSwiperNext bg-no-repeat hover:bg-white flex justify-center items-center  transition-all duration-300 cursor-pointer
-        right-8 top-2/4 z-30
-        rounded-[17px] 
+        -right-8 md:right-6 lg:right-8 top-2/4 z-30
+        rounded-xl lg:rounded-[17px] 
         bg-[length:50%_auto]
+        w-14 h-14 bg-[left_0.55rem_center]
         lg:w-[90px] lg:h-[90px] lg:bg-[left_1rem_center]
         xl:w-[120px] xl:h-[120px] xl:bg-[left_1.5rem_center];
     }
 
     .titleSlideDef {
-        @apply text-white font-gotham_bold leading-none lg:text-4xl xl:text-[43px] 2xl:text-[48px] 2xl:leading-[1em] mb-6;
+        @apply text-white font-gotham_bold leading-tight lg:leading-none text-xl lg:text-4xl xl:text-[43px] 2xl:text-[48px] 2xl:leading-[1em] mb-6;
     }
 
     .paragSlideDef {
@@ -277,11 +284,11 @@
     }
 
     .startTopics {
-        @apply relative font-gotham_medium text-white text-lg xl:text-[22px] 2xl:text-[24px] leading-tight pl-6 ml-4;
+        @apply relative font-gotham_medium text-white text-[15px] md:text-base lg:text-lg xl:text-[22px] 2xl:text-[24px] leading-tight pl-4 lg:pl-6 lg:ml-4;
 
         &::before {
             content: "";
-            @apply absolute -left-[2px] top-2 w-3 h-3 bg-white block rounded-full;
+            @apply absolute -left-[2px] top-1 w-2 h-2 lg:top-2 lg:w-3 lg:h-3 bg-white block rounded-full;
         }
 
         span {
@@ -290,17 +297,25 @@
     }
 
     .defaultSusTopics {
-        @apply ml-20 mt-10 relative;
+        @apply ml-12 lg:ml-20 mt-5 lg:mt-10 relative;
         li {
-            @apply font-gotham_medium text-lg xl:text-xl 2xl:text-[25px] text-white leading-[1.2em] mb-8 2xl:mb-6 relative;
+            @apply font-gotham_book lg:font-gotham_medium text-[14px] lg:text-lg xl:text-xl 2xl:text-[25px] text-white leading-[1.2em] mb-4 lg:mb-8 2xl:mb-6 relative;
 
             &::before {
                 content: "";
-                @apply absolute -left-[60px] top-2 bg-listSusItem bg-no-repeat bg-left bg-[length:47px_auto] w-[48px] h-2 z-[2];
+                @apply absolute 
+                top-1 lg:top-2 
+                -left-4 lg:-left-[60px] 
+                rounded-full lg:rounded-none
+                bg-white lg:bg-transparent
+                lg:bg-listSusItem lg:bg-no-repeat lg:bg-left lg:bg-[length:47px_auto] 
+                w-[6px] lg:w-[48px] 
+                h-[6px] lg:h-2 
+                z-[2];
             }
 
             span {
-                @apply font-gotham_bold text-[22px] xl:text-[25px] 2xl:text-[32px] text-amarelopastel;
+                @apply font-gotham_bold text-[15px] lg:text-[22px] xl:text-[25px] 2xl:text-[32px] text-amarelopastel;
             }
         }
     }
@@ -320,14 +335,15 @@
     .predio {
         @apply absolute
         bottom-0  
-        hidden lg:block                           
+        hidden md:block   
+        md:w-[420px] md:-right-2                        
         lg:w-[540px] lg:right-2
         xl:w-[660px] xl:right-2
         2xl:w-[690px] 2xl:right-14;
     }
 
     .illustracao {
-        @apply absolute z-10 hidden lg:block;
+        @apply absolute z-10 hidden md:block;
     }
 
     .indicadores {
