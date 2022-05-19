@@ -1603,6 +1603,26 @@ header .navbar-burger.is-active span:nth-child(3) {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -2659,6 +2679,11 @@ header .navbar-burger.is-active span:nth-child(3) {
     grid-column: span 6 / span 6;
   }
 
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2849,6 +2874,18 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 100px;
   }
 
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+
+  .md\:text-\[50px\] {
+    font-size: 50px;
+  }
+
   .md\:leading-none {
     line-height: 1;
   }
@@ -2926,6 +2963,21 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .lg\:mb-14 {
@@ -3188,6 +3240,26 @@ header .navbar-burger.is-active span:nth-child(3) {
   .lg\:text-\[22px\] {
     font-size: 22px;
   }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .lg\:text-\[29px\] {
+    font-size: 29px;
+  }
+
+  .lg\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .lg\:text-\[15px\] {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -3223,6 +3295,16 @@ header .navbar-burger.is-active span:nth-child(3) {
   .xl\:my-\[66px\] {
     margin-top: 66px;
     margin-bottom: 66px;
+  }
+
+  .xl\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .xl\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .xl\:mb-\[38px\] {
@@ -3419,6 +3501,18 @@ header .navbar-burger.is-active span:nth-child(3) {
   .xl\:text-\[24px\] {
     font-size: 24px;
   }
+
+  .xl\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .xl\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .xl\:text-\[19px\] {
+    font-size: 19px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -3450,6 +3544,11 @@ header .navbar-burger.is-active span:nth-child(3) {
   .\32xl\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+  }
+
+  .\32xl\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .\32xl\:mt-10 {
@@ -3642,6 +3741,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .\32xl\:text-\[24px\] {
     font-size: 24px;
+  }
+
+  .\32xl\:text-\[46px\] {
+    font-size: 46px;
   }
 
   .\32xl\:leading-none {
