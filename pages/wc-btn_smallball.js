@@ -29,7 +29,7 @@ class SmallButtonNegociosElement extends HTMLElement {
         }
 
         this.innerHTML = `
-                <div class="group cursor-pointer hover:translate-x-4 w-[73px] h-[73px] rounded-full flex justify-center items-center border-[3px] border-verdemedio hover:border-verdehamb transition-all duration-300">
+                <div class="group cursor-pointer hover:md:translate-y-4 hover:xl:translate-x-4 hover:xl:translate-y-0 w-[73px] h-[73px] rounded-full flex justify-center items-center border-[3px] border-verdemedio hover:border-verdehamb transition-all duration-300">
                     ${icon}
                 </div>            
                 `;
