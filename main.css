@@ -439,4 +439,18 @@
         overflow-x: hidden;
         overflow-y: visible !important;
     }
+
+    .ttinitial {
+        @apply absolute left-1/2;
+    }
+}
+
+.tippy-box[data-theme~="hoac"] {
+    background-color: white;
+    border-radius: 24px;
+    color: #003b4e;
+    font-size: 16px;
+    padding: 16px;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(123, 220, 224, 0.35);
 }

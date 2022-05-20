@@ -71,8 +71,15 @@
         navigation: {
             nextEl: '.btnSwiperNext',
         }
-      });
+    });
 
+    tippy('[data-tippy-content]', {
+        arrow: false,
+        trigger: "click",
+        hideOnClick: true,
+        theme: 'hoac',
+        allowHTML: true
+    });
     
 })(jQuery);
 

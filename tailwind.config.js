@@ -55,6 +55,10 @@ module.exports = {
                 indicadores: "url('../backgrounds/indicadores.jpg')",
                 lideranca: "url('../backgrounds/lideranca.jpg')",
                 indicadorestop: "url('../backgrounds/indicadores-top.jpg')",
+                modelos: "url('../backgrounds/modelo.svg')",
+                modelofinal: "url('../backgrounds/modelo-final.svg')",
+                modelofinallg: "url('../backgrounds/modelo-final-lg.svg')",
+                modelofinalxs: "url('../backgrounds/modelo-final-xs.svg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',
