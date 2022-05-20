@@ -2016,9 +2016,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .max-w-\[120vw\] {
   max-width: 120vw;
 }
-.shrink {
-  flex-shrink: 1;
-}
 .flex-grow {
   flex-grow: 1;
 }
@@ -2171,18 +2168,6 @@ header .navbar-burger.is-active span:nth-child(3) {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-.rounded-l-\[20px\] {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.rounded-l-\[40px\] {
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-}
-.rounded-l-\[48px\] {
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
-}
 .rounded-l-\[50px\] {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -2205,9 +2190,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .border-b-\[30px\] {
   border-bottom-width: 30px;
 }
-.border-l-\[20px\] {
-  border-left-width: 20px;
-}
 .border-btnStartBorder {
   border-color: rgba(112,112,112,0.56);
 }
@@ -2219,17 +2201,9 @@ header .navbar-burger.is-active span:nth-child(3) {
   --tw-border-opacity: 1;
   border-color: rgb(21 58 76 / var(--tw-border-opacity));
 }
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
 .border-verdemedio {
   --tw-border-opacity: 1;
   border-color: rgb(0 120 137 / var(--tw-border-opacity));
-}
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 .border-l-verdeaguaclaro {
   --tw-border-opacity: 1;
@@ -2460,10 +2434,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .fill-white {
   fill: #fff;
 }
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2641,6 +2611,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .text-\[22px\] {
   font-size: 22px;
+}
+.text-\[16px\] {
+  font-size: 16px;
 }
 .text-\[14px\] {
   font-size: 14px;
@@ -3369,6 +3342,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     margin-top: 0px;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .lg\:mt-36 {
     margin-top: 9rem;
   }
@@ -3642,6 +3619,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 52px;
   }
 
+  .lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
   .lg\:text-\[15px\] {
     font-size: 15px;
   }
@@ -3660,10 +3641,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:text-\[34px\] {
     font-size: 34px;
-  }
-
-  .lg\:text-\[22px\] {
-    font-size: 22px;
   }
 }
 
@@ -4089,10 +4066,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .\32xl\:top-44 {
     top: 11rem;
-  }
-
-  .\32xl\:-right-\[18\.5em\] {
-    right: -18.5em;
   }
 
   .\32xl\:col-span-7 {
