@@ -46,15 +46,18 @@ module.exports = {
                 bolinhashorizontal: "url('../svgs/bg-bolinhas-horizontal.svg')",
                 pontilhadoPalavraLideranca: "url('../svgs/pontilhado-palavra.svg')",
                 arrowSwiperNext: "url('../svgs/arrow-swipernext.svg')",
+                arrowSwiperCovid: "url('../svgs/arrow-slidecovid19.svg')",
                 listSusItem: "url('../svgs/itemlistsus.svg')",
                 nossasUnidades1: "url('../imgs/nossas-unidades1.jpg')",
                 pontilhadoInvestimentos: "url('../svgs/pontilhado-investimentos.svg')",
-
+                
                 sumario: "url('../backgrounds/sumario.jpg')",
                 investimentos: "url('../backgrounds/investimentos.jpg')",
+                nossasunidades: "url('../backgrounds/nossas-unidades.jpg')",
                 indicadores: "url('../backgrounds/indicadores.jpg')",
                 lideranca: "url('../backgrounds/lideranca.jpg')",
                 indicadorestop: "url('../backgrounds/indicadores-top.jpg')",
+                covid19: "url('../backgrounds/covid19.jpg')",
                 modelos: "url('../backgrounds/modelo.svg')",
                 modelofinal: "url('../backgrounds/modelo-final.svg')",
                 modelofinallg: "url('../backgrounds/modelo-final-lg.svg')",
@@ -69,6 +72,7 @@ module.exports = {
             },
             boxShadow: {
                 indicadoresbox: '0px 5px 9px 1px rgba(0,59,78,0.22)',
+                covid19box: '0px 5px 15px rgba(123, 220, 224, 0.35)',
             },
             zIndex: {
                 '100': '100',
