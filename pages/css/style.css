@@ -1595,11 +1595,11 @@ header .navbar-burger.is-active span:nth-child(3) {
 .top-0 {
   top: 0px;
 }
-.left-0 {
-  left: 0px;
-}
 .left-1\/2 {
   left: 50%;
+}
+.left-0 {
+  left: 0px;
 }
 .right-4 {
   right: 1rem;
@@ -1649,11 +1649,17 @@ header .navbar-burger.is-active span:nth-child(3) {
 .left-\[34px\] {
   left: 34px;
 }
+.top-20 {
+  top: 5rem;
+}
 .-top-\[4\.5rem\] {
   top: -4.5rem;
 }
 .-left-\[42px\] {
   left: -42px;
+}
+.z-100 {
+  z-index: 100;
 }
 .z-40 {
   z-index: 40;
@@ -1822,8 +1828,11 @@ header .navbar-burger.is-active span:nth-child(3) {
 .ml-10 {
   margin-left: 2.5rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+.mt-36 {
+  margin-top: 9rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -1852,6 +1861,12 @@ header .navbar-burger.is-active span:nth-child(3) {
 .mr-\[3px\] {
   margin-right: 3px;
 }
+.ml-20 {
+  margin-left: 5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .block {
   display: block;
 }
@@ -1866,6 +1881,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .hidden {
   display: none;
+}
+.h-\[100px\] {
+  height: 100px;
 }
 .h-20 {
   height: 5rem;
@@ -1911,11 +1929,8 @@ header .navbar-burger.is-active span:nth-child(3) {
   height: -moz-fit-content;
   height: fit-content;
 }
-.h-\[120px\] {
-  height: 120px;
-}
-.h-\[80\%\] {
-  height: 80%;
+.h-\[30vw\] {
+  height: 30vw;
 }
 .h-14 {
   height: 3.5rem;
@@ -1929,11 +1944,20 @@ header .navbar-burger.is-active span:nth-child(3) {
 .h-\[73px\] {
   height: 73px;
 }
+.h-\[120px\] {
+  height: 120px;
+}
+.h-\[80\%\] {
+  height: 80%;
+}
 .min-h-screen {
   min-height: 100vh;
 }
 .w-full {
   width: 100%;
+}
+.w-px {
+  width: 1px;
 }
 .w-\[160px\] {
   width: 160px;
@@ -1955,9 +1979,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .w-\[230px\] {
   width: 230px;
-}
-.w-px {
-  width: 1px;
 }
 .w-\[280px\] {
   width: 280px;
@@ -2016,15 +2037,18 @@ header .navbar-burger.is-active span:nth-child(3) {
 .max-w-\[120vw\] {
   max-width: 120vw;
 }
+.shrink {
+  flex-shrink: 1;
+}
 .flex-grow {
   flex-grow: 1;
 }
-.-translate-y-10 {
-  --tw-translate-y: -2.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-10 {
+  --tw-translate-y: -2.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-translate-x-1 {
@@ -2201,6 +2225,10 @@ header .navbar-burger.is-active span:nth-child(3) {
   --tw-border-opacity: 1;
   border-color: rgb(21 58 76 / var(--tw-border-opacity));
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-verdemedio {
   --tw-border-opacity: 1;
   border-color: rgb(0 120 137 / var(--tw-border-opacity));
@@ -2220,6 +2248,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 .border-l-verdeagua {
   --tw-border-opacity: 1;
   border-left-color: rgb(51 118 134 / var(--tw-border-opacity));
+}
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -2434,6 +2466,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 .fill-white {
   fill: #fff;
 }
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2612,9 +2648,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .text-\[22px\] {
   font-size: 22px;
 }
-.text-\[16px\] {
-  font-size: 16px;
-}
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -2626,6 +2659,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .text-\[64px\] {
   font-size: 64px;
+}
+.text-\[16px\] {
+  font-size: 16px;
 }
 .font-extralight {
   font-weight: 200;
@@ -2978,6 +3014,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -3000,6 +3040,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .md\:h-\[1078px\] {
     height: 1078px;
+  }
+
+  .md\:h-\[20vw\] {
+    height: 20vw;
   }
 
   .md\:h-16 {
@@ -3342,10 +3386,6 @@ header .navbar-burger.is-active span:nth-child(3) {
     margin-top: 0px;
   }
 
-  .lg\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
   .lg\:mt-36 {
     margin-top: 9rem;
   }
@@ -3366,12 +3406,16 @@ header .navbar-burger.is-active span:nth-child(3) {
     margin-left: -30vw;
   }
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
-  }
-
   .lg\:mt-32 {
     margin-top: 8rem;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:block {
@@ -3581,6 +3625,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     padding-top: 0.5rem;
   }
 
+  .lg\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -3619,10 +3667,6 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 52px;
   }
 
-  .lg\:text-\[22px\] {
-    font-size: 22px;
-  }
-
   .lg\:text-\[15px\] {
     font-size: 15px;
   }
@@ -3641,6 +3685,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:text-\[34px\] {
     font-size: 34px;
+  }
+
+  .lg\:text-\[22px\] {
+    font-size: 22px;
   }
 }
 
@@ -3796,12 +3844,12 @@ header .navbar-burger.is-active span:nth-child(3) {
     height: 120px;
   }
 
-  .xl\:h-\[140px\] {
-    height: 140px;
-  }
-
   .xl\:h-20 {
     height: 5rem;
+  }
+
+  .xl\:h-\[140px\] {
+    height: 140px;
   }
 
   .xl\:w-\[360px\] {
@@ -4066,6 +4114,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .\32xl\:top-44 {
     top: 11rem;
+  }
+
+  .\32xl\:-right-\[18\.5em\] {
+    right: -18.5em;
   }
 
   .\32xl\:col-span-7 {
