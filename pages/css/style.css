@@ -806,6 +806,16 @@ header .navbar-burger.is-active span:nth-child(3) {
     height: 890px;
   }
 }
+.swiperCard {
+  height: 375px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+
+  .swiperCard {
+    height: 750px;
+  }
+}
 .swiper-slide {
   height: 580px;
   width: 100%;
@@ -828,6 +838,21 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .swiper-slide {
     height: 890px;
+  }
+}
+.swiperCard-slide {
+  height: 370px;
+  width: 100%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+@media (min-width: 1024px) {
+
+  .swiperCard-slide {
+    height: 725px;
   }
 }
 .swiper-col-left {
@@ -1587,10 +1612,6 @@ header .navbar-burger.is-active span:nth-child(3) {
   margin-left: auto;
   margin-right: auto;
 }
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1794,9 +1815,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .w-2\/3 {
   width: 66.666667%;
-}
-.w-\[90vw\] {
-  width: 90vw;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -2350,6 +2368,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .text-\[28px\] {
   font-size: 28px;
 }
+.text-\[100px\] {
+  font-size: 100px;
+}
 .text-\[36px\] {
   font-size: 36px;
 }
@@ -2361,9 +2382,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .text-\[14px\] {
   font-size: 14px;
-}
-.text-\[16px\] {
-  font-size: 16px;
 }
 .text-\[25px\] {
   font-size: 25px;
@@ -2659,6 +2677,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     width: 2rem;
   }
 
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2785,12 +2807,12 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 16px;
   }
 
-  .md\:text-\[30px\] {
-    font-size: 30px;
-  }
-
   .md\:text-\[50px\] {
     font-size: 50px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
   }
 
   .md\:text-\[19px\] {
@@ -3138,16 +3160,16 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 52px;
   }
 
-  .lg\:text-\[18px\] {
-    font-size: 18px;
-  }
-
   .lg\:text-\[15px\] {
     font-size: 15px;
   }
 
   .lg\:text-\[29px\] {
     font-size: 29px;
+  }
+
+  .lg\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .lg\:text-\[20px\] {
@@ -3382,12 +3404,12 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 64px;
   }
 
-  .xl\:text-\[20px\] {
-    font-size: 20px;
-  }
-
   .xl\:text-\[38px\] {
     font-size: 38px;
+  }
+
+  .xl\:text-\[20px\] {
+    font-size: 20px;
   }
 
   .xl\:text-\[22px\] {
@@ -3619,12 +3641,12 @@ header .navbar-burger.is-active span:nth-child(3) {
     font-size: 38px;
   }
 
-  .\32xl\:text-\[24px\] {
-    font-size: 24px;
-  }
-
   .\32xl\:text-\[46px\] {
     font-size: 46px;
+  }
+
+  .\32xl\:text-\[24px\] {
+    font-size: 24px;
   }
 
   .\32xl\:leading-none {

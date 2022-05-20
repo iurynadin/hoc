@@ -234,12 +234,28 @@
         2xl:h-[890px];
     }
 
+    .swiperCard {
+        @apply w-full
+        h-[375px]
+        lg:h-[750px]
+        /* xl:h-[750px] */
+        /* 2xl:h-[716px]; */
+    }
+
     .swiper-slide {
         @apply bg-red-400 w-full 
         h-[580px]
         lg:h-[750px]
         xl:h-[850px]
         2xl:h-[890px];
+    }
+
+    .swiperCard-slide {
+        @apply bg-red-400 w-full border border-black
+        h-[370px]
+        lg:h-[725px]
+        /* xl:h-[850px]
+        2xl:h-[890px]; */
     }
 
     .swiper-col-left {
