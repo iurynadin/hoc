@@ -16,7 +16,6 @@
     <body class="w-full">
         <!-- Sómente para identificar breakpoint. Remover em produção -->
         <div class="bpvisor"><p></p></div>
-        <div class="fixed w-px h-[100px] bg-red-600 z-100 top-0 left-1/2 -translate-x-1/2"></div>
 
         <header class="fixed top-0 left-0 w-full h-20 bg-white shadow-xl z-40 flex flex-row justify-between items-center px-4 xl:px-10">
             <div class="flex flex-row items-center gap-x-4 h-full">
@@ -924,7 +923,7 @@
 
 
             <!-- Covid-19, ano dois -->
-            <section id="covid-19" class="relative border-l-[12px] border-l-verdeescuro bg-white md:bg-covid19 bg-no-repeat bg-[right_bottom] bg-[length:80%_auto] xl:bg-[length:90%_auto] pt-28 pb-10 md:pb-20 lg:pb-40">
+            <section id="covid-19" class="relative border-l-[12px] border-l-verdeescuro bg-white md:bg-covid19 bg-no-repeat bg-[right_bottom] bg-[length:80%_auto] xl:bg-[length:90%_auto] pt-28 pb-10 md:pb-20">
                 <div class="container relative">
                     <h1 class="text-verdehamb text-[42px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Covid-19, ano dois</h1>
                 </div>
@@ -1017,7 +1016,7 @@
 
 
             <!-- Desempenho em indicadores e taxas -->
-            <section id="desempenho" class="relative border-l-[12px] border-l-verdeagua bg-gradient-to-b from-white via-white to-[#0079892f] pt-24 md:pt-28">
+            <section id="desempenho" class="relative border-l-[12px] border-l-verdeagua bg-gradient-to-b from-white via-white to-[#0079892f] pt-24 md:pt-20">
                 <div class="container">
                     <h1 class="md:mb-14 font-gotham_extra_light text-[#00b1bb]  text-[36px] md:text-[40px] lg:text-[52px] xl:text-[64px] 2xl:text-[77px] leading-none">Desempenho em<br /> indicadores e taxas</h1>
                     <div class="relative w-2/3 md:w-1/2 h-2 flex justify-end my-10 md:my-20">
@@ -1284,15 +1283,13 @@
                 </div>
             </section>
 
-
-            <div class="relative h-[30vw] md:h-[20vw] border-l-[12px] border-amarelolimao bg-gradient-to-t from-[#007789f8] to-[#00798930]">
-                <img class="absolute top-20 left-0" src="./svgs/onda-pontilhada-vd-dir.svg" alt="">
-                
+            <div class="relative h-[120px] xl:h-[140px] 2xl:h-[200px] border-l-[12px] border-amarelolimao bg-gradient-to-t from-[#007789f8] to-[#00798930] flex justify-center items-center">
+                <div class="w-full h-[80%] bg-pontilhadoInvestimentos bg-bottom lg:bg-center bg-[length:auto_100%] bg-no-repeat"></div>
             </div>
 
 
             <!-- Educação, Pesquisa, Inovação e Saúde Digital -->
-            <section id="educacao" class="z-0 relative border-l-[12px] border-b-[30px] border-amarelolimao ">
+            <section id="educacao" class="z-0 relative border-l-[12px] border-b-[30px] border-amarelolimao pt-20 ">
                 
                 <img class="absolute object-cover -z-10 top-0 left-0 w-full h-full" src="./imgs/bg-episd.png" alt="">
                 <div class="container">
@@ -1351,10 +1348,10 @@
             <!-- Sustentabilidade e Responsabilidade Social -->
             <section id="sustentabilidade" class="relative z-0 overflow-hidden border-l-[12px] border-l-verdeescuro bg-white pt-28">
                 <div class="container">
-                    <h1 class="mb-14 font-gotham_extra_light text-[#00b1bb]  text-[36px] md:text-[40px] lg:text-[52px] xl:text-[64px] 2xl:text-[77px] leading-none">Sustentabilidade e<br /> Responsabilidade Social</h1>
+                    <h1 class="mb-8 lg:mb-14 font-gotham_extra_light text-[#00b1bb]  text-[36px] md:text-[40px] lg:text-[52px] xl:text-[64px] 2xl:text-[77px] leading-none">Sustentabilidade e<br /> Responsabilidade Social</h1>
                     <img class="absolute left-0 w-[80%] md:w-[60%]" src="./imgs/pontilhado-vd.png" />
 
-                    <div class="relative mt-36 pb-5 mx-auto lg:w-full xl:w-[80%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative mt-14 lg:mt-36 pb-5 mx-auto lg:w-full xl:w-[80%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
                         <div class="flex flex-col w-[80%] items-left justify-between font-gotham_light  text-[15px] md:text-[19px] lg:text-[20px] xl:text-[22px] text-verdemedio">
                             <div class="font-gotham_book  text-[28px] xl:text-[42px] text-verdehamb">Responsabilidade Social<br /><span class="mt-10 font-gotham text-[14px] md:text-[17px] xl:text-[20px] text-verdemedio uppercase">proadi-sus</span></div>
                             <div>
@@ -1388,13 +1385,19 @@
                             <div class="mt-3">O coeficiente de mortalidade neonatal da cidade de Santos (SP) passou de 3,5% em 2020 para 2,2% em 2021 (melhora de 38%). Reforçando o seu compromisso com a qualidade da assistência neonatal, o Instituto Social Hospital Alemão Oswaldo Cruz aderiu à Aliança Nacional pelo Parto Seguro e Respeitoso.</div>
                         </div>
                     </div>
-                    <div class="relative mt-36 pb-5 mx-auto lg:w-full xl:w-[80%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
-                        <img class="absolute object-cover -top-[4.5rem] lg:-top-[6vw] md:-ml-[40vw] lg:-left-[3.5vw]  -ml-[30vw] lg:-ml-[30vw] w-[200vw] max-w-[200vw] lg:w-[150vw] lg:max-w-[150vw] xl:w-[150vw] xl:max-w-[150vw] 2xl:w-[130vw] 2xl:max-w-[130vw]" src="./svgs/onda-pontilhada-vd-esq.svg">
+
+                    <div class="relative mt-10 lg:mt-36 pb-5 mx-auto lg:w-full xl:w-[80%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
+                        
+                        <!-- <img class="absolute object-cover -top-[4.5rem] lg:-top-[6vw] md:-ml-[40vw] lg:-left-[3.5vw]  -ml-[30vw] lg:-ml-[30vw] w-[200vw] max-w-[200vw] lg:w-[150vw] lg:max-w-[150vw] xl:w-[150vw] xl:max-w-[150vw] 2xl:w-[130vw] 2xl:max-w-[130vw]" src="./svgs/onda-pontilhada-vd-esq.svg"> -->
+
+                        <div class="relative z-[2] full-width h-[80px] lg:h-[100px] xl:h-[120px] 2xl:h-[142px] bg-pontilhadoInvestimentos bg-[70%_top] lg:bg-center bg-[length:auto_100%] bg-no-repeat mt-12 mb-8 lg:mt-0">
+                        </div>
+
                         <div class="col-span-1 lg:col-span-2"><div class="font-gotham_book  text-[28px] xl:text-[42px] text-verdehamb">Meio-ambiente e Eficiência</div></div>
-                        <div class="flex flex-col w-full lg:w-[80%] items-left font-gotham_light  text-[25px] md:text-[30px] lg:text-[34px]  2xl:text-[40px] text-verdemedio">
+                        <div class="flex flex-col w-full lg:w-[80%] items-left font-gotham_light  text-[25px] md:text-[30px] lg:text-[34px] 2xl:text-[40px] text-verdemedio">
 
                             <div>
-                                <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/certificado.svg" />
+                                <img class="mt-10 lg:mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/certificado.svg" />
                             </div>
                             <div class="mt-3">Início da estruturação, com base na <span class="font-gotham_bold text-amarelolimao3">ISO 14000</span>, do Sistema de Gestão Ambiental.</div>
                             <div>

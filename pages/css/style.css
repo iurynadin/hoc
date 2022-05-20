@@ -1864,6 +1864,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 .ml-20 {
   margin-left: 5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .block {
   display: block;
 }
@@ -1940,6 +1943,12 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .h-\[73px\] {
   height: 73px;
+}
+.h-\[120px\] {
+  height: 120px;
+}
+.h-\[80\%\] {
+  height: 80%;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -2431,6 +2440,9 @@ header .navbar-burger.is-active span:nth-child(3) {
 }
 .bg-\[right_bottom\] {
   background-position: right bottom;
+}
+.bg-\[70\%_top\] {
+  background-position: 70% top;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -3181,6 +3193,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     padding-bottom: 5rem;
   }
 
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .md\:text-\[72px\] {
     font-size: 72px;
   }
@@ -3392,6 +3408,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:block {
@@ -3824,6 +3844,10 @@ header .navbar-burger.is-active span:nth-child(3) {
     height: 5rem;
   }
 
+  .xl\:h-\[140px\] {
+    height: 140px;
+  }
+
   .xl\:w-\[360px\] {
     width: 360px;
   }
@@ -4160,6 +4184,10 @@ header .navbar-burger.is-active span:nth-child(3) {
 
   .\32xl\:h-\[142px\] {
     height: 142px;
+  }
+
+  .\32xl\:h-\[200px\] {
+    height: 200px;
   }
 
   .\32xl\:w-\[500px\] {
