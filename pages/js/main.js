@@ -56,7 +56,7 @@
     );
 
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiperHoc', {
         direction: 'horizontal',
         effect: 'fade',
         fadeEffect: {
@@ -70,6 +70,21 @@
         },
         navigation: {
             nextEl: '.btnSwiperNext',
+        }
+    });
+
+    const swiper19 = new Swiper(".swiperCovid19", {
+        slidesPerView: "auto",
+        direction: 'horizontal',
+        spaceBetween: 30,
+        grabCursor: true,
+        rewind: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.btnSwiperCovid',
         }
     });
 

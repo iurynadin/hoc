@@ -226,28 +226,22 @@
         }
     }
 
-    .swiper {
-        @apply w-full
-        h-[580px]
-        lg:h-[750px]
-        xl:h-[850px]
-        2xl:h-[890px];
-    }
+    #oswaldo-cruz {
+        .swiper {
+            @apply w-full
+            h-[580px]
+            lg:h-[750px]
+            xl:h-[850px]
+            2xl:h-[890px];
+        }
 
-    .swiperCard {
-        @apply w-full
-        h-[375px]
-        lg:h-[750px]
-        /* xl:h-[750px] */
-        /* 2xl:h-[716px]; */
-    }
-
-    .swiper-slide {
-        @apply bg-red-400 w-full 
-        h-[580px]
-        lg:h-[750px]
-        xl:h-[850px]
-        2xl:h-[890px];
+        .swiper-slide {
+            @apply w-full 
+            h-[580px]
+            lg:h-[750px]
+            xl:h-[850px]
+            2xl:h-[890px];
+        }
     }
 
     .swiperCard-slide {
@@ -255,7 +249,7 @@
         h-[370px]
         lg:h-[725px]
         /* xl:h-[850px]
-        2xl:h-[890px]; */
+        2xl:h-[890px]; */;
     }
 
     .swiper-col-left {
@@ -277,6 +271,36 @@
         w-14 h-14 bg-[left_0.55rem_center]
         lg:w-[90px] lg:h-[90px] lg:bg-[left_1rem_center]
         xl:w-[120px] xl:h-[120px] xl:bg-[left_1.5rem_center];
+    }
+
+    #covid-19 {
+        .swiperCovid19 {
+            @apply h-auto;
+        }
+
+        .swiper-slide {
+            @apply w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[640px] h-full;
+        }
+
+        .btnSwiperCovid {
+            @apply w-20 h-20 bg-amarelolimao2 rounded-full flex justify-center items-center bg-arrowSwiperCovid bg-no-repeat bg-center absolute top-1/2 -translate-y-1/2 right-10 z-100;
+        }
+
+        .swiperBox {
+            @apply rounded-[30px] xl:rounded-[40px] bg-white shadow-covid19box p-6 xl:p-10;
+
+            &__imgcover {
+                @apply w-full xl:h-[200px] 2xl:h-[280px] rounded-[15px] xl:rounded-[20px] overflow-hidden mb-4 xl:mb-6 2xl:mb-8;
+            }
+
+            h3 {
+                @apply uppercase font-gotham_bold text-base lg:text-lg 2xl:text-xl text-verdemedio mb-2 2xl:mb-5;
+            }
+
+            p {
+                @apply font-gotham_light text-cinza text-base xl:text-lg 2xl:text-[22px];
+            }
+        }
     }
 
     .titleSlideDef {
