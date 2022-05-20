@@ -2338,9 +2338,6 @@ header .navbar-burger.is-active span:nth-child(3) {
 .bg-pontilhadoInvestimentos {
   background-image: url('../svgs/pontilhado-investimentos.svg');
 }
-.bg-covid19 {
-  background-image: url('../backgrounds/covid19.jpg');
-}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
