@@ -120,7 +120,7 @@
             @apply lg:h-full;
         }
         nav .bgTopNav.is-active {
-            @apply h-[580px] 2xl:h-[820px] lg:rounded-3xl;
+            @apply h-[624px] 2xl:h-[820px] lg:rounded-3xl rounded-b-2xl;
         }
 
         nav.topNav.is-active {

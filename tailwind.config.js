@@ -15,7 +15,7 @@ module.exports = {
                 amarelopastel: "#eaff90",
                 verdeagua: "#337686",
                 verdeaguaclaro: "#50aeb9",
-                verdehamb: "#00b2bb",
+                verdehamb: "#00B2BB",
                 verdemedio: "#007889",
                 verdeescuro: "#153a4c",
                 azulescuro: "#003B4E",
@@ -36,6 +36,9 @@ module.exports = {
             boxShadow: {
                 saibaMaisRosa1: "0px 0px 10px 2px rgba(152, 27, 27, 0.5)",
             },
+            width: {
+                fullwidthNav: "calc(100% + 3.5rem)",
+            },
             aspectRatio: {
                 hero: '17 / 10',
                 hero2: '956 / 541',
@@ -52,6 +55,7 @@ module.exports = {
                 nossasUnidades1: "url('../imgs/nossas-unidades1.jpg')",
                 nossasUnidades2: "url('../imgs/nossas-unidades2.jpg')",
                 pontilhadoInvestimentos: "url('../svgs/pontilhado-investimentos.svg')",
+                navpontilhado: "url('../svgs/nav-pontilhado.svg')",
                 
                 sumario: "url('../backgrounds/sumario.jpg')",
                 investimentos: "url('../backgrounds/investimentos.jpg')",
