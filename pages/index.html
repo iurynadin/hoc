@@ -67,13 +67,24 @@
 
             <!-- Home/Hero -->
             <section class="home w-full bg-verdeagua bg-hero bg-center bg-no-repeat bg-cover" id="home">
-                <div class="container h-screen flex justify-end items-center text-right">
-                    <h1 class="text-5xl md:text-[72px] xl:text-[100px] leading-none md:translate-y-14 2xl:translate-y-32">
-                        <span class="text-white">Relatório<br>Integrado</span><br>
-                        <span class="text-amarelolimao2 font-gotham_bold">2021</span>
-                    </h1>
+                <div class="container h-screen flex flex-col justify-center items-end text-right">
+                    <div class="relative z-[5]">
+                        <h1 class="text-5xl md:text-[58px] xl:text-[72px] leading-none lg:pt-10 xl:pt-20">
+                            <span class="text-white">Relatório<br>Integrado</span><br>
+                            <span class="text-amarelolimao2 font-gotham_bold">2021</span>
+                        </h1>
+                        <img src="./svgs/logo-hero.svg" class="w-[230px] md:w-[270px] xl:w-[340px]" alt="">
+                    </div>
+
+                    <!-- texturas -->
+                    <img src="./backgrounds/hero2-texture-top.png" class="h-[270px] absolute top-20 left-0 hidden sm:block z-[1] origin-top-left" id="textureTop" alt="">
+
+                    <img src="./backgrounds/hero2-texture-bottom.png" class="h-[338px] absolute bottom-0 left-0 z-[1] origin-bottom-left hidden sm:block" id="textureBottom" alt="">
+
+                    <div class="absolute w-full h-20 left-0 bottom-0 bg-gradient-to-t from-verdeagua to-verdeagua/0 z-[2]"></div>
+
                 </div>
-                <a href="#summary" class="group btnStart absolute w-20 h-20 border-2 border-btnStartBorder bg-btnStartFill hover:bg-btnStartHoverFill hover:border-btnStartFill hover:translate-y-3 hover: bottom-10 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center transition-all duration-300">
+                <a href="#summary" class="group btnStart absolute w-20 h-20 border-2 border-btnStartBorder bg-btnStartFill hover:bg-btnStartHoverFill hover:border-btnStartFill hover:translate-y-3 hover: bottom-10 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center transition-all duration-300 z-[5]">
                     <svg xmlns="http://www.w3.org/2000/svg" class="fill-verdehamb group-hover:fill-verdeescuro transition-all duration-300" width="28" height="51" viewBox="0 0 28 51"><text transform="translate(0 42)" font-size="43" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">↓</tspan></text></svg>
                 </a>
             </section>
@@ -159,12 +170,12 @@
                     <div class="h-full flex flex-col md:px-3 xl:px-6 2xl:px-10">
                         <div class="relative rounded-2xl 2xl:rounded-[20px] w-full xl:h-[420px] 2xl:h-[450px] overflow-hidden block mb-4">
                             <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-verdeescuro to-[rgba(51,118,134,0)] z-10"></div>
-                            <img src="./imgs/weber.jpg" class="h-full w-full object-cover object-bottom 2xl:object-center" alt="">
+                            <img src="./imgs/weber.jpg" class="h-full w-full object-cover object-center 2xl:object-center" alt="">
                         </div>
                         <div class="relative flex-grow flex flex-col justify-start md:justify-between">
-                            <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt="">
-                            <p class="pl-8 md:pl-0 mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">... iniciamos um trabalho de cultura mais intenso junto às lideranças do Hospital, a fim de dotá-las de senso e atitude de dono para com o negócio e a estratégia.”</p>
-                            <div class="w-full pl-8 md:pl-0">
+                            <!-- <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt=""> -->
+                            <p class="pl-0 mb-4 font-gotham_medium text-sm lg:text-base 2xl:text-xl text-azulescuro leading-tight">"No ano em que completamos 125 anos, temos como compromisso olhar para o futuro e continuar crescendo, sem perder a nossa essência: cuidar com excelência técnica e acolhimento"</p>
+                            <div class="w-full md:pt-6 lg:pt-20 pl-0">
                                 <p class="uppercase text-azulescuro font-gotham_bold text-sm md:text-base xl:text-lg 2xl:text-xl leading-tight">Weber Porto</p>
                                 <p class="text-sm xl:text-base 2xl:text-xl font-gotham_light text-cinza leading-tight">Presidente do Conselho Deliberativo</p>
                             </div>
@@ -177,9 +188,9 @@
                             <img src="./imgs/jose-marcelo.jpg" class="h-full w-full object-cover object-top" alt="">
                         </div>
                         <div class="relative flex-grow flex flex-col justify-start md:justify-between">
-                            <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt="">
-                            <p class="pl-8 md:pl-0 mb-4 font-gotham_book_italic text-sm lg:text-base 2xl:text-xl text-cinza leading-tight">Também temos como objetivo manter um olhar cada vez mais aguçado à jornada, às necessidades e às dores de nossos pacientes para oferecer os melhores desfechos clínicos e qualidade de vida aqueles que nos procuram e são nossa razão de existir.”</p>
-                            <div class="w-full pl-8 md:pl-0">
+                            <!-- <img src="./svgs/aspas.svg" class="absolute -top-1 left-0 md:-left-10 w-6 md:w-8 xl:-left-14 xl:w-10" alt=""> -->
+                            <p class="pl-0 mb-4 font-gotham_medium text-sm lg:text-base 2xl:text-xl text-azulescuro leading-tight">"Para alavancar nosso crescimento e consolidar o protagonismo do Hospital na saúde, estruturamos um novo ciclo do Planejamento Estratégico em 2021"</p>
+                            <div class="w-full pl-0">
                                 <p class="uppercase text-azulescuro font-gotham_bold text-sm md:text-base xl:text-lg 2xl:text-xl leading-tight">Dr. José Marcelo de Oliveira</p>
                                 <p class="text-sm xl:text-base 2xl:text-xl font-gotham_light text-cinza leading-tight">Diretor-presidente</p>
                             </div>
@@ -206,6 +217,7 @@
                                     <p class="font-gotham_light text-azulescuro text-base lg:text-xl 2xl:text-[30px] pr-4 lg:pr-28 xl:pr-0 leading-tight">Referência na América Latina, o Hospital Alemão Oswaldo Cruz construiu, ao longo dos seus quase 125 anos de história, uma tradição que combina a excelência em tratamento e  o acolhimento. A Instituição, que possui um corpo clínico renomado e uma das melhores assistências do país, conta com Modelo Assistencial próprio que coloca o paciente e o familiar no centro do cuidado</p>
 
                                     <div class="btnSwiperNext"></div>
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="pagination-inside pagination-green">
                                         <div class="relative">
                                             <div class="swiper-pagination"></div>
@@ -228,6 +240,7 @@
                                     <p class="topicsSlide2"><span>Atuação em parceria com a TriNetX</span> para acelerar a pesquisa clínica e a descoberta de terapias e tratamentos por meio de Real World Evidence</p>
                                     
 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -257,6 +270,7 @@
                                         </ul>
                                     </div>
                                 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -287,6 +301,7 @@
                                         </ul>
                                     </div>
                                 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -312,6 +327,7 @@
 
                                     <p class="paragSlideDef"><span>Estamos entre as Melhores Empresas</span> da Great Place to Work (GPTW)®. Conquistamos também os selos de Melhores Empresas  para Trabalhar da GPTW nos rankings Terceiro Setor e Gestão Saudável</p>
                                 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -335,6 +351,7 @@
 
                                     <p class="paragSlideDef"><span>Adotamos a inteligência artificial</span> para avaliar e prever a evolução do quadro clínico dos pacientes, possibilitando um cuidado ainda mais personalizado</p>
                                 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -360,6 +377,7 @@
 
                                     <p class="paragSlideDef"><span>Com uma área verde com 2 mil m²</span> repleta de árvores centenárias, a Unidade Paulista é o primeiro hospital no país a contar com sistema de gestão digital do patrimônio arbóreo. O espaço é usado para atividades físicas com os pacientes, além de visitas de pets</p>
                                 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -383,6 +401,7 @@
 
                                     <p class="paragSlideDef"><span>Mais de 12 mil profissionais</span> capacitados para o enfrentamento à Covid-19</p>
                                 
+                                    <div class="btnSwiperPrev"></div>
                                     <div class="btnSwiperNext"></div>
                                     <div class="pagination-inside">
                                         <div class="relative">
@@ -401,76 +420,114 @@
                 </div>
             </section>
 
-            <section class="relative w-full xl:bg-modelofinal xl:bg-[center_top_690px] bg-no-repeat bg-[length:1920px_1400px]">
-                
-                <!-- Nossas Unidades -->
-                <section id="nossas-unidades" class="relative border-l-[12px] border-verdeescuro bg-transparent pt-10 md:pt-28 pb-10 md:pb-0 lg:bg-nossasunidades lg:bg-no-repeat lg:bg-[right_top]">
-                    <div class="relative hidden md:block">
-                        <div class="absolute left-0 w-6/12 rounded-r-[40px] bg-amarelolimao2 overflow-hidden bg-nossasUnidades1 bg-cover bg-right
-                            md:top-[140px] lg:top-[180px] xl:top-[230px] 
-                            md:h-[440px] xl:h-[500px] 2xl:h-[548px] 
-                            ">
-                            <div class="relative z-[2] w-full h-full border-amarelolimao flex flex-col justify-end items-end">
-                                <div class="w-auto p-10">
-                                    <h2 class="text-3xl xl:text-[42px] font-gotham_light text-amarelolimao2 my-6 2xl:mt-10 2xl:mb-6">Em São Paulo</h2>
-                                    <ul>
-                                        <li class="font-gotham_light text-base xl:text-[22px] text-white">• Unidade Paulista</li>
-                                        <li class="font-gotham_light text-base xl:text-[22px] text-white">• Unidade Vergueiro</li>
-                                        <li class="font-gotham_light text-base xl:text-[22px] text-white">• Unidade Campo Belo</li>
-                                        <li class="font-gotham_light text-base xl:text-[22px] text-white">• Centro de Inovação e Saúde Digital</li>
-                                        <li class="font-gotham_light text-base xl:text-[22px] text-white">• Escola Técnica e Faculdade</li>
-                                    </ul>
+
+            <section class="relative">
+                <!-- Missao, visão e Valores -->
+                <section class="relative border-l-[12px] border-verdehamb bg-transparent lg:bg-nossasunidades lg:bg-no-repeat lg:bg-[right_top]">
+                    <div class="container py-10 md:pt-32">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="flex items-center">
+                                    <h1 class="text-verdehamb text-[48px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Missão</h1>
+                                    <img src="./svgs/ico-missao.svg" class="w-14 lg:w-20 ml-4" alt="">
                                 </div>
+                                <div class="relative w-full lg:w-8/12 h-2 flex justify-start my-4 lg:my-8 bg-bolinhashorizontal bg-repeat-x"> </div>
+                                <p class="text-2xl lg:text-4xl text-verdemedio font-gotham_light">Ser preciso e humano para garantir a melhor experiência e resultado em saúde para o paciente.</p>
                             </div>
-                        </div>
-                    </div>
-    
-                    <div class="container">
-    
-                        <div class="grid grid-cols-12">
-    
-                            <div class="col-span-12 md:col-span-6 relative xl:pt-10">
-                                <h1 class="text-verdehamb text-[48px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Nossas Unidades</h1>
-                                <div class="relative w-full h-2 flex justify-end my-10">
-                                    <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[1000px] h-1 block"></div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h1 class="text-verdehamb text-[48px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Visão</h1>
+                                    <img src="./svgs/ico-visao.svg" class="w-14 lg:w-20 ml-4" alt="">
                                 </div>
-                                <div class="relative hidden md:block md:h-[510px] lg:h-[550px] xl:h-[660px] w-10"></div>
+                                <div class="relative w-full lg:w-8/12 h-2 flex justify-start my-4 lg:my-8 bg-bolinhashorizontal bg-repeat-x"> </div>
+                                <p class="text-2xl lg:text-4xl text-verdemedio font-gotham_light">O cuidado pleno com a saúde acontece na harmonia entre o conhecimento e o acolhimento.</p>
                             </div>
 
+                            <div class="col-span-1 md:col-span-2">
+                                <div class="flex items-center">
+                                    <h1 class="text-verdehamb text-[48px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Valores</h1>
+                                    <img src="./svgs/ico-valores.svg" class="w-14 lg:w-20 ml-4" alt="">
+                                </div>
+                                <div class="relative w-full h-2 flex justify-start my-4 lg:my-8 bg-bolinhashorizontal bg-repeat-x"> </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14">
+                                    <div class="text-lg lg:text-[22px] font-gotham_book text-azulescuro leading-tight">
+                                        <span class=" font-gotham_bold text-verdemedio">Segurança do paciente</span> <br>
+                                        Atenção e precisão para entregar o essencial para nossos pacientes: segurança.
+                                    </div>
 
-                            <div class="col-span-12 mb-10 md:hidden">
-                                <img src="./imgs/unidade-santos.jpg" class="w-full max-w-[560px]" alt="">
-                                <h2 class="text-3xl xl:text-[42px] font-gotham_light text-verdehamb my-6 2xl:mt-10 2xl:mb-6">Em São Paulo</h2>
-                                <ul>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Unidade Paulista</li>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Unidade Vergueiro</li>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Unidade Campo Belo</li>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Centro de Inovação e Saúde Digitallo</li>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Escola Técnica e Faculdade</li>
-                                </ul>
-                            </div>
+                                    <div class="text-lg lg:text-[22px] font-gotham_book text-azulescuro leading-tight">
+                                        <span class=" font-gotham_bold text-verdemedio">Acolhimento</span> <br>
+                                        É na relação humana do toque e do olhar que se dá a mais profunda medicina.
+                                    </div>
 
+                                    <div class="text-lg lg:text-[22px] font-gotham_book text-azulescuro leading-tight">
+                                        <span class=" font-gotham_bold text-verdemedio">Verdade</span> <br>
+                                        A confiança é o nosso meio, e a credibilidade, o nosso fim. Somos íntegros conosco e com o mundo à nossa volta.
+                                    </div>
 
-    
-                            <div class="col-span-12 md:col-span-6 md:pl-14 xl:pl-20 2xl:pl-40">
-                                <img src="./imgs/unidade-santos.jpg" class="w-full max-w-[560px]" alt="">
-                                <h2 class="text-3xl xl:text-[42px] font-gotham_light text-verdehamb my-6 2xl:mt-10 2xl:mb-6">Em Santos<sup>*</sup></h2>
-                                <ul class="2xl:pr-36">
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Complexo Hospitalar dos Estivadores</li>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Ambesp – Ambulatório Médico de Especialidades Dr. Nelson Teixeira</li>
-                                    <li class="text-base xl:text-lg xl:leading-none text-cinza font-gotham_light mb-2 md:mb-4 lg:mb-2">• Hospital de Campanha Vitória (ativo entre maio de 2020 e outubro de 2021)</li>
-                                </ul>
-    
-                                <p class="font-gotham_light text-sm text-cinza mt-6 leading-tight">
-                                    <sup>*</sup> Por meio do Instituto Social<br>Hospital Alemão Oswaldo Cruz
-                                </p>
+                                    <div class="text-lg lg:text-[22px] font-gotham_book text-azulescuro leading-tight">
+                                        <span class=" font-gotham_bold text-verdemedio">Protagonismo colaborativo</span> <br>
+                                        O Hospital é um organismo vivo. Cada um precisa exercer o seu papel e, sobretudo, ter iniciativa, enxergar-se no outro e trabalhar em conjunto.
+                                    </div>
+
+                                    <div class="text-lg lg:text-[22px] font-gotham_book text-azulescuro leading-tight">
+                                        <span class=" font-gotham_bold text-verdemedio">Tradição inovadora</span> <br>
+                                        Preservação da cultura e dos marcos históricos de um hospital centenário, mas que sabe se reinventar para evoluir continuamente.
+                                    </div>
+
+                                     
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+            </section>
 
+            <section class="relative w-full xl:bg-modelofinal xl:bg-[center_top_546px] bg-no-repeat bg-[length:1920px_1400px] pt-10 pb-10 md:pb-0" id="nossas-unidades">
+                <div class="w-[12px] h-[1000px] md:h-[700px] lg:h-[760px] bg-verdeescuro absolute  block z-[5] top-0 left-0"></div>
+                <div class="container">
+                    <h1 class="text-verdehamb text-[48px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Nossas Unidades</h1>
+                </div>
+                <div class="relative w-full h-2 flex justify-start bg-bolinhashorizontal bg-repeat-x my-6 md:my-10"></div>
+
+                <div class="grid md:grid-cols-2 gap-10 relative pb-14">
+                    <a href="#" class="group hover:border-amarelolimao2 border-4 border-white border-l-0 hover:border-4 hover:border-l-0 relative h-[380px] lg:h-[500px] rounded-r-[40px] bg-amarelolimao2 overflow-hidden bg-nossasUnidades1 bg-cover bg-right flex flex-col justify-end items-start transition-all duration-300">
+                        <div class="w-auto p-10">
+                            <h2 class="text-3xl xl:text-[42px] font-gotham_bold text-amarelolimao2 my-6 2xl:mt-10 2xl:mb-6">Em São Paulo</h2>
+                            <ul>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Unidade Paulista</li>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Unidade Vergueiro</li>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Unidade Campo Belo</li>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Centro de Inovação e Saúde Digital</li>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Escola Técnica e Faculdade</li>
+                            </ul>
+                            <span class="group font-gotham_book text-2xl text-amarelolimao2 flex items-center mt-4">
+                                <img src="./svgs/ico-ballplus.svg" class="w-8 mr-2 opacity-60 group-hover:opacity-100" alt="">
+                                <span class="opacity-20 group-hover:opacity-100">veja as unidades</span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="relative h-[380px] lg:h-[500px] border-4 border-white border-r-0 rounded-l-[40px] bg-verdeaguaclaro overflow-hidden bg-cover bg-center bg-nossasUnidades2 flex flex-col justify-end items-start">
+                        <div class="w-auto lg:w-9/12 xl:w-7/12 p-10">
+                            <h2 class="text-3xl xl:text-[42px] font-gotham_bold text-amarelolimao2 my-6 2xl:mt-10 2xl:mb-6">Em Santos*</h2>
+                            <ul>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Complexo Hospitalar dos Estivadores</li>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Ambesp – Ambulatório Médico de Especialidades Dr. Nelson Teixeira</li>
+                                <li class="font-gotham_medium text-base text-white mb-[7px]">• Hospital de Campanha Vitória (ativo entre maio de 2020 e outubro de 2021)</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="absolute right-10 bottom-0 text-sm font-gotham_bold text-cinza mt-6 leading-tight">
+                        <sup>*</sup> Por meio do Instituto Social<br>Hospital Alemão Oswaldo Cruz
+                    </p>
+
+                </div>
+
+                
                 <!-- Modelo de Negócios -->
-                <section id="modelo-de-negocios"  class="relative border-l-[12px] border-amarelolimao overflow-y-visible pt-8 lg:pt-10 xl:pt-14">
+                <section id="modelo-de-negocios"  class="relative border-l-[12px] border-amarelolimao overflow-y-visible pt-8 lg:pt-10 xl:pt-32">
                     <div class="container relative">
                         <h1 class="text-verdehamb text-[42px] lg:text-[54px] xl:text-[68px] 2xl:text-[77px] leading-none">Modelo de Negócios</h1>
                     </div>
@@ -480,7 +537,7 @@
                     </div>
 
                     <div class="container">
-                        <p class="font-gotham_light text-lg lg:text-xl text-azulescuro w-full md:w-[55%] underline">Aqui, apresentamos de forma sintetizada nosso processo de geração de valor, dos capitais que acessamos aos impactos que produzimos</p>
+                        <p class="font-gotham_light text-lg lg:text-xl text-azulescuro w-full md:w-[55%]">Aqui, apresentamos de forma sintetizada nosso processo de geração de valor, dos capitais que acessamos aos impactos que produzimos</p>
                     </div>
 
                     <!-- breakpoints xs até lg -->
@@ -659,13 +716,15 @@
                     </div>
 
                 </section>
-
             </section>
 
+
+            
 
             <!-- Indicadores Estratégicos -->
             <section id="indicadores" class="relative border-l-[12px] border-l-verdeaguaclaro  bg-indicadores bg-[center_bottom] bg-contain bg-no-repeat pt-28">
                 <div class="absolute w-full top-0 right-0 h-[500px] z-[-1] bg-[right_top] bg-indicadorestop bg-[length:auto_220px] md:bg-[length:auto_380px] 2xl:bg-[length:auto_498px] bg-no-repeat"></div>
+
                 <div class="absolute top-0 left-0 w-full h-5 bg-verdemedio block z-10"></div>
                 <div class="container">
 
@@ -784,6 +843,31 @@
 
                             <div class="indicadores">
                                 <div>
+                                    <div class="indicadores__title">Satisfação do colaborador (%)</div>
+                                    <p><strong>O que é:</strong> pesquisa de satisfação realizada com suporte da Great Place to Work (GPTW) </p>
+                                </div>
+                                <div class="indicadores__infos">
+                                    <div class="indicadores__infos--titles">
+                                        <div class="indicadores__subtitle">Satisfação do colaborador</div>
+                                        <div class="indicadores__unid">Índice de confiança</div>
+                                    </div>
+                                    <div class="indicadores__infos--numbers">
+                                        <div class="indicadores__thamarelo">
+                                            <span>2019</span>
+                                            <span>2020</span>
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="indicadores__tditems">
+                                            <span>69%</span>
+                                            <span>73%</span>
+                                            <span>77%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="indicadores">
+                                <div>
                                     <div class="indicadores__title">Provisão dos devedores duvidosos (R$)</div>
                                     <p><strong>O que é:</strong> o volume de recursos não recebidos que a Instituição enquadra como incertos quanto ao recebimento</p>
                                 </div>
@@ -807,30 +891,7 @@
                                 </div>
                             </div>
 
-                            <div class="indicadores">
-                                <div>
-                                    <div class="indicadores__title">Satisfação do colaborador (%)</div>
-                                    <p><strong>O que é:</strong> pesquisa de satisfação realizada com suporte da Great Place to Work (GPTW) </p>
-                                </div>
-                                <div class="indicadores__infos">
-                                    <div class="indicadores__infos--titles">
-                                        <div class="indicadores__subtitle">Satisfação do colaborador</div>
-                                        <div class="indicadores__unid">Índice de confiança</div>
-                                    </div>
-                                    <div class="indicadores__infos--numbers">
-                                        <div class="indicadores__thamarelo">
-                                            <span>2019</span>
-                                            <span>2020</span>
-                                            <span>2021</span>
-                                        </div>
-                                        <div class="indicadores__tditems">
-                                            <span>69%</span>
-                                            <span>73%</span>
-                                            <span>77%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
 
                             <div class="indicadores">
                                 <div>
@@ -866,7 +927,7 @@
 
 
             <!-- Investimentos em 2021 -->
-            <section id="investimentos" class="investimentos bg-investimentos bg-center bg-cover border-l-[12px] border-l-amarelolimao overflow-x-hidden relative  bg-verdemedio pt-20 pb-0 lg:py-20 xl:py-40">
+            <section id="investimentos" class="investimentos bg-investimentos bg-center bg-cover border-l-[12px] border-l-amarelolimao overflow-x-hidden relative  bg-verdemedio pt-20 pb-0 lg:py-20 xl:pt-40 lg:pb-10">
                 <div class="container">
 
                     <div class="relative w-full lg:w-6/12">
@@ -874,17 +935,19 @@
                         <h2 class="text-amarelolimao2 text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[40px] mt-8 mb-4 2xl:my-10 font-gotham_light leading-tight">O Capex consolidado do Hospital Alemão Oswaldo Cruz em 2021 foi de</h2>
                     </div>
 
-                    <div class="relative z-[2] full-width h-[80px] lg:h-[100px] xl:h-[120px] 2xl:h-[142px] bg-pontilhadoInvestimentos bg-bottom lg:bg-center bg-[length:auto_100%] bg-no-repeat mt-12 lg:mt-0">
-                        <div class="container -translate-y-10 lg:-translate-y-0 lg:pt-2 ">
-                            <div class="text-white font-gotham_light pl-[10px] pb-40 text-[28px] lg:text-[42px] xl:text-[56px] 2xl:text-[64px]">R$ <span class="font-gotham_bold">30,4</span> milhões, </div>
+                    <div class="relative z-[2] full-width mt-4 lg:mt-0">
+                        <div class="container">
+                            <div class="text-white font-gotham_light text-[28px] lg:text-[42px] xl:text-[56px] 2xl:text-[64px]">R$ 
+                                <span class="font-gotham_bold">30,4</span> milhões,<span class="text-2xl"> incluindo</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="relative w-full">
+                    <!-- <div class="relative w-full">
                         <p>incluindo:</p>
-                    </div>
+                    </div> -->
 
-                    <div class="grid gap-y-10 lg:grid-cols-3 lg:gap-x-10 xl:gap-x-20 2xl:gap-x-28 mt-6">
+                    <div class="grid gap-y-10 lg:grid-cols-3 lg:gap-x-10 xl:gap-x-20 2xl:gap-x-28 mt-16">
                         <div>
                             <div class="flex justify-start items-center mb-2">
                                 <span class="itemstitle">R$ <sspan class="font-gotham_bold">22</sspan> milhões </span>
@@ -909,6 +972,10 @@
                         </div>
                     </div>
 
+                    <div class="relative z-[2] full-width h-[80px] lg:h-[100px] xl:h-[120px] 2xl:h-[142px] bg-pontilhadoInvestimentos bg-bottom lg:bg-center bg-[length:auto_100%] bg-no-repeat mt-12 lg:mt-0">
+                        
+                    </div>
+
                     <div class="relative lg:absolute w-full lg:w-[45%] bg-verdeescuro rounded-t-[30px] lg:rounded-l-[40px] lg:top-20 xl:top-36 2xl:top-44 lg:right-0 p-10 lg:p-14 mt-10 lg:mt-0">
                         <div class="text-left w-[100%] xl:w-[80%]">
                             <div class="flex flex-row 2xl:gap-x-4 mb-4">
@@ -918,6 +985,22 @@
                             <span class="text-white font-gotham_extra_light xl:text-[18px] 2xl:text-[22px]">O centro cirúrgico da Unidade Paulista ganhou três salas de cirurgia em fevereiro e outras três em setembro. Isto contribuiu para que o Hospital atingisse o seu recorde em volume de cirurgias apesar da pandemia.</span>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="relative bg-azulescuro py-8">
+                <div class="container">
+                    <div class="w-full lg:w-7/12 flex flex-col lg:flex-row justify-start items-end">
+                        <div class="flex-grow">
+                            <p class="text-amarelolimao2 text-center text-2xl leading-tight">Modelo Assistencial <span class="font-gotham_bold block">Hospital Alemão Oswaldo Cruz®</span></p>
+                            <img src="./imgs/modelo-assistencial.png" class="lg:min-w-[320px] xl:min-w-[400px] mt-4 block" alt="">
+                        </div>
+                        <p class="text-white text-base flex-shrink flex-grow-0 mx-6 py-5 lg:py-0 lg:mx-0 lg:ml-10 xl:pr-4">A importância do cuidado na Instituição é de tal ordem que resultou na criação do Modelo Assistencial Hospital Alemão Oswaldo Cruz®, um conjunto de diretrizes e premissas que norteiam o relacionamento do Hospital com os pacientes e seus familiares. O Modelo utiliza o conceito do cuidado baseado no relacionamento (RBC – Relationship Based Care) e no primary nursing.</p>
+                    </div>
+                </div>
+                <div class="relative lg:absolute lg:right-0 lg:top-8 h-[420px] xl:h-[470px] ml-[6%] w-[94%] mt-6 lg:m-0 lg:w-[36%] xl:w-[40%] rounded-l-[40px] flex flex-col justify-end items-start  bg-[position:left_center] bg-no-repeat bg-fotomodelo bg-cover p-10">
+                    <p class=" text-amarelolimao2 font-gotham_bold text-xl w-7/12">O Modelo norteia o relacionamento da Instituição com os pacientes e seus familiares</p>
+
                 </div>
             </section>
 
@@ -938,7 +1021,7 @@
                             <div class="swiper-slide">
                                 <div class="swiperBox">
                                     <div class="swiperBox__imgcover">
-                                        <img src="./imgs/swipercovid-1.jpg" class="w-full object-cover object-center" alt="">
+                                        <img src="./imgs/swipercovid-1n.jpg" class="w-full object-cover object-center" alt="">
                                     </div>
                                     <h3>Comitê médico</h3>
                                     <p>
@@ -950,7 +1033,7 @@
                             <div class="swiper-slide">
                                 <div class="swiperBox">
                                     <div class="swiperBox__imgcover">
-                                        <img src="./imgs/swipercovid-2.jpg" class="w-full object-cover object-center" alt="">
+                                        <img src="./imgs/swipercovid-2n.jpg" class="w-full object-cover object-center" alt="">
                                     </div>
                                     <h3>ECMO</h3>
                                     <p>
@@ -962,7 +1045,7 @@
                             <div class="swiper-slide">
                                 <div class="swiperBox">
                                     <div class="swiperBox__imgcover">
-                                        <img src="./imgs/swipercovid-3.jpg" class="w-full object-cover object-center" alt="">
+                                        <img src="./imgs/swipercovid-1.jpg" class="w-full object-cover object-center" alt="">
                                     </div>
                                     <h3>Terapia de Oxigênio Nasal de Alto Fluxo </h3>
                                     <p>
@@ -1008,7 +1091,8 @@
                             </div>
 
                         </div>
-                        <div class="btnSwiperCovid"></div>
+                        <div class="btnSwiperCovid left-10 rotate-180 swCovidPrev"></div>
+                        <div class="btnSwiperCovid right-10 swCovidNext"></div>
                     </div>
                 </div>
                 
@@ -1016,275 +1100,185 @@
 
 
             <!-- Desempenho em indicadores e taxas -->
-            <section id="desempenho" class="relative border-l-[12px] border-l-verdeagua bg-gradient-to-b from-white via-white to-[#0079892f] pt-24 md:pt-20">
+            <section id="desempenho" class="relative border-l-[12px] border-l-verdeagua  pt-24 md:pt-20">
                 <div class="container">
-                    <h1 class="md:mb-14 font-gotham_extra_light text-[#00b1bb]  text-[36px] md:text-[40px] lg:text-[52px] xl:text-[64px] 2xl:text-[77px] leading-none">Desempenho em<br /> indicadores e taxas</h1>
-                    <div class="relative w-2/3 md:w-1/2 h-2 flex justify-end my-10 md:my-20">
+                    <h1 class="md:mb-14 font-gotham_extra_light text-[#00b1bb]  text-[36px] md:text-[40px] lg:text-[52px] xl:text-[64px] 2xl:text-[77px] leading-none">Qualidade, segurança<br />e desfechos clínicos</h1>
+
+                    <div class="relative w-9/12 h-2 flex justify-end my-10 md:my-20">
                         <div class="absolute bg-bolinhashorizontal bg-repeat-x w-[2000px] h-1 block"></div>
                     </div>
-                    <div class="grid grid-cols-1 2xl:grid-cols-3 font-gotham_bold text-[20px] text-[#00b1bb]">
-                        <div class="md:mt-16 2xl:mt-0">
-                            <span class="uppercase">Taxa de oucpação de UTI</span><br />
-                            <span class="font-gotham_light text-black">Unidade Paulista</span>
-                            <div class="mt-10 flex flex-row justify-start items-center w-full">
-                                <img class="hidden md:block" src="./imgs/to-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    69,9%
-                                </div>
+
+                    <div class="flex flex-wrap lg:flex-nowrap gap-10">
+                        <div class="w-full lg:w-5/12 xl:w-4/12">
+                            <p class="font-gotham_light text-cinza text-lg">O Hospital Alemão Oswaldo Cruz conta com uma Política Institucional de Qualidade, Segurança do Paciente e Desfechos Clínicos e um Programa de Melhoria da Qualidade e Segurança para estabelecer diretrizes e processos que identificam e priorizam setores e pontos críticos para o sucesso nessas áreas. A Instituição pratica uma série de padrões internacionalmente reconhecidos, que se desdobram em processos, protocolos e indicadores. </p>
+                        </div>
+                        <div class="lg:w-5/12 xl:w-5/12">
+                            <p class="font-gotham_light text-cinza text-lg">O compromisso com a segurança do paciente perpassa todo o dia a dia da Instituição, envolvendo das áreas médicas e assistenciais até as mais diversas equipes de suporte. Merece destaque também o Comitê Estratégico de Qualidade e Segurança do Paciente, que é composto pela equipe de Qualidade e Segurança do Paciente e também pelos gerentes corporativos médicos e assistenciais, bem como pelos diretores-executivos do Comitê Médico e Assistencial, órgão deliberativo que tem por objetivo dar celeridade e abrangência às ações de qualidade e segurança do paciente.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 font-gotham_bold text-[20px] mt-20 lg:gap-x-14 xl:gap-x-6 gap-y-14">
+                        <div class="quality">
+                            <span class="quality__title">Densidade de incidência de infecção da corrente sanguínea relacionada a cateter venoso central em UTI das unidades Paulista e Vergueiro </span><span class="font-gotham_light text-cinza">(x/1.000 cateteres-dia)</span><br />
+                            <div class="quality__row">
+                                <div class="quality__ball">2019</div>
+                                <div class="quality__dots w-[100px]"></div>
+                                <div class="quality__value">1,23</div>
                             </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/to-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    71,5%
-                                </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2020</div>
+                                <div class="quality__dots w-[120px]"></div>
+                                <div class="quality__value">1,27</div>
                             </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/to-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    85,6%
-                                </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2021</div>
+                                <div class="quality__dots w-[240px]"></div>
+                                <div class="quality__value">2,61</div>
+                            </div>
+
+                            <div class="quality__obs">
+                                Referência: Associação Nacional de Hospitais Privados (Anahp): 3,14
                             </div>
                         </div>
-                        <div class="mt-16 2xl:mt-0">
-                            <span class="uppercase">Taxa de oucpação de UTI</span><br />
-                            <span class="font-gotham_light text-black">Unidade Vergueiro</span>
-                            <div class="mt-10 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/tov-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-p.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    21,9%
-                                </div>
+
+                        <div class="quality">
+                            <span class="quality__title">Letalidade por sepse</span><span class="font-gotham_light text-cinza">(%)</span><br />
+                            <div class="quality__row">
+                                <div class="quality__ball">2019</div>
+                                <div class="quality__dots w-[100px]"></div>
+                                <div class="quality__value">7,8</div>
                             </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/tov-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    54%
-                                </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2020</div>
+                                <div class="quality__dots w-[220px]"></div>
+                                <div class="quality__value">17,3</div>
                             </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/tov-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    83,5%
-                                </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2021</div>
+                                <div class="quality__dots w-[240px]"></div>
+                                <div class="quality__value">17,9</div>
+                            </div>
+
+                            <div class="quality__obs">
+                                Referência: Instituto Latinoamericano de Sepse (ILAS): 22,3
                             </div>
                         </div>
-                        <div class="mt-16 2xl:mt-0">
-                            <span class="uppercase">Atendimentos na UTI</span><br />
-                            <span class="font-gotham_light text-black">Unidade Paulista</span>
-                            <div class="mt-10 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/at-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    2.955
-                                </div>
+
+                        <div class="quality">
+                            <span class="quality__title">Densidade de eventos adversos relacionados a medicamentos</span>
+                            <!-- <span class="font-gotham_light text-cinza">(%)</span> -->
+                            <br />
+                            <div class="quality__row">
+                                <div class="quality__ball">2019</div>
+                                <div class="quality__dots w-[210px]"></div>
+                                <div class="quality__value">0,30</div>
                             </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/at-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    1.909
-                                </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2020</div>
+                                <div class="quality__dots w-[240px]"></div>
+                                <div class="quality__value">0,35</div>
                             </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/at-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    3.608
-                                </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2021</div>
+                                <div class="quality__dots w-[160px]"></div>
+                                <div class="quality__value">0,23</div>
+                            </div>
+
+                            <div class="quality__obs">
+                                Referência: Associação Nacional de Hospitais Privados (Anahp): 0,74
+                            </div>
+                        </div>
+
+                        <div class="quality">
+                            <span class="quality__title">Queda com lesão </span><span class="font-gotham_light text-cinza">(%)</span><br />
+                            <div class="quality__row">
+                                <div class="quality__ball">2019</div>
+                                <div class="quality__dots w-[240px]"></div>
+                                <div class="quality__value">0,39</div>
+                            </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2020</div>
+                                <div class="quality__dots w-[220px]"></div>
+                                <div class="quality__value">0,36</div>
+                            </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2021</div>
+                                <div class="quality__dots w-[200px]"></div>
+                                <div class="quality__value">0,32</div>
+                            </div>
+
+                            <div class="quality__obs">
+                                Referência: Associação Nacional de Hospitais Privados (Anahp): 0,25
+                            </div>
+                        </div>
+
+                        <div class="quality">
+                            <span class="quality__title">Percentual de adesão à avaliação de risco de tromboembolismo venoso</span><span class="font-gotham_light text-cinza">(%)</span><br />
+                            <div class="quality__row">
+                                <div class="quality__ball">2019</div>
+                                <div class="quality__dots w-[180px]"></div>
+                                <div class="quality__value">87,5</div>
+                            </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2020</div>
+                                <div class="quality__dots w-[240px]"></div>
+                                <div class="quality__value">97,7</div>
+                            </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2021</div>
+                                <div class="quality__dots w-[230px]"></div>
+                                <div class="quality__value">96,7</div>
+                            </div>
+
+                            <div class="quality__obs">
+                                Referência: Associação Nacional de Hospitais Privados (Anahp): 86,2%
+                            </div>
+                        </div>
+
+                        <div class="quality">
+                            <span class="quality__title">Letalidade por Infarto Agudo do Miocárdio (IAM)</span>
+                            <span class="font-gotham_light text-cinza">(%)</span>
+                            <br />
+                            <div class="quality__row">
+                                <div class="quality__ball">2019</div>
+                                <!-- <div class="quality__dots w-[210px]"></div> -->
+                                <div class="quality__value">0</div>
+                            </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2020</div>
+                                <div class="quality__dots w-[240px]"></div>
+                                <div class="quality__value">14,5</div>
+                            </div>
+
+                            <div class="quality__row">
+                                <div class="quality__ball">2021</div>
+                                <div class="quality__dots w-[160px]"></div>
+                                <div class="quality__value">8,6</div>
+                            </div>
+
+                            <div class="quality__obs">
+                                Referência: Associação Nacional de Hospitais Privados (Anahp): 6,4
                             </div>
                         </div>
                     </div>
-                    <div class="mt-16 2xl:mt-20 grid grid-cols-1 2xl:grid-cols-3 font-gotham_bold text-[20px] text-[#00b1bb]">
-                        <div class="">
-                            <span class="uppercase">Atendimentos UTI</span><br />
-                            <span class="font-gotham_light text-black">Unidade Vergueiro</span>
-                            <div class="mt-10 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/atv-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-p.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    346
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/atv-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    813
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/atv-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    1.205
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-16 2xl:mt-0 h-fit overflow-x-auto col-span-1 2xl:col-span-2 ">
-                            <span class="uppercase">Média de ocupação</span><br />
-                            <span class="font-gotham_light text-black">Internação</span>
-                            <div class="mt-10 flex flex-row justify-start items-center ">
-                                <img class="hidden md:block" src="./imgs/mo-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                    78,1% +<br />
-                                    (Paulista)
-                                </div>
-                                <div class="hidden lg:flex flex-row justify-start items-center">
-                                    <img class="hidden md:block" src="./imgs/mo-11.png" alt="">
-                                    <img class="md:hidden block" src="./imgs/p.png" alt="">
-                                    <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                        38,9%<br />
-                                        (Vergueiro)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:hidden ml-16 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/mo-11.png" alt="">
-                                <img class="md:hidden block" src="./imgs/p.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                    38,9%<br />
-                                    (Vergueiro)
-                                </div>
-                            </div>
-                            <div class="mt-10 lg:mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/mo-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                    68,9% +<br />
-                                    (Paulista)
-                                </div>
-                                <div class="hidden lg:flex flex-row justify-start items-center">
-                                    <img class="hidden md:block" src="./imgs/mo-21.png" alt="">
-                                    <img class="md:hidden block" src="./imgs/p.png" alt="">
-                                    <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                        30,7%<br />
-                                        (Vergueiro)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:hidden ml-16 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/mo-21.png" alt="">
-                                <img class="md:hidden block" src="./imgs/p.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                    30,7%<br />
-                                    (Vergueiro)
-                                </div>
-                            </div>
-                            <div class="mt-10 lg:mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden lg:block" src="./imgs/mo-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                    83,8% +<br />
-                                    (Paulista)
-                                </div>
-                                <div class="hidden lg:flex flex-row justify-start items-center">
-                                    <img class="hidden md:block" src="./imgs/mo-31.png" alt="">
-                                    <img class="md:hidden block" src="./imgs/m.png" alt="">
-                                    <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                        70,2%<br />
-                                        (Vergueiro)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:hidden ml-16 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/mo-31.png" alt="">
-                                <img class="md:hidden block" src="./imgs/m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[16px] lg:text-[22px] leading-none self-end">
-                                    70,2%<br />
-                                    (Vergueiro)
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="mt-16 2xl:mt-20 grid grid-cols-1 2xl:grid-cols-3 font-gotham_bold text-[20px] text-[#00b1bb]">
-                        <div class="mt-5 2xl:mt-0">
-                            <span class="uppercase">Internações</span><br />
-                            <span class="font-gotham_light text-black">Unidade Paulista e Vergueiro</span>
-                            <div class="mt-10 xl:mt-20 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/ip-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    26.543
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/ip-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    26.538
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/ip-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    32.032
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-16 2xl:mt-0">
-                            <span class="uppercase">Total de cirurgias<br />(Pacientes recuperados)</span><br />
-                            <span class="font-gotham_light text-black">Unidade Paulista</span>
-                            <div class="mt-10 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/top-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    15.626
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/top-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    12.474
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/top-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    14.334
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-16 2xl:mt-0">
-                            <span class="uppercase">Total de cirurgias<br />(Pacientes recuperados)</span><br />
-                            <span class="font-gotham_light text-black">Unidade Vergueiro</span>
-                            <div class="mt-10 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/tov-1.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2019-p.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    4.595
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/tov-2.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2020-m.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    6.929
-                                </div>
-                            </div>
-                            <div class="mt-5 flex flex-row justify-start items-center">
-                                <img class="hidden md:block" src="./imgs/tov-3.png" alt="">
-                                <img class="md:hidden block" src="./imgs/2021-l.png" alt="">
-                                <div class="ml-3 font-gotham_book text-[22px]">
-                                    9.099
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br /><br /><br /><br /><br /><br />
+
                 </div>
+                <div class="relative w-full bg-gradient-to-b from-white to-[#E8F3F4] block h-[170px]"></div>
             </section>
 
-            <div class="relative h-[120px] xl:h-[140px] 2xl:h-[200px] border-l-[12px] border-amarelolimao bg-gradient-to-t from-[#007789f8] to-[#00798930] flex justify-center items-center">
-                <div class="w-full h-[80%] bg-pontilhadoInvestimentos bg-bottom lg:bg-center bg-[length:auto_100%] bg-no-repeat"></div>
+            <div class="relative h-[120px] xl:h-[353px] border-l-[12px] border-amarelolimao bg-gradient-to-b from-[#E8F3F4] to-[#007889] flex justify-center items-center">
+                <div class="w-full h-[177px] bg-pontilhadoInvestimentos bg-bottom lg:bg-center bg-[length:auto_100%] bg-no-repeat"></div>
             </div>
 
 
@@ -1298,18 +1292,18 @@
                         <div class="w-full lg:w-[90%] flex flex-col items-left">
                             <div class="flex flex-row items-start flex-nowrap">
                                 <img class="h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/livro.svg" alt="" />
-                                <p class="ml-10">O Centro Internacional de Pesquisa publicou 187 artigos que, juntos, envolveram mais de 10 mil pacientes. Ele seguiu também fazendo parte da rede colaborativa de estudos de relevância populacional comandada pelo Population Health Research Institute (PHRI) – e que reúne 1,5 milhão de participantes de 250 instituições de 102 países diferentes.</p>
+                                <p class="ml-10">O <span class="font-gotham_bold">Centro Internacional de Pesquisa</span> publicou 187 artigos que, juntos, envolveram mais de 10 mil pacientes. Ele seguiu também fazendo parte da rede colaborativa de estudos de relevância populacional comandada pelo Population Health Research Institute (PHRI) – e que reúne 1,5 milhão de participantes de 250 instituições de 102 países diferentes.</p>
                             </div>
                             <div class="mt-10 flex flex-row items-start flex-nowrap">
                                 <img class="h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/globo.svg" alt="" />
-                                <p class="ml-10">Entrada do Centro Internacional de Pesquisa na plataforma TriNetX, uma rede colaborativa que reúne instituições de saúde, a indústria farmacêutica e organizações de pesquisa e utiliza o Real World Data. Os dados (todos anônimos) reúnem 450 milhões de prontuários de 170 instituições de saúde em mais de 30 países.</p>
+                                <p class="ml-10">Entrada do Centro Internacional de Pesquisa na <span class="font-gotham_bold">plataforma TriNetX</span>, uma rede colaborativa que reúne instituições de saúde, a indústria farmacêutica e organizações de pesquisa e utiliza o Real World Data. Os dados (todos anônimos) reúnem 450 milhões de prontuários de 170 instituições de saúde em mais de 30 países.</p>
                             </div>
                             <div class="mt-10 flex flex-row items-start flex-nowrap">
-                                <img class="h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/ressonancia.svg" alt="" />
-                                <p class="ml-10">Com o auxílio do Centro de Inovação e Saúde Digital, o Hospital tem utilizado a realidade virtual e a realidade aumentada para apoio ao planejamento cirúrgico. Depois de capturadas, imagens de exames como tomografia computadorizada e ressonância magnética são colocadas em um ambiente virtual e manipuladas em 3D pelos médicos.</p>
+                                <img class="h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/ico-centroinovacao.svg" alt="" />
+                                <p class="ml-10">Com o auxílio do <span class="font-gotham_bold">Centro de Inovação e Saúde Digital</span>, o Hospital tem utilizado a realidade virtual e a realidade aumentada para apoio ao planejamento cirúrgico. Depois de capturadas, imagens de exames como tomografia computadorizada e ressonância magnética são colocadas em um ambiente virtual e manipuladas em 3D pelos médicos.</p>
                             </div>
                         </div>
-                        <div class="w-full mx-auto lg:ml-5 mt-10 lg:mt-0 flex flex-col items-left bg-verdeescuro border border-verdeescuro rounded-[40px] -m-5 p-5">
+                        <div class="w-full mx-auto lg:ml-5 mt-10 lg:mt-0 flex flex-col items-left bg-verdeescuro border border-verdeescuro rounded-[40px] -m-5 p-5 pb-10">
                             <div class="flex flex-row self-center items-end">
                                 <span class="font-gotham_light text-[20px] md:text-[50px] lg:text-[29px] xl:text-[38px] 2xl:text-[46px] text-amarelolimao">Números da Educação</span>
                                 <img class="ml-3 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/enfermeira.svg" alt="">
@@ -1352,18 +1346,18 @@
                     <img class="absolute left-0 w-[80%] md:w-[60%]" src="./imgs/pontilhado-vd.png" />
 
                     <div class="relative mt-14 lg:mt-36 pb-5 mx-auto lg:w-full xl:w-[80%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
-                        <div class="flex flex-col w-[80%] items-left justify-between font-gotham_light  text-[15px] md:text-[19px] lg:text-[20px] xl:text-[22px] text-verdemedio">
-                            <div class="font-gotham_book  text-[28px] xl:text-[42px] text-verdehamb">Responsabilidade Social<br /><span class="mt-10 font-gotham text-[14px] md:text-[17px] xl:text-[20px] text-verdemedio uppercase">proadi-sus</span></div>
+                        <div class="flex flex-col w-[100%] items-left justify-between font-gotham_light  text-[15px] md:text-[19px] lg:text-[20px] xl:text-[22px] text-verdemedio">
+                            <div class="font-gotham_book  text-[28px] xl:text-[42px] text-verdehamb">Responsabilidade Social<br /><span class="mt-10 font-gotham_bold text-[14px] md:text-[17px] xl:text-[20px] text-verdemedio uppercase">proadi-sus</span></div>
                             <div>
-                                <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/mao-lapis.svg" />
+                                <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/ico-resp1.svg" />
                             </div>
                             <div class="mt-3">Para o Triênio 2021-2023, estão previstos 26 projetos e R$ 199,377 milhões em imunidade tributária. Nas entregas, 18.770 profissionais capacitados, 106 hospitais contemplados em todo o Brasil e mais de 100 publicações científicas.</div>
                             <div>
-                                <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/identidade.svg" />
+                                <img class="mt-20 w-14 md:w-16 xl:w-20" src="./svgs/ico-resp2.svg" />
                             </div>
                             <div class="mt-3">Ações como a TeleUTI, que aconteceu em Rondônia durante três meses, reforçaram a ampliação do acesso ao atendimento. </div>
                             <div>
-                                <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/virus.svg" />
+                                <img class="mt-20 w-14 md:w-16" src="./svgs/ico-resp3.svg" />
                             </div>
                             <div class="mt-3">Elaboração de protocolos de prevenção à Covid-19 e serviços de suporte, treinamento e qualificação à disposição de profissionais do Brasil inteiro através do Telessaúde do Hospital.</div>
                         </div>
@@ -1386,39 +1380,47 @@
                         </div>
                     </div>
 
-                    <div class="relative mt-10 lg:mt-36 pb-5 mx-auto lg:w-full xl:w-[80%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative mt-10 lg:mt-36 pb-5 mx-auto lg:w-full xl:w-[90%] 2xl:w-[85%] grid grid-cols-1 lg:grid-cols-2">
                         
                         <!-- <img class="absolute object-cover -top-[4.5rem] lg:-top-[6vw] md:-ml-[40vw] lg:-left-[3.5vw]  -ml-[30vw] lg:-ml-[30vw] w-[200vw] max-w-[200vw] lg:w-[150vw] lg:max-w-[150vw] xl:w-[150vw] xl:max-w-[150vw] 2xl:w-[130vw] 2xl:max-w-[130vw]" src="./svgs/onda-pontilhada-vd-esq.svg"> -->
 
                         <div class="relative z-[2] full-width h-[80px] lg:h-[100px] xl:h-[120px] 2xl:h-[142px] bg-pontilhadoInvestimentos bg-[70%_top] lg:bg-center bg-[length:auto_100%] bg-no-repeat mt-12 mb-8 lg:mt-0">
                         </div>
 
-                        <div class="col-span-1 lg:col-span-2"><div class="font-gotham_book  text-[28px] xl:text-[42px] text-verdehamb">Meio-ambiente e Eficiência</div></div>
-                        <div class="flex flex-col w-full lg:w-[80%] items-left font-gotham_light  text-[25px] md:text-[30px] lg:text-[34px] 2xl:text-[40px] text-verdemedio">
+                        <div class="col-span-1 lg:col-span-2">
+                            <div class="font-gotham_book  text-[28px] xl:text-[42px] text-verdehamb">Meio-ambiente e Eficiência</div>
+                        </div>
+
+                        <div class="flex flex-col w-full lg:w-[90%] items-left font-gotham_light text-[25px] md:text-[30px] 2xl:text-[40px] text-verdemedio ">
 
                             <div>
                                 <img class="mt-10 lg:mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/certificado.svg" />
                             </div>
-                            <div class="mt-3">Início da estruturação, com base na <span class="font-gotham_bold text-amarelolimao3">ISO 14000</span>, do Sistema de Gestão Ambiental.</div>
+                            <div class="mt-3">
+                                Início da estruturação, com base na ISO 14000 do <span class="font-gotham_bold text-amarelolimao3">Sistema de Gestão Ambiental</span>
+                            </div>
+
                             <div>
                                 <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/energia.svg" />
                             </div>
-                            <div class="mt-3"><span class="font-gotham_bold text-amarelolimao3">414.932</span> kWh<br />
-                                de energia e<br />
-                                <span class="font-gotham_bold text-amarelolimao3">16.243</span> litros de<br />água economizados<br /> em 2021.</div>
+                            <div class="mt-3">
+                                <span class="font-gotham_bold text-amarelolimao3">414.932</span> kWh de energia economizados em 2021 
+                            </div>
+
                         </div>
 
-                        <div class="lg:ml-16 xl:ml-32 2xl:ml-28 flex flex-col w-full lg:w-[70%] items-left font-gotham_light text-[17px] md:text-[20px] lg:text-[22px] xl:text-[24px] text-verdemedio">
-                            
-                            
+                        <div class="lg:ml-16 2xl:ml-28 flex flex-col w-full lg:w-[90%] items-left font-gotham_light text-[25px] md:text-[30px] 2xl:text-[40px] text-verdemedio">
                             <div>
                                 <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/reciclagem.svg" />
                             </div>
-                            <div class="mt-3">Mesmo em meio à pandemia, redução de 8% na geração de resíduos perfurocortantes por paciente-dia e de 30% em resíduos perigosos.</div>
+                            <div class="mt-3">Mesmo em meio à pandemia, o Hospital <span class="font-gotham_bold text-amarelolimao3">reduziu em 30%</span> a sua geração de resíduos perigosos</div>
+
                             <div>
                                 <img class="mt-20 h-14 w-14 md:w-16 md:h-16 xl:h-20 xl:w-20" src="./svgs/arvores.svg" />
                             </div>
-                            <div class="mt-3">O Hospital se tornou o primeiro no país a contar com um sistema de <span class="font-gotham_bold">gestão digital do seu patrimônio arbóreo</span> para realizar inspeções, análises e avaliações de risco de queda de árvores; a integração com o processo de licenciamento ambiental e o controle operacional das atividades de manejo arbóreo.</div>
+                            <div class="mt-3">
+                                O Hospital se tornou o primeiro no país a contar com um sistema de <span class="font-gotham_bold text-amarelolimao3">gestão digital do seu patrimônio arbóreo</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1426,15 +1428,19 @@
 
 
             <!-- Créditos -->
-            <section id="créditos" class="z-0 overflow-hidden relative border-l-[12px] border-l-verdeaguaclaro bg-gradient-to-t from-[#007889] via-[#007889] md:via-[#00788990] to-transparent min-h-screen">
+            <section id="créditos" class="z-0 overflow-hidden relative border-l-[12px] border-l-verdeaguaclaro bg-gradient-to-t from-[#003B4E] via-[#007889] to-[#007889]/0 min-h-screen">
+                
                 <img class="absolute -z-10 top-0 left-0" src="./svgs/mesh-creditos.svg" />
+                
                 <div class="pt-40 container">
-                    
                     <h1 class="-mt-20 sm:mt-0 md:mt-10 lg:mt-32 2xl:mt-40 font-gotham_extra_light text-[64px] md:text-[100px] text-amarelolimao">Créditos</h1>
+
                     <span class="font-gotham_bold text-[14px] md:text-[20px] text-amarelolimao uppercase leading-none">Relatório integrado 2021<br />Hospital Alemão Oswaldo Cruz</span>
                     <img class="absolute -mr-[20vw] -mt-[2.5vw] w-[120vw] max-w-[120vw]" src="./svgs/onda-pontilhada-bc.svg" />
-                    <div class="mt-12 xl:mt-16 pb-20 flex flex-row flex-wrap lg:space-x-5 xl:space-x-20 font-gotham_light lg:text-[18px] xl:text-[22px] text-white">
-                        <div class="flex flex-col justify-between space-y-5">
+
+                    <div class="mt-12 xl:mt-16 pb-20 flex flex-row flex-wrap lg:flex-nowrap lg:space-x-5 xl:space-x-20 font-gotham_light text-base xl:text-[18px] 2xl:text-[22px] text-white">
+
+                        <div class="lg:w-7/12 flex flex-col justify-between space-y-5">
                             <p class="leading-tight">
                                 <span class="font-gotham_bold">Direção</span><br />
                                 Dr. José Marcelo A. de Oliveira<br />
@@ -1463,7 +1469,8 @@
                                 <i>Analista de Comunicação Corporativa</i> 
                             </p>
                         </div>
-                        <div class="flex flex-col justify-between space-y-5">
+
+                        <div class="lg:w-5/12 flex flex-col justify-between space-y-5">
                             <p class="leading-tight">
                                 <span class="font-gotham_bold">Apoio de Produção</span><br />
                                 Rafaela Rosas<br />
@@ -1471,7 +1478,7 @@
                             </p>
                             
                             <p class="leading-tight">
-                                Eloisa Sato<br />
+                                Heloisa Sato<br />
                                 <i>Designer</i> 
                             </p>
                             
@@ -1491,6 +1498,68 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="mt-4 pb-20 flex flex-row flex-wrap lg:flex-nowrap lg:space-5 xl:space-x-20 font-gotham_light text-base xl:text-[18px] 2xl:text-[22px] text-white">
+
+                        <div class="w-full lg:w-7/12">
+                            <div class="text-amarelolimao2 uppercase font-gotham_bold text-lg mb-6">Unidades</div>
+
+                            <div class="grid lg:grid-cols-3 gap-6">
+                                <p class="text-white"><span class="font-gotham_bold">Unidade Paulista</span> <br>
+                                    Rua Treze de Maio, 1.815<br>
+                                    Bela Vista<br>
+                                    CEP 01327-001<br>
+                                    São Paulo (SP)<br>
+                                    Tel.: 11 3549 1000
+                                </p>
+    
+                                <p class="text-white">
+                                    <span class="font-gotham_bold">Unidade Campo Belo</span> <br>
+                                    Avenida Vereador José Diniz, 3.457 - Sobreloja <br>
+                                    Campo Belo <br>
+                                    CEP 04603-003 <br>
+                                    São Paulo (SP) <br>
+                                    Tel.: 11 2344 2700
+                                </p>
+    
+                                <p class="text-white">
+                                    <span class="font-gotham_bold">Hospital Vergueiro</span> <br>
+                                    Rua São Joaquim, 36<br>
+                                    Liberdade<br>
+                                    CEP 01508-0 00<br>
+                                    São Paulo (SP)<br>
+                                    Tel.: 11 3549 1000
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="w-full lg:w-5/12 ">
+                            <div class="text-amarelolimao2 uppercase font-gotham_bold text-lg mb-6 mt-10 lg:mt-0">Nos acompanhe nas redes sociais:</div>
+
+                            <div class="flex justify-start gap-4">
+                                <a href="#" target="_blank">
+                                    <img src="./svgs/ico-redes-youtube.svg" class="w-[46px]" alt="">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./svgs/ico-redes-facebook.svg" class="w-[46px]" alt="">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./svgs/ico-redes-twitter.svg" class="w-[46px]" alt="">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./svgs/ico-redes-instagram.svg" class="w-[46px]" alt="">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./svgs/ico-redes-linkedin.svg" class="w-[46px]" alt="">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./svgs/ico-redes-spotify.svg" class="w-[46px]" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </section>
 
@@ -1500,6 +1569,7 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="./js/main.js" type="text/javascript"></script>

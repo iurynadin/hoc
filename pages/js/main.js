@@ -84,7 +84,8 @@
             clickable: true,
         },
         navigation: {
-            nextEl: '.btnSwiperCovid',
+            nextEl: '.swCovidNext',
+            prevEl: '.swCovidPrev',
         }
     });
 
@@ -94,6 +95,31 @@
         hideOnClick: true,
         theme: 'hoac',
         allowHTML: true
+    });
+
+    gsap.to('#textureTop', {
+        keyframes: {
+          "0%": {scale:1, },
+          "50%": { scale:0.7, delay: 6 },
+          "75%": { scale:0.7},
+          "100%": { scale:1, delay: 5 },
+        },
+        ease: 'none', // ease the entire keyframe block
+        duration: 12,
+        repeat: -1,
+        delay: 0.5
+    });
+
+    gsap.to('#textureBottom', {
+        keyframes: {
+          "0%": {scale:0.7, },
+          "50%": { scale:0.95, delay: 8},
+          "75%": { scale:0.95},
+          "100%": { scale:0.7, delay: 5 },
+        },
+        ease: 'none', // ease the entire keyframe block
+        duration: 14,
+        repeat: -1
     });
     
 })(jQuery);

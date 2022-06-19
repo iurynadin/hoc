@@ -267,10 +267,19 @@
         @apply absolute bg-amarelolimao2 bg-arrowSwiperNext bg-no-repeat hover:bg-white flex justify-center items-center  transition-all duration-300 cursor-pointer
         -right-8 md:right-6 lg:right-8 top-2/4 z-30
         rounded-xl lg:rounded-[17px] 
-        bg-[length:50%_auto]
-        w-14 h-14 bg-[left_0.55rem_center]
+        bg-[length:40%_auto]
+        w-14 h-14 bg-[left_0.7rem_center]
         lg:w-[90px] lg:h-[90px] lg:bg-[left_1rem_center]
         xl:w-[120px] xl:h-[120px] xl:bg-[left_1.5rem_center];
+    }
+    .btnSwiperPrev {
+        @apply absolute bg-amarelolimao2 bg-arrowSwiperPrev bg-no-repeat hover:bg-white flex justify-center items-center  transition-all duration-300 cursor-pointer
+        -left-[70px] top-2/4 z-30
+        rounded-xl lg:rounded-[17px] 
+        bg-[length:40%_auto]
+        w-14 h-14 bg-[left_1.7rem_center]
+        lg:w-[90px] lg:h-[90px] lg:bg-[left_2.5rem_center] lg:-left-[138px]
+        xl:w-[120px] xl:h-[120px] xl:bg-[left_3.3rem_center];
     }
 
     #covid-19 {
@@ -283,7 +292,7 @@
         }
 
         .btnSwiperCovid {
-            @apply w-20 h-20 bg-amarelolimao2 rounded-full flex justify-center items-center bg-arrowSwiperCovid bg-no-repeat bg-center absolute top-1/2 -translate-y-1/2 right-10 z-100;
+            @apply w-20 h-20 bg-amarelolimao2 rounded-full flex justify-center items-center bg-arrowSwiperCovid bg-no-repeat bg-center absolute top-1/2 -translate-y-1/2  z-100;
         }
 
         .swiperBox {
@@ -443,6 +452,31 @@
 
         p {
             @apply text-amarelolimao2 text-lg lg:text-[22px] xl:text-2xl 2xl:text-[32px] font-gotham_light leading-snug;
+        }
+    }
+
+    .quality{
+        @apply flex flex-col justify-end items-start;
+
+        &__title{
+            @apply text-[#00b1bb];
+        }
+
+        &__row{
+            @apply flex justify-start items-center mb-4;
+        }
+
+        &__ball {
+            @apply text-[19px] text-white bg-amarelolimao3 flex justify-center items-center rounded-full w-[60px] h-[60px] leading-tight flex-shrink-0 mr-[3px];
+        }
+        &__dots{
+            @apply relative bg-bolinhashorizontal bg-repeat-x bg-[length:auto_9px] w-[2000px] h-3 block flex-grow;
+        }
+        &__value{
+            @apply text-[#00b1bb] font-gotham_book text-[22px] ml-3;
+        }
+        &__obs{
+            @apply text-base font-gotham_light text-cinza leading-snug;
         }
     }
 

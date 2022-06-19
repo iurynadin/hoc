@@ -41,14 +41,16 @@ module.exports = {
                 hero2: '956 / 541',
             },
             backgroundImage: {
-                hero: "url('../backgrounds/hero.jpg')",
+                hero: "url('../backgrounds/hero2.jpg')",
                 bolinhasvertical: "url('../svgs/bg-bolinhas.svg')",
                 bolinhashorizontal: "url('../svgs/bg-bolinhas-horizontal.svg')",
                 pontilhadoPalavraLideranca: "url('../svgs/pontilhado-palavra.svg')",
                 arrowSwiperNext: "url('../svgs/arrow-swipernext.svg')",
+                arrowSwiperPrev: "url('../svgs/arrow-swiperprev.svg')",
                 arrowSwiperCovid: "url('../svgs/arrow-slidecovid19.svg')",
                 listSusItem: "url('../svgs/itemlistsus.svg')",
                 nossasUnidades1: "url('../imgs/nossas-unidades1.jpg')",
+                nossasUnidades2: "url('../imgs/nossas-unidades2.jpg')",
                 pontilhadoInvestimentos: "url('../svgs/pontilhado-investimentos.svg')",
                 
                 sumario: "url('../backgrounds/sumario.jpg')",
@@ -59,9 +61,10 @@ module.exports = {
                 indicadorestop: "url('../backgrounds/indicadores-top.jpg')",
                 covid19: "url('../backgrounds/covid19.jpg')",
                 modelos: "url('../backgrounds/modelo.svg')",
-                modelofinal: "url('../backgrounds/modelo-final.svg')",
+                modelofinal: "url('../backgrounds/modelo-final-clogo.svg')",
                 modelofinallg: "url('../backgrounds/modelo-final-lg.svg')",
                 modelofinalxs: "url('../backgrounds/modelo-final-xs.svg')",
+                fotomodelo: "url('../imgs/foto-modelo.jpg')",
             },
             backgroundPosition: {
                 postSustentabilidade: 'right 8%',
@@ -76,7 +79,7 @@ module.exports = {
             },
             zIndex: {
                 '100': '100',
-            }
+            },
         },
     },
     plugins: [],
