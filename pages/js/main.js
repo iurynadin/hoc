@@ -64,6 +64,7 @@
     const swiper = new Swiper('.swiperHoc', {
         direction: 'horizontal',
         effect: 'fade',
+        simulateTouch: false,
         fadeEffect: {
             crossFade: true
         },
@@ -75,8 +76,11 @@
         },
         navigation: {
             nextEl: '.btnSwiperNext',
+            prevEl: '.btnSwiperPrev',
         }
     });
+
+    
 
     const swiperUnidades = new Swiper('.swiperUnidades', {
         direction: 'horizontal',
@@ -140,13 +144,15 @@
         repeat: -1
     });
 
-    var maxHeight = -1;
-    $('.swiperBox').each(function() {
-        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-    });
-    $('.swiperBox').each(function() {
-        $(this).height(maxHeight);
-    });
+    setTimeout(function () {
+        var maxHeight = -1;
+        $('.swiperBox').each(function() {
+            maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+        });
+        $('.swiperBox').each(function() {
+            $(this).height(maxHeight);
+        });
+    },500)
     
 })(jQuery);
 
