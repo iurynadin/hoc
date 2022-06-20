@@ -38,10 +38,13 @@ module.exports = {
             },
             width: {
                 fullwidthNav: "calc(100% + 3.5rem)",
+                swiperUnid: "calc(100% - 180px)",
+                swiperUnidXS: "calc(100% - 60px)",
             },
             aspectRatio: {
                 hero: '17 / 10',
                 hero2: '956 / 541',
+                modalimg: '433 / 289'
             },
             backgroundImage: {
                 hero: "url('../backgrounds/hero2.jpg')",
@@ -83,6 +86,9 @@ module.exports = {
             },
             zIndex: {
                 '100': '100',
+            },
+            translate: {
+                elementTopOut: "calc((100vh + 500px) * -1)",
             },
         },
     },

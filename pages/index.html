@@ -509,7 +509,7 @@
                 <div class="relative w-full h-2 flex justify-start bg-bolinhashorizontal bg-repeat-x my-6 md:my-10"></div>
 
                 <div class="grid md:grid-cols-2 gap-10 relative pb-14">
-                    <a href="#" class="group hover:border-amarelolimao2 border-4 border-white border-l-0 hover:border-4 hover:border-l-0 relative h-[380px] lg:h-[500px] rounded-r-[40px] bg-amarelolimao2 overflow-hidden bg-nossasUnidades1 bg-cover bg-right flex flex-col justify-end items-start transition-all duration-300">
+                    <a href="#" id="showModal" class="group hover:border-amarelolimao2 border-4 border-white border-l-0 hover:border-4 hover:border-l-0 relative h-[380px] lg:h-[500px] rounded-r-[40px] bg-amarelolimao2 overflow-hidden bg-nossasUnidades1 bg-cover bg-right flex flex-col justify-end items-start transition-all duration-300">
                         <div class="w-auto p-10">
                             <h2 class="text-3xl xl:text-[42px] font-gotham_bold text-amarelolimao2 my-6 2xl:mt-10 2xl:mb-6">Em São Paulo</h2>
                             <ul>
@@ -520,7 +520,8 @@
                                 <li class="font-gotham_medium text-base text-white mb-[7px]">• Escola Técnica e Faculdade</li>
                             </ul>
                             
-                            <div data-fancybox="dialog" data-src="#dialog-content" class="group font-gotham_book text-2xl text-amarelolimao2 flex items-center mt-4">
+                            <!-- data-fancybox="dialog" data-src="#dialog-content" -->
+                            <div class="group font-gotham_book text-2xl text-amarelolimao2 flex items-center mt-4">
                                 <img src="./svgs/ico-ballplus.svg" class="w-8 mr-2 opacity-60 group-hover:opacity-100" alt="">
                                 <span class="opacity-20 group-hover:opacity-100">veja as unidades</span>
                             </div>
@@ -1582,30 +1583,117 @@
                 </div>
             </section>
 
-            <div id="dialog-content" style="display:none;">
-                <div class="w-full lg:w-[1000px]">
-                    <div class="grid grid-cols-12">
-                        <div class="col-span-12 lg:col-span-7 p-8 bg-[#242424] relative">
-                            <div class="relative flex flex-col h-full">
-            
-                                <div class="relative swiper swiperPessoal w-full flex-grow">
-                                    <div class="swiper-wrapper">
+            <!-- modal swiper -->
+            <!--  -->
+            <section class="fixed top-0 left-0 z-100 w-full h-screen bg-white/90 translate-y-elementTopOut opacity-0 duration-500 transition-all modalSlider" id="modalSlider">
+                <div class="relative w-full h-screen flex justify-start items-center">
+
+                    <img src="./svgs/btn-close.svg" class="w-10 h-10 absolute top-10 right-10 z-10 closeModal cursor-pointer" alt="">
+
+                    <div class="mx-auto w-full">
+
+                        <div class="swiper swiperUnidades">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-grid">
+                                        <div class="colImg">
+                                            <div>
+                                                <img src="./imgs/unid-paulista.jpg" alt="Unidade Paulista">
+                                            </div>
+                                        </div>
+                                        <div class="colContent">
+                                            <h3>Unidade Paulista</h3>
+                                            <p>A Unidade está estrategicamente situada no coração da cidade, na região da Avenida Paulista. Seu foco está em serviços assistenciais, diagnósticos, de tratamento e de pesquisa em medicina de alta complexidade, abrangendo diversas especialidades.</p>
+                                        </div>
                                     </div>
                                 </div>
-            
-                                <div class="relative w-full flex justify-center items-center"> <!-- lg:absolute lg:left-0 lg:bottom-10 -->
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit a voluptatibus ab totam velit provident odio sunt? Alias ex obcaecati, nostrum impedit perferendis odit officia quia ut nam totam saepe aperiam quas quasi asperiores sint unde voluptatem a cum?
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-grid">
+                                        <div class="colImg">
+                                            <div>
+                                                <img src="./imgs/unid-vergueiro.jpg" alt="Unidade Vergueiro">
+                                            </div>
+                                        </div>
+                                        <div class="colContent">
+                                            <h3>Hospital Vergueiro</h3>
+                                            <p>Tem como foco a oferta de serviços e atividades assistenciais, ambulatoriais e cirúrgicas em modelo de negócio inovador, baseado em bundles (conjuntos de processos e procedimentos padronizados) negociados com previsibilidade de custo e atenção em desfechos clínicos com as operadoras de saúde. Em 2021, foram R$ 18,3 milhões investidos, sob a forma de despesa com pessoal, na expansão e na adequação do Hospital ao cenário da pandemia. Hoje, o prédio acomoda novos leitos para realização de transplante de medula óssea, além do Centro Especializado em Oncologia e do Centro Especializado em Obesidade e Diabetes.</p>
+                                        </div>
+                                    </div>
                                 </div>
-            
+                                <div class="swiper-slide">
+                                    <div class="swiper-grid">
+                                        <div class="colImg">
+                                            <div>
+                                                <img src="./imgs/unid-campobelo.jpg" alt="Unidade Campo Belo">
+                                            </div>
+                                        </div>
+                                        <div class="colContent">
+                                            <h3>Unidade Campo Belo</h3>
+                                            <p>Com endereço na zona sul de São Paulo, conta com mais de 1,4 mil m² de área construída e 15 salas para serviços, como: </p>
+                                            <ul>
+                                                <li>• Centro de Infusão</li>
+                                                <li>• Clínica especializada em tontura</li>
+                                                <li>• Check-up personalizado</li>
+                                                <li>• Serviço de Endoscopia Alta e Colonoscopia</li>
+                                                <li>• Day Clinic cirúrgico</li>
+                                                <li>• Clínica Especializada em Memória</li>
+                                                <li> • Consultas nas especialidades de clínica médica, cirurgia geral, cardiologia, geriatria, dermatologia, ginecologia, reumatologia, gastroenterologia, coloproctologia, hepa-tologia, oftalmologia, ortopedia, otorrino-laringologia, nefrologia, cirurgia plástica, urologia, neurologia, psiquiatria, psicologia, pneumologia, nutrição e fonoaudiologia </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-grid">
+                                        <div class="colImg">
+                                            <div>
+                                                <img src="./imgs/unid-centroinovacao.jpg" alt="Centro de Inovação e Saúde Digital">
+                                            </div>
+                                        </div>
+                                        <div class="colContent">
+                                            <h3>Centro de Inovação e Saúde Digital</h3>
+                                            <p>O espaço fica na Avenida Paulista e acolhe uma incubadora e aceleradora de start-ups. Também conta com um laboratório de ciên-cia de dados, estação de educação e desen-volvimento de soluções em realidade virtual e realidade aumentada, e uma ilha de im-pressão 3D. Além disso, parte das atividades do Centro Internacional de Pesquisa ocorrem nesse endereço.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-grid">
+                                        <div class="colImg">
+                                            <div>
+                                                <img src="./imgs/unid-escolatecnica.jpg" alt="Escola Técnica e Faculdade">
+                                            </div>
+                                        </div>
+                                        <div class="colContent">
+                                            <h3>Escola Técnica e Faculdade</h3>
+                                            <p>A Instituição conta com a Faculdade de Educação em Ciências da Saúde e com a Escola Técnica, por meio das quais são oferecidos cursos técnicos, de graduação e de pós-graduação.</p>
+                                            <ul>
+                                                <li>• 8 salas de aula</li>
+                                                <li>• 3 laboratórios (Informática, Práticas Assis-tenciais e Realidade Virtual)</li>
+                                                <li>• 980 m² de área construída</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-span-12 lg:col-span-5 p-8">
-                            <div class="text-white font-sfpro_bold text-2xl mb-4" id="postModalLabel"></div>
-                            <div id="description"></div>
-                        </div>
+
+                        <div class="btnSwiperUnidNext"></div>
+                        <div class="btnSwiperUnidPrev"></div>
+
+                        <!--  -->
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- <div id="dialog-content" style="display:none;">
+                <div class="w-full">
+                    <div class="container">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptatem debitis molestiae rerum consequatur temporibus assumenda modi maiores dolores dignissimos eaque fugit, illum soluta, voluptate dolor ullam error, atque nesciunt in! Quis facere praesentium consectetur, iusto sint dicta. Adipisci quod, repudiandae ipsum earum animi architecto a, odit velit hic obcaecati consectetur! Nesciunt, maxime! Quo ipsa, at nesciunt exercitationem, consequatur quibusdam quidem, perferendis omnis eos atque ullam rem enim recusandae ipsum qui commodi vel necessitatibus mollitia adipisci blanditiis repudiandae repellat dolores. Nemo tempora provident ipsum illo. Doloribus, exercitationem vero culpa qui, tenetur neque vitae repudiandae impedit vel quas accusantium quo ea, non voluptatum nam et unde. Voluptas odio tempora error sunt, quod exercitationem facilis optio, qui excepturi ad cupiditate fuga animi molestiae! Voluptatem dolorum ex molestiae veniam vitae sint, voluptate exercitationem veritatis debitis quibusdam, neque reprehenderit itaque, quisquam accusamus omnis nobis unde? Impedit temporibus eveniet nulla officiis, accusamus saepe possimus ut, iure iusto officia consequatur voluptate facilis </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </main>
         

@@ -44,6 +44,11 @@
         }
     );
 
+    $("#showModal, .closeModal").on( "click", function (event) {
+        event.preventDefault();
+        $("#modalSlider").toggleClass("is-active");
+    });
+
     $(".header__hambcont").hover(
         function(){
             console.log('mouseover');
@@ -70,6 +75,19 @@
         },
         navigation: {
             nextEl: '.btnSwiperNext',
+        }
+    });
+
+    const swiperUnidades = new Swiper('.swiperUnidades', {
+        direction: 'horizontal',
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.btnSwiperUnidNext',
+            prevEl: '.btnSwiperUnidPrev',
         }
     });
 
